@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 768 405" style="enable-background:new 0 0 768 405;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#29ABE2;}
+	.st1{font-family:'MyriadPro-Bold';}
+	.st2{font-size:24px;}
+	.st3{font-family:'MyriadPro-Regular';}
+</style>
+<rect id="My_Box__x7B__x7B_color:Revenue_x2C_scale:_x23_1_x7D__x7D_" x="33.5" y="119.5" class="st0" width="247" height="247"/>
+<text transform="matrix(1 0 0 1 31.9121 51.8657)" class="st1 st2">Revenue: </text>
+<text transform="matrix(1 0 0 1 47.7844 269.0971)" class="st3 st2">{{Revenue}}</text>
+<text transform="matrix(1 0 0 1 31.9121 80.6657)" class="st1 st2">Expense: </text>
+<text transform="matrix(1 0 0 1 162.4121 80.6657)" class="st3 st2">{{Expenses}}</text>
+</svg>
