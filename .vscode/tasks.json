@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": ["$tsc"],
+      "group": "build",
+      "label": "build",
+      "detail": "build package and single iife files"
+    },
+    {
+      "type": "npm",
+      "script": "build:es6",
+      "problemMatcher": ["$tsc"],
+      "group": "build",
+      "label": "build lite",
+      "detail": "build package only"
+    }
+  ]
+}

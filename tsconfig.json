@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "system",
-    "outFile": "./dist/dynsvg.js",
-    "esModuleInterop": true,
-    "inlineSourceMap": true,
-    "inlineSources": true
+    "target": "ES2020",
+    "module": "ES6",
+    "sourceMap": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "outDir": "lib",
   },
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/tests/*"
   ]
-  }
+}
