@@ -36,6 +36,13 @@ export default class DynamicTransform extends Dynamic {
         return 'scaleY(' + t + ')'
       },
     },
+    {
+      name: 'rotate',
+      short: 'r',
+      get: function (t, opts) {
+        return 'rotate(' + t * 360 + 'deg)'
+      },
+    },
   ]
 
   constructor(element: Element) {
@@ -46,7 +53,7 @@ export default class DynamicTransform extends Dynamic {
   }
 
   static getDynamics(svg: Element, types = ['all']): Array<Dynamic> {
-    return Array.from(svg.querySelectorAll('g,rect,circle,line'))
+    return Array.from(svg.querySelectorAll('g,rect,circle,line,polygon'))
       .filter((e) => e.id?.match(parse.RE_DOUBLEBRACE))
       .map((e) => new DynamicTransform(e))
   }
@@ -78,6 +85,28 @@ export default class DynamicTransform extends Dynamic {
     const svgElem = this.element as SVGGraphicsElement
 
     let transform_strs: Array<string> = []
+
+    if (svgElem.transform.baseVal.numberOfItems > 0) {
+      for (let i = 0; i < svgElem.transform.baseVal.numberOfItems; i += 1) {
+        const transform = svgElem.transform.baseVal.getItem(i)
+        transform_strs.push(
+          'matrix(' +
+            transform.matrix.a +
+            ',' +
+            transform.matrix.b +
+            ',' +
+            transform.matrix.c +
+            ',' +
+            transform.matrix.d +
+            ',' +
+            transform.matrix.e +
+            ',' +
+            transform.matrix.f +
+            ')'
+        )
+      }
+    }
+
     for (let transform of DynamicTransform.transforms) {
       let key
       if (this.opts.hasOwnProperty(transform.name)) {
@@ -87,7 +116,7 @@ export default class DynamicTransform extends Dynamic {
       }
       if (key) {
         const col_str = this.opts[key].toString()
-        const col = parse.columnFromData( col_str, data )
+        const col = parse.columnFromData(col_str, data)
         if (col?.stats) {
           const val = data.get(0, col.name) as number
           if (val) {
@@ -97,6 +126,7 @@ export default class DynamicTransform extends Dynamic {
         }
       }
     }
+
     svgElem.style.transform = transform_strs.join(' ')
   }
 }

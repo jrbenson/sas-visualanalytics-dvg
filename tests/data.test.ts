@@ -158,5 +158,5 @@ test('Data Parsing from VA - Column Stats', () => {
   expect(d.max('Revenue')).toBeCloseTo(4820.5)
 
   expect(d.min('Expenses')).toBeCloseTo(0)
-  expect(d.max('Expenses')).toBeCloseTo(1000)
+  expect(d.max('Expenses')).toBeCloseTo(300)
 })

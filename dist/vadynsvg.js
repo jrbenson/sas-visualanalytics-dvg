@@ -835,7 +835,7 @@
             this.prepElement();
         }
         static getDynamics(svg, types = ['all']) {
-            return Array.from(svg.querySelectorAll('g,rect,circle,line'))
+            return Array.from(svg.querySelectorAll('g,rect,circle,line,polygon'))
                 .filter((e) => e.id?.match(RE_DOUBLEBRACE))
                 .map((e) => new DynamicTransform(e));
         }
@@ -863,6 +863,24 @@
         apply(data) {
             const svgElem = this.element;
             let transform_strs = [];
+            if (svgElem.transform.baseVal.numberOfItems > 0) {
+                for (let i = 0; i < svgElem.transform.baseVal.numberOfItems; i += 1) {
+                    const transform = svgElem.transform.baseVal.getItem(i);
+                    transform_strs.push('matrix(' +
+                        transform.matrix.a +
+                        ',' +
+                        transform.matrix.b +
+                        ',' +
+                        transform.matrix.c +
+                        ',' +
+                        transform.matrix.d +
+                        ',' +
+                        transform.matrix.e +
+                        ',' +
+                        transform.matrix.f +
+                        ')');
+                }
+            }
             for (let transform of DynamicTransform.transforms) {
                 let key;
                 if (this.opts.hasOwnProperty(transform.name)) {
@@ -906,6 +924,13 @@
             short: 'sy',
             get: function (t, opts) {
                 return 'scaleY(' + t + ')';
+            },
+        },
+        {
+            name: 'rotate',
+            short: 'r',
+            get: function (t, opts) {
+                return 'rotate(' + t * 360 + 'deg)';
             },
         },
     ];
@@ -958,7 +983,7 @@
             },
             {
                 name: 'bi102',
-                label: 'Expenses {{0 1000}}',
+                label: 'Expenses {{0 300}}',
                 type: 'number',
                 usage: 'quantitative',
                 aggregation: 'average',
