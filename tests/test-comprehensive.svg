@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="256px" viewBox="0 0 512 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>test-comprehensive</title>
+    <g id="test-comprehensive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Text" font-family="SegoeUI, Segoe UI" font-size="14" font-weight="normal" fill="#3F3F3F">
+            <tspan x="24" y="39">{{#0|name}}: {{#0}}</tspan>
+            <tspan x="24" y="58">Compact {{#0|name}}: {{#0|c}}</tspan>
+        </text>
+        <rect id="{{scaleX:#0}}" fill="#33A3FF" x="24" y="81" width="459" height="6"></rect>
+        <rect id="{{sx:#0,origin:1-0.5}}" fill="#33A3FF" x="24" y="99" width="459" height="6"></rect>
+        <rect id="{{scale:#0,origin:0.5-0.5}}" fill="#33A3FF" x="24" y="117" width="459" height="6"></rect>
+        <rect id="{{g1}}" fill-opacity="0" fill="#D8D8D8" x="24" y="135" width="462" height="6"></rect>
+        <line x1="24" y1="138" x2="483" y2="138" id="Line" stroke="#DDDDDD" stroke-width="2"></line>
+        <rect id="{{positionX:#0,guide:g1}}" fill="#2886C6" x="480" y="135" width="6" height="6"></rect>
+        <text id="{{positionX:#0,guide:g1}}" font-family="SegoeUI, Segoe UI" font-size="10" font-weight="normal" fill="#323130">
+            <tspan x="468.30957" y="152">{{#0|c}}</tspan>
+        </text>
+        <rect id="{{g2}}" fill-opacity="0" fill="#D8D8D8" x="374" y="23" width="42" height="42"></rect>
+        <line x1="373.5" y1="65.5" x2="416.5" y2="22.5" id="Line" stroke="#DDDDDD" stroke-linecap="square"></line>
+        <rect id="{{position:#0,guide:g2}}" fill="#2886C6" x="371" y="62" width="6" height="6"></rect>
+        <circle id="{{s:#0,origin:0.5-0.5}}" fill="#AFDCFE" cx="461" cy="44" r="21"></circle>
+        <circle id="Oval" stroke="#DDDDDD" cx="461" cy="44" r="21"></circle>
+        <rect id="{{rotate:#0,origin:0.5-1}}" fill="#2886C6" x="460" y="23" width="2" height="21"></rect>
+    </g>
+</svg>

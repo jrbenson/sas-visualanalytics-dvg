@@ -4,10 +4,10 @@
     <g id="test-sketch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <text id="{{Department}}-Expen" font-family="SegoeUI, Segoe UI" font-size="16" font-weight="normal" fill="#323130">
             <tspan x="23" y="40">{{Department}}</tspan>
-            <tspan x="23" y="61">Expenses: {{Expenses|c}}</tspan>
+            <tspan x="23" y="61">Expenses: {{#1|c}}</tspan>
             <tspan x="23" y="82">Revenue: {{Revenue}}</tspan>
             <tspan x="23" y="103">Date: {{Date}}</tspan>
         </text>
-        <rect id="My-Rect-{{color:Expense,size:Revenue}}" fill="#A0C5FF" x="23" y="128" width="459" height="40"></rect>
+        <rect id="My-Rect-{{color:Expense,scale:Expenses,origin:0 0}}" fill="#A0C5FF" x="23" y="128" width="459" height="40"></rect>
     </g>
 </svg>

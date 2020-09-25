@@ -18,18 +18,17 @@ export function inIframe(): boolean {
  * @param {string[]} methods Values: all | text
  */
 export function cleanSVG(svg: Element, methods: string[] = ['all']) {
-    if (methods.includes('all') || methods.includes('text')) {
-      svg.querySelectorAll('tspan').forEach(function (elem) {
-        if (elem.parentElement && elem.parentElement.hasAttribute('x')) {
-          elem.removeAttribute('x')
-        }
-        if (elem.parentElement && elem.parentElement.hasAttribute('y')) {
-          elem.removeAttribute('y')
-        }
-      })
-    }
+  if (methods.includes('all') || methods.includes('text')) {
+    svg.querySelectorAll('tspan').forEach(function (elem) {
+      if (elem.parentElement && elem.parentElement.hasAttribute('x')) {
+        elem.removeAttribute('x')
+      }
+      if (elem.parentElement && elem.parentElement.hasAttribute('y')) {
+        elem.removeAttribute('y')
+      }
+    })
   }
-
+}
 
 export const SAMPLE_SVG = `
 <?xml version="1.0" encoding="UTF-8"?>
@@ -44,63 +43,113 @@ export const SAMPLE_SVG = `
 </svg>
 `
 
-
-export const SAMPLE_MESSAGE = {
+export const SAMPLE_MESSAGE_1 = {
   version: '1',
-  resultName: 'result',
-  rowCount: 19,
-  availableRowCount: 19,
+  resultName: 'dd91',
+  rowCount: 1,
+  availableRowCount: 1,
   data: [
-    ['Technology', 180435, 54400, 834],
-    ['Engineering', 80867, 12300, 432],
-    ['Sales', 50000, 65004, 344],
-    ['Operations', 60714, 48200, 543],
+    [
+      14.51235099824859,
+      2595.146703562358,
+      120.37471949000783,
+      885.5554616588712,
+      'Beach',
+      403611.52993069455,
+      140.48547547574043,
+      'Jul',
+    ],
   ],
   columns: [
     {
-      name: 'bi76',
-      label: 'Department',
-      type: 'string',
-    },
-    {
-      name: 'bi77',
-      label: 'Revenue',
+      name: 'bi141',
+      label: 'Expenses {{min}}',
       type: 'number',
       usage: 'quantitative',
-      aggregation: 'totalCount',
-      format: {
-        name: 'COMMA',
-        width: 12,
-        precision: 0,
-        formatString: 'COMMA12.',
-      },
+      aggregation: 'min',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
     },
     {
-      name: 'bi78',
+      name: 'bi142',
+      label: 'Revenue {{max}}',
+      type: 'number',
+      usage: 'quantitative',
+      aggregation: 'max',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+    {
+      name: 'bi102',
       label: 'Expenses',
       type: 'number',
       usage: 'quantitative',
-      aggregation: 'totalCount',
-      format: {
-        name: 'COMMA',
-        width: 12,
-        precision: 0,
-        formatString: 'COMMA12.',
-      },
+      aggregation: 'average',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
     },
     {
-      name: 'bi79',
-      label: 'Employees',
+      name: 'bi112',
+      label: 'Expenses {{max}}',
       type: 'number',
       usage: 'quantitative',
-      aggregation: 'totalCount',
-      format: {
-        name: 'COMMA',
-        width: 12,
-        precision: 0,
-        formatString: 'COMMA12.',
-      },
+      aggregation: 'max',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+    { name: 'bi130', label: 'Department', type: 'string' },
+    {
+      name: 'bi103',
+      label: 'Revenue',
+      type: 'number',
+      usage: 'quantitative',
+      aggregation: 'sum',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+    {
+      name: 'bi143',
+      label: 'Revenue {{min}}',
+      type: 'number',
+      usage: 'quantitative',
+      aggregation: 'min',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+    {
+      name: 'bi131',
+      label: 'Date',
+      type: 'date',
+      usage: 'categorical',
+      format: { name: 'MONTH', width: 3, precision: 0, formatString: 'MONTH3' },
     },
   ],
 }
 
+export const SAMPLE_MESSAGE_2 = {
+  version: '1',
+  resultName: 'dd91',
+  rowCount: 1,
+  availableRowCount: 1,
+  data: [['Bead', 'Dec', 112.81571032867849, 1329.474768526684]],
+  columns: [
+    { name: 'bi100', label: 'Department', type: 'string' },
+    {
+      name: 'bi101',
+      label: 'Date',
+      type: 'date',
+      usage: 'categorical',
+      format: { name: 'MONTH', width: 3, precision: 0, formatString: 'MONTH3' },
+    },
+    {
+      name: 'bi102',
+      label: 'Expenses {{0 1000}}',
+      type: 'number',
+      usage: 'quantitative',
+      aggregation: 'average',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+    {
+      name: 'bi103',
+      label: 'Revenue {{0.5 4820.50}}',
+      type: 'number',
+      usage: 'quantitative',
+      aggregation: 'average',
+      format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+    },
+  ],
+}

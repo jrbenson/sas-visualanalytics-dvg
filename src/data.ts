@@ -1,53 +1,232 @@
 import * as ddc from 'sas-va-ddc'
+import { parseVAFormats, Formatter } from './formats'
 
 type Value = string | number | Date | undefined
 
+export enum ColumnType {
+  String,
+  Number,
+  Date,
+}
+
+interface Stats {
+  min: number
+  max: number
+  sum: number
+  avg: number
+  manual?: boolean
+}
+
+export interface Column {
+  name: string
+  type: ColumnType
+  format: { std?: Formatter; cmp?: Formatter }
+  stats?: Stats
+}
+
 export class Row {
-  private values: Map<string, Value> = new Map()
+  private _values: Array<Value> = []
+  private _cols_map: Map<string, number> = new Map()
 
   constructor(data: Array<Value>, columns: Array<string>) {
     for (let i = 0; i < columns.length; i += 1) {
       if (i < data.length) {
-        this.values.set(columns[i], data[i])
+        this._values.push(data[i])
+        this._cols_map.set(columns[i], i)
       }
     }
   }
 
-  set(column: string, value: Value) {
-    this.values.set(column, value)
+  get(column: string | number) {
+    if (typeof column === 'string') {
+      if (this._cols_map.has(column)) {
+        const index = this._cols_map.get(column)
+        if (index != undefined) {
+          return this._values[index]
+        }
+      }
+    } else {
+      return this._values[column]
+    }
   }
 
-  get(column: string) {
-    return this.values.get(column)
+  set(column: string | number, value: Value) {
+    if (typeof column === 'string') {
+      if (this._cols_map.has(column)) {
+        const index = this._cols_map.get(column)
+        if (index != undefined) {
+          this._values[index] = value
+        }
+      }
+    } else {
+      this._values[column] = value
+    }
+  }
+
+  delete(column: string | number) {
+    if (typeof column === 'string') {
+      if (this._cols_map.has(column)) {
+        const index = this._cols_map.get(column)
+        if (index != undefined) {
+          this._values.splice(index, 1)
+          for (let [col_name, col_index] of this._cols_map) {
+            if (col_index > index) {
+              this._cols_map.set(col_name, col_index - 1)
+            }
+          }
+          this._cols_map.delete(column)
+        }
+      }
+    } else {
+      if (column >= 0 && column < this._values.length) {
+        this._values.splice(column, 1)
+        const key = Array.from(this._cols_map.keys())[column]
+        for (let [col_name, col_index] of this._cols_map) {
+          if (col_index > column) {
+            this._cols_map.set(col_name, col_index - 1)
+          }
+        }
+        this._cols_map.delete(key)
+      }
+    }
+  }
+
+  renameColumn(column: string | number, name: string) {
+    if (typeof column === 'string') {
+      const index = this._cols_map.get(column)
+      if (index !== undefined) {
+        this._cols_map.set(name, index)
+        this._cols_map.delete(column)
+      }
+    } else {
+      const key = Array.from(this._cols_map.keys())[column]
+      this._cols_map.set(name, column)
+      this._cols_map.delete(key)
+    }
   }
 }
 
 export class Data {
-  private rows: Array<Row> = []
-  private cols: Array<string> = []
-  private frmt: { std: Map<string, Formatter>; cmp: Map<string, Formatter> } = {
-    std: new Map(),
-    cmp: new Map(),
-  }
+  private _rows: Array<Row> = []
+  private _cols: Array<Column> = []
+  private _cols_map: Map<string, number> = new Map()
 
   constructor(data: Array<Array<Value>>, columns: Array<string>) {
     for (let row_data of data) {
-      this.rows.push(new Row(row_data, columns))
+      this._rows.push(new Row(row_data, columns))
     }
-    this.cols = columns
+
+    let types: string[] = []
+    let first_row = data[0]
+    if (first_row) {
+      types = data[0].map((d) => typeof d)
+    }
+    this._cols = columns.map((c, i) => ({
+      name: c,
+      type: types[i] === 'string' ? ColumnType.String : ColumnType.Number,
+      format: {},
+    }))
+    columns.forEach((c, i) => this._cols_map.set(c, i))
+
+    this.calcColumnStats()
   }
 
-  setColumnFormat(column: string, format: Formatter, compact = false) {
-    if (this.cols.includes(column)) {
-      if (compact) {
-        this.frmt.cmp.set(column, format)
-      } else {
-        this.frmt.std.set(column, format)
+  get cols() {
+    return Array.from(this._cols_map.keys())
+  }
+
+  get rows() {
+    return this._rows
+  }
+
+  get(row: number, column: string | number): Value {
+    const r = this._rows[row]
+    const col = this.getColumn(column)
+    if (r && col) {
+      return r.get(col.name)
+    }
+  }
+
+  set(row: number, column: string | number, value: Value) {
+    if (row < this._rows.length) {
+      const r = this._rows[row]
+      const col = this.getColumn(column)
+      if (col) {
+        r.set(col.name, value)
       }
     }
   }
 
-  setColumnFormats(columns: Array<string>, formats: Array<Formatter>, compact = false) {
+  getColumn(column: string | number, type?: ColumnType) {
+    if (type === undefined) {
+      if (typeof column === 'string') {
+        if (this._cols_map.has(column)) {
+          const index = this._cols_map.get(column)
+          if (index != undefined) {
+            return this._cols[index]
+          }
+        }
+      } else {
+        return this._cols[column]
+      }
+    } else {
+      if (typeof column === 'number') {
+        const selected_cols = this._cols.filter((c) => c.type === type)
+        return selected_cols[column]
+      }
+    }
+  }
+
+  renameColumn(column: string | number, name: string) {
+    const col = this.getColumn(column)
+    if (col) {
+      const index = this._cols_map.get(col.name)
+      if (index !== undefined) {
+        for (let row of this._rows) {
+          row.renameColumn(column, name)
+        }
+        this._cols_map.set(name, index)
+        this._cols_map.delete(col.name)
+        col.name = name
+      }
+    }
+  }
+
+  getRow(row: number): Row | undefined {
+    if (row < this._rows.length) {
+      return this._rows[row]
+    }
+  }
+
+  getFormatted(row: number, column: string | number, compact = false): string {
+    const col = this.getColumn(column)
+    if (col) {
+      const val = this.get(row, col.name)
+      if (val !== undefined) {
+        if (compact && col.format.cmp) {
+          return col.format.cmp?.format(val) as string
+        } else if (col.format.std) {
+          return col.format.std?.format(val) as string
+        } else {
+          return val.toString()
+        }
+      }
+    }
+    return '???'
+  }
+
+  setColumnFormat(column: string | number, format: Formatter, compact = false) {
+    const col = this.getColumn(column)
+    if (col) {
+      if (compact) {
+        col.format.cmp = format
+      } else {
+        col.format.std = format
+      }
+    }
+  }
+
+  setColumnFormats(columns: Array<string | number>, formats: Array<Formatter>, compact = false) {
     for (let i = 0; i < columns.length; i += 1) {
       if (i < formats.length) {
         this.setColumnFormat(columns[i], formats[i], compact)
@@ -55,39 +234,131 @@ export class Data {
     }
   }
 
-  castColumn(column: string, typeFunction: Function) {
-    if (this.cols.includes(column)) {
-      for (let row of this.rows) {
-        row.set(column, typeFunction(row.get(column)))
+  min(column: string | number) {
+    return this.getColumn(column)?.stats?.min
+  }
+
+  max(column: string | number) {
+    return this.getColumn(column)?.stats?.max
+  }
+
+  sum(column: string | number) {
+    return this.getColumn(column)?.stats?.sum
+  }
+
+  avg(column: string | number) {
+    return this.getColumn(column)?.stats?.avg
+  }
+
+  calcColumnStats(columns: Array<string> = []) {
+    if (columns.length <= 0) {
+      columns = this._cols.map((c) => c.name)
+    }
+    function hasManualStats(column: Column) {
+      if (column.stats && column.stats.manual && column.stats.manual === true) {
+        return true
+      }
+      return false
+    }
+    const selected_cols = this._cols.filter(
+      (c) => columns.includes(c.name) && c.type === ColumnType.Number && !hasManualStats(c)
+    )
+    selected_cols.forEach(
+      (col) =>
+        (col.stats = {
+          min: Number.MAX_VALUE,
+          max: Number.MIN_VALUE,
+          sum: 0,
+          avg: 0,
+        })
+    )
+    for (let row of this._rows) {
+      for (let col of selected_cols) {
+        if (col && col.stats) {
+          const val = row.get(col.name) as number
+          if (val < col.stats.min) {
+            col.stats.min = val
+          }
+          if (val > col.stats.max) {
+            col.stats.max = val
+          }
+          col.stats.sum += val
+        }
+      }
+    }
+    for (let col of selected_cols) {
+      if (col && col.stats) {
+        col.stats.avg = col.stats.sum / this._rows.length
       }
     }
   }
 
-  set(row: number, column: string, value: Value) {
-    if (row < this.rows.length) {
-      const r = this.rows[row]
-      return r.set(column, value)
-    }
-  }
-
-  get(row: number, column: string, compact = false): string {
-    const val = this.getRaw(row, column)
-    if (val !== undefined) {
-      if (compact && this.frmt.cmp.has(column)) {
-        return this.frmt.cmp.get(column)?.format(val) as string
-      } else if (this.frmt.std.has(column)) {
-        return this.frmt.std.get(column)?.format(val) as string
-      } else {
-        return val.toString()
+  setColumnStats(column: string | number, stats: { min?: number; max?: number; avg?: number; sum?: number }) {
+    const col = this.getColumn(column)
+    if (col) {
+      if (!col.stats) {
+        col.stats = {
+          min: Number.MAX_VALUE,
+          max: Number.MIN_VALUE,
+          sum: 0,
+          avg: 0,
+        }
       }
+      if (stats.min !== undefined) {
+        col.stats.min = stats.min
+      }
+      if (stats.max !== undefined) {
+        col.stats.max = stats.max
+      }
+      if (stats.sum !== undefined) {
+        col.stats.sum = stats.sum
+      }
+      if (stats.avg !== undefined) {
+        col.stats.avg = stats.avg
+      }
+      col.stats.manual = true
     }
-    return '???'
   }
 
-  getRaw(row: number, column: string): Value {
-    if (row < this.rows.length) {
-      const r = this.rows[row]
-      return r.get(column)
+  dropColumn(column: string | number) {
+    const col = this.getColumn(column)
+    if (col) {
+      for (const row of this._rows) {
+        row.delete(col.name)
+      }
+      const dropped_index = this._cols_map.get(col.name)
+      if (dropped_index != undefined) {
+        for (let [col_name, col_index] of this._cols_map) {
+          if (col_index > dropped_index) {
+            this._cols_map.set(col_name, col_index - 1)
+          }
+        }
+      }
+      this._cols_map.delete(col.name)
+      this._cols = this._cols.filter((c) => c.name !== col.name)
+      //console.log( column, this._cols )
+    }
+  }
+
+  castColumn(column: string | number, type: ColumnType) {
+    const col = this.getColumn(column)
+    if (col) {
+      col.type = type
+      switch (type) {
+        case ColumnType.String:
+          for (let row of this._rows) {
+            row.set(col.name, String(row.get(col.name)))
+          }
+          break
+        case ColumnType.Number:
+          for (let row of this._rows) {
+            row.set(col.name, Number(row.get(col.name)))
+          }
+          this.calcColumnStats([col.name])
+          break
+        case ColumnType.Date:
+          break
+      }
     }
   }
 
@@ -100,13 +371,13 @@ export class Data {
   static fromVA(message: ddc.VAMessage): Data {
     let data = new Data(
       message.data,
-      message.columns.map((x: any) => x.label)
+      message.columns.map((x: ddc.VAColumn) => x.label)
     )
 
-    message.columns.forEach((column: any) => {
+    message.columns.forEach((column: ddc.VAColumn) => {
       switch (column.type) {
         case 'number':
-          data.castColumn(column.label, Number)
+          data.castColumn(column.label, ColumnType.Number)
           break
         // case 'date':
         // case 'datetime':
@@ -115,198 +386,16 @@ export class Data {
       }
     })
 
-    const stdFormats = parseFormats(message);
-    for ( let col in stdFormats ) {
-      data.setColumnFormat( col, stdFormats[col] )
+    const stdFormats = parseVAFormats(message)
+    for (let col in stdFormats) {
+      data.setColumnFormat(col, stdFormats[col])
     }
 
-    const cmpFormats = parseFormats(message, true);
-    for ( let col in cmpFormats ) {
-      data.setColumnFormat( col, cmpFormats[col] )
+    const cmpFormats = parseVAFormats(message, true)
+    for (let col in cmpFormats) {
+      data.setColumnFormat(col, cmpFormats[col], true)
     }
 
     return data
   }
-}
-
-const BASIC_FORMATS: Record<string, string> = {
-  DOLLAR: 'NLMNLUSD',
-  EURO: 'NLMNLEUR',
-  POUND: 'NLMNLGBP',
-  WON: 'NLMNLCNY',
-  YEN: 'NLMNLJPY',
-}
-
-/**
- * Extracts the hours, minutes, and seconds from a duration in seconds.
- *
- * @param {Number} secs Number of seconds in the duration.
- * @return {Object} Object with durations in h, m, and s properties.
- */
-function timeFromSeconds(secs: number): { h: number; m: number; s: number } {
-  secs = Math.round(secs)
-  var hours = Math.floor(secs / (60 * 60))
-
-  var divisor_for_minutes = secs % (60 * 60)
-  var minutes = Math.floor(divisor_for_minutes / 60)
-
-  var divisor_for_seconds = divisor_for_minutes % 60
-  var seconds = Math.ceil(divisor_for_seconds)
-
-  var obj = {
-    h: hours,
-    m: minutes,
-    s: seconds,
-  }
-  return obj
-}
-
-// TODO: Figure out why return signature has to include 'undefined'
-interface Formatter {
-  format: (value: number | string | Date) => string | undefined
-}
-
-// Hack to get around ES2020 standard not having notation.
-interface FormatterOptions extends Intl.NumberFormatOptions {
-  notation?: string
-}
-
-/**
- * Parse the format model from VA into an object with a format method.
- *
- * @param {Object} format Format from VA message.
- * @param {boolean} compact Controls whether format generates compacted output or not.
- * @return {Formatter} Object with an appropriate format method.
- */
-function parseFormat(column: ddc.VAColumn, compact: boolean = false): Formatter {
-  const format = column.format
-  if (format) {
-    if (column.type === 'number') {
-      let format_opts: FormatterOptions = {
-        maximumFractionDigits: format.precision,
-        minimumFractionDigits: format.precision,
-      }
-      if (compact) {
-        format_opts.notation = 'compact'
-        format_opts.maximumSignificantDigits = 3
-      }
-
-      for (let basic in BASIC_FORMATS) {
-        if (format.name === basic) {
-          format.name = BASIC_FORMATS[basic]
-        }
-      }
-
-      if (format.name.startsWith('NLMNI')) {
-        return {
-          format: (value: number | string | Date) => {
-            if (typeof value === 'number') {
-              return (
-                format.name.replace('NLMNI', '') + new Intl.NumberFormat(navigator.language, format_opts).format(value)
-              )
-            }
-          },
-        }
-      } else if (format.name.startsWith('TIME')) {
-        return {
-          format: (value: number | string | Date) => {
-            if (typeof value === 'number') {
-              const parts = timeFromSeconds(value)
-              return (
-                ('' + parts.h).padStart(2, '0') +
-                ':' +
-                ('' + parts.m).padStart(2, '0') +
-                ':' +
-                ('' + parts.s).padStart(2, '0')
-              )
-            }
-            return '???'
-          },
-        }
-      } else if (format.name.startsWith('HOUR')) {
-        return {
-          format: (value: number | string | Date) => {
-            if (typeof value === 'number') {
-              const hours = Math.floor(value / (60 * 60))
-              return new Intl.NumberFormat(navigator.language).format(hours)
-            }
-            return '???'
-          },
-        }
-      } else if (format.name.startsWith('HHMM')) {
-        return {
-          format: (value: number | string | Date) => {
-            if (typeof value === 'number') {
-              const parts = timeFromSeconds(value)
-              return ('' + parts.h).padStart(2, '0') + ':' + ('' + parts.m).padStart(2, '0')
-            }
-            return '???'
-          },
-        }
-      } else if (format.name.startsWith('MMSS')) {
-        return {
-          format: (value: number | string | Date) => {
-            if (typeof value === 'number') {
-              const secs = Math.round(value)
-              const minutes = Math.floor(secs / 60)
-              const seconds = Math.ceil((secs % (60 * 60)) % 60)
-              return ('' + minutes).padStart(2, '0') + ':' + ('' + seconds).padStart(2, '0')
-            }
-            return '???'
-          },
-        }
-      } else if (format.name.startsWith('NLMNL')) {
-        format_opts.style = 'currency'
-        format_opts.currency = format.name.replace('NLMNL', '')
-      } else if (format.name.startsWith('PERCENT')) {
-        format_opts.style = 'percent'
-      } else if (format.name.startsWith('F')) {
-        format_opts.useGrouping = false
-      } else if (format.name.startsWith('BEST')) {
-        delete format_opts.maximumFractionDigits
-        format_opts.maximumSignificantDigits = format.width
-        if (compact) {
-          format_opts.maximumSignificantDigits = 3
-        }
-      }
-      return {
-        format: (value: number | string | Date) => {
-          if (typeof value === 'number') {
-            return new Intl.NumberFormat(navigator.language, format_opts).format(value)
-          }
-          return '???'
-        },
-      }
-    } else if (column.type === 'date') {
-      return {
-        format: (value: number | string | Date) => {
-          if (typeof value === 'string') {
-            return value
-          }
-          return '???'
-        },
-      }
-    }
-  }
-  return {
-    format: (value: number | string | Date) => {
-      if (typeof value === 'string') {
-        return value
-      }
-      return '???'
-    },
-  }
-}
-
-/**
- * Parse the format models from VA into a list of objects with a format method.
- *
- * @param {Object} message Full message model from VA
- * @param {boolean} compact Controls whether format generates compacted output or not.
- * @return {Object[]} List of objects with an appropriate format method.
- */
-function parseFormats(message: ddc.VAMessage, compact: boolean = false): Record<string, Formatter> {
-  let formats: Record<string, Formatter> = {}
-  message.columns.forEach((column) => (formats[column.label] = parseFormat(column, compact)))
-  return formats
 }
