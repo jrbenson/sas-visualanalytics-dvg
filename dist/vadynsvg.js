@@ -831,6 +831,8 @@
     class DynamicTransform extends Dynamic {
         constructor(element) {
             super(element);
+            this.origin_h = 0;
+            this.origin_v = 0;
             this.orig_bbox = this.element.getBBox();
             this.prepElement();
         }
@@ -856,13 +858,14 @@
                     origin_h = origin_v = Number(origin_opts[0]);
                 }
             }
-            origin_h = this.orig_bbox.x + this.orig_bbox.width * origin_h;
-            origin_v = this.orig_bbox.y + this.orig_bbox.height * origin_v;
-            svgElem.style.transformOrigin = origin_h + 'px ' + origin_v + 'px';
+            this.origin_h = this.orig_bbox.x + this.orig_bbox.width * origin_h;
+            this.origin_v = this.orig_bbox.y + this.orig_bbox.height * origin_v;
+            svgElem.style.transformOrigin = this.origin_h + 'px ' + this.origin_v + 'px';
         }
         apply(data) {
             const svgElem = this.element;
             let transform_strs = [];
+            transform_strs.push('translate(' + -this.origin_h + 'px,' + -this.origin_v + 'px)');
             if (svgElem.transform.baseVal.numberOfItems > 0) {
                 for (let i = 0; i < svgElem.transform.baseVal.numberOfItems; i += 1) {
                     const transform = svgElem.transform.baseVal.getItem(i);
@@ -881,6 +884,7 @@
                         ')');
                 }
             }
+            transform_strs.push('translate(' + this.origin_h + 'px,' + this.origin_v + 'px)');
             for (let transform of DynamicTransform.transforms) {
                 let key;
                 if (this.opts.hasOwnProperty(transform.name)) {

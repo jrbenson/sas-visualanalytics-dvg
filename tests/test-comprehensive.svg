@@ -28,6 +28,6 @@
             <rect id="{{s:#0,origin:0.5-0}}" x="26" y="52" width="12" height="12"></rect>
             <rect id="{{s:#0,origin:1-0.5}}" x="-2.27373675e-13" y="26" width="12" height="12"></rect>
         </g>
-        <polygon id="{{r:#0,origin:0.5-0.5}}" fill="#33A3FF" transform="translate(352.000000, 30.000000) rotate(-270.000000) translate(-352.000000, -30.000000) " points="352 25 358 35 346 35"></polygon>
+        <polygon id="{{r:#0,origin:0.5-0.5}}" fill="#33A3FF" transform="translate(256.000000, 185.000000) rotate(-270.000000) translate(-256.000000, -185.000000) " points="256 180 262 190 250 190"></polygon>
     </g>
 </svg>
