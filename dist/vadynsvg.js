@@ -626,15 +626,29 @@
         return ('{' +
             text
                 .replace(RE_NOVALUEKEY, function (match, g1) {
-                return match.replace(g1, g1 + ':true');
+                return match.replace(g1, trimChars(g1, [' ', '-']) + ':true');
             })
                 .replace(RE_NONJSONCHAR, function (match, g1) {
                 if (match !== 'true' && match !== 'false' && !RE_NUMBER.test(match)) {
-                    return '"' + match + '"';
+                    return '"' + trimChars(match, [' ', '-']) + '"';
                 }
-                return match;
+                return trimChars(match, [' ', '-']);
             }) +
             '}');
+    }
+    /**
+     * Trims any of the specified characters from the star and end of the text.
+     *
+     * @param text The text to trim.
+     * @param chars List of characters to trim.
+     */
+    function trimChars(text, chars) {
+        var start = 0, end = text.length;
+        while (start < end && chars.indexOf(text[start]) >= 0)
+            ++start;
+        while (end > start && chars.indexOf(text[end - 1]) >= 0)
+            --end;
+        return start > 0 || end < text.length ? text.substring(start, end) : text;
     }
     /**
      * Creates an object from a string in the format {{param|opt:val,opt:val}}.
@@ -646,23 +660,56 @@
             name: '',
             opts: {},
         };
-        text = decodeIllustrator(text);
         const matches = text.match(RE_DOUBLEBRACE);
         if (matches) {
             text = matches[0].slice(2, -2);
             if (text.includes('|')) {
                 const name_opts = text.split('|');
-                obj.name = name_opts[0];
+                obj.name = trimChars(name_opts[0], [' ', '-']);
                 obj.opts = JSON.parse(jsonEncodeLiteral(name_opts[1]));
             }
             else if (text.includes(':')) {
                 obj.opts = JSON.parse(jsonEncodeLiteral(text));
             }
             else {
-                obj.name = text;
+                obj.name = trimChars(text, [' ', '-']);
             }
         }
         return obj;
+    }
+    function elementsWithOptions(svg, options) {
+        return Array.from(svg.querySelectorAll('*[id]'))
+            .filter((e) => e.id?.match(RE_DOUBLEBRACE))
+            .filter(function (e) {
+            let syn = syntax(e.id);
+            for (let option in syn.opts) {
+                if (options.includes(option)) {
+                    return true;
+                }
+            }
+            return false;
+        });
+    }
+    function elementsByName(svg) {
+        const elements = new Map();
+        console.log(svg.querySelectorAll('*[id]'));
+        Array.from(svg.querySelectorAll('*[id]'))
+            .filter((e) => e.id?.match(RE_DOUBLEBRACE))
+            .forEach(function (e) {
+            console.log(e);
+            let syn = syntax(e.id);
+            if (syn.name) {
+                elements.set(syn.name, e);
+            }
+        });
+        return elements;
+    }
+    function firstObjectKey(object, keys) {
+        for (let key of keys) {
+            if (object.hasOwnProperty(key)) {
+                return key;
+            }
+        }
     }
     /**
      * Detects type from @, #, and $ prefixes for string, number, and time and position.
@@ -777,6 +824,22 @@
         constructor(element) {
             super(element);
             this.template = this.element.textContent;
+            const svgElem = this.element;
+            const bbox = svgElem.getBBox();
+            const key = firstObjectKey(this.opts, ['align', 'a']);
+            if (key) {
+                svgElem.setAttribute('text-anchor', this.opts[key].toString());
+                switch (this.opts[key]) {
+                    case 'start':
+                        break;
+                    case 'middle':
+                        svgElem.setAttribute('x', (bbox.x + (bbox.width / 2)) + 'px');
+                        break;
+                    case 'end':
+                        svgElem.setAttribute('x', (bbox.x + bbox.width) + 'px');
+                        break;
+                }
+            }
         }
         static getDynamics(svg, types = ['all']) {
             let elems = [];
@@ -831,45 +894,66 @@
     class DynamicTransform extends Dynamic {
         constructor(element) {
             super(element);
-            this.origin_h = 0;
-            this.origin_v = 0;
-            this.orig_bbox = this.element.getBBox();
-            this.prepElement();
+            this.base_transforms = [];
+            const svgElem = this.element;
+            this.bbox = svgElem.getBBox();
+            this.origin = this.getOrigin();
+            this.base_transforms = this.getBaseTransforms();
+            this.wrapWithGroup();
+            svgElem.setAttribute('vector-effect', 'non-scaling-stroke');
+            svgElem.style.transitionProperty = 'transform';
+            svgElem.style.transitionDuration = '1s';
+            svgElem.style.transformOrigin = this.origin.x + 'px ' + this.origin.y + 'px';
+            this.named_elems = elementsByName(element);
         }
         static getDynamics(svg, types = ['all']) {
-            return Array.from(svg.querySelectorAll('g,rect,circle,line,polygon'))
-                .filter((e) => e.id?.match(RE_DOUBLEBRACE))
-                .map((e) => new DynamicTransform(e));
+            const options = [].concat(...DynamicTransform.transforms.map((t) => t.keys));
+            return elementsWithOptions(svg, options).map((e) => new DynamicTransform(e));
         }
-        prepElement() {
+        getOrigin() {
             const svgElem = this.element;
-            this.orig_bbox = svgElem.getBBox();
-            svgElem.style.transitionProperty = 'transform, fill, color';
-            svgElem.style.transitionDuration = '1s';
+            this.bbox = svgElem.getBBox();
             let origin_h = 0;
             let origin_v = 0;
-            const origin_opts = this.opts['origin']?.toString().split('-');
-            if (origin_opts) {
-                if (origin_opts.length > 1) {
-                    origin_h = Number(origin_opts[0]);
-                    origin_v = Number(origin_opts[1]);
-                }
-                else {
-                    origin_h = origin_v = Number(origin_opts[0]);
+            const key = firstObjectKey(this.opts, ['origin', 'o']);
+            if (key) {
+                const origin_opts = this.opts[key]?.toString().split('-');
+                if (origin_opts) {
+                    if (origin_opts.length > 1) {
+                        origin_h = Number(origin_opts[0]);
+                        origin_v = Number(origin_opts[1]);
+                    }
+                    else {
+                        origin_h = origin_v = Number(origin_opts[0]);
+                    }
                 }
             }
-            this.origin_h = this.orig_bbox.x + this.orig_bbox.width * origin_h;
-            this.origin_v = this.orig_bbox.y + this.orig_bbox.height * origin_v;
-            svgElem.style.transformOrigin = this.origin_h + 'px ' + this.origin_v + 'px';
+            origin_h = this.bbox.x + this.bbox.width * origin_h;
+            origin_v = this.bbox.y + this.bbox.height * origin_v;
+            return { x: origin_h, y: origin_v };
         }
-        apply(data) {
+        wrapWithGroup() {
             const svgElem = this.element;
-            let transform_strs = [];
-            transform_strs.push('translate(' + -this.origin_h + 'px,' + -this.origin_v + 'px)');
+            const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            svgElem.insertAdjacentElement('afterend', group);
+            group.append(svgElem);
+            group.classList.add(...svgElem.classList);
+            svgElem.classList.remove(...svgElem.classList);
+            group.style.cssText = svgElem.style.cssText;
+            svgElem.style.cssText = '';
+            const cPath = svgElem.getAttribute('clip-path');
+            if (cPath) {
+                group.setAttribute('clip-path', cPath);
+                svgElem.removeAttribute('clip-path');
+            }
+        }
+        getBaseTransforms() {
+            let base_transforms = [];
+            const svgElem = this.element;
             if (svgElem.transform.baseVal.numberOfItems > 0) {
                 for (let i = 0; i < svgElem.transform.baseVal.numberOfItems; i += 1) {
                     const transform = svgElem.transform.baseVal.getItem(i);
-                    transform_strs.push('matrix(' +
+                    base_transforms.push('matrix(' +
                         transform.matrix.a +
                         ',' +
                         transform.matrix.b +
@@ -884,15 +968,18 @@
                         ')');
                 }
             }
-            transform_strs.push('translate(' + this.origin_h + 'px,' + this.origin_v + 'px)');
+            return base_transforms;
+        }
+        apply(data) {
+            const svgElem = this.element;
+            let transform_strs = [];
+            if (this.base_transforms.length > 0) {
+                transform_strs.push('translate(' + -this.origin.x + 'px,' + -this.origin.y + 'px)');
+                transform_strs.push(...this.base_transforms);
+                transform_strs.push('translate(' + this.origin.x + 'px,' + this.origin.y + 'px)');
+            }
             for (let transform of DynamicTransform.transforms) {
-                let key;
-                if (this.opts.hasOwnProperty(transform.name)) {
-                    key = transform.name;
-                }
-                else if (this.opts.hasOwnProperty(transform.short)) {
-                    key = transform.short;
-                }
+                const key = firstObjectKey(this.opts, transform.keys);
                 if (key) {
                     const col_str = this.opts[key].toString();
                     const col = columnFromData(col_str, data);
@@ -900,7 +987,17 @@
                         const val = data.get(0, col.name);
                         if (val) {
                             const norm = (val - col.stats.min) / (col.stats.max - col.stats.min);
-                            transform_strs.push(transform.get(norm, this.opts));
+                            const gkey = firstObjectKey(this.opts, ['guide', 'g']);
+                            let guide = undefined;
+                            if (gkey) {
+                                guide = this.named_elems.get(this.opts[gkey].toString());
+                            }
+                            if (guide) {
+                                transform_strs.push(transform.get(norm, this.opts, guide));
+                            }
+                            else {
+                                transform_strs.push(transform.get(norm, this.opts));
+                            }
                         }
                     }
                 }
@@ -910,31 +1007,51 @@
     }
     DynamicTransform.transforms = [
         {
-            name: 'scale',
-            short: 's',
-            get: function (t, opts) {
+            keys: ['scale', 's'],
+            get: function (t, opts, guide) {
                 return 'scale(' + t + ',' + t + ')';
             },
         },
         {
-            name: 'scaleX',
-            short: 'sx',
-            get: function (t, opts) {
+            keys: ['scaleX', 'sx'],
+            get: function (t, opts, guide) {
                 return 'scaleX(' + t + ')';
             },
         },
         {
-            name: 'scaleY',
-            short: 'sy',
-            get: function (t, opts) {
+            keys: ['scaleY', 'sy'],
+            get: function (t, opts, guide) {
                 return 'scaleY(' + t + ')';
             },
         },
         {
-            name: 'rotate',
-            short: 'r',
-            get: function (t, opts) {
-                return 'rotate(' + t * 360 + 'deg)';
+            keys: ['rotate', 'r'],
+            get: function (t, opts, guide) {
+                let limit = 1.0;
+                const key = firstObjectKey(opts, ['rotateLimit', 'rl']);
+                if (key) {
+                    limit = Number(opts[key]);
+                }
+                return 'rotate(' + t * 360 * limit + 'deg)';
+            },
+        },
+        {
+            keys: ['postion', 'p'],
+            get: function (t, opts, guide) {
+                console.log(guide);
+                return 'translate(' + t + 'px,' + t + 'px)';
+            },
+        },
+        {
+            keys: ['positionX', 'px'],
+            get: function (t, opts, guide) {
+                return 'translateX(' + t + 'px)';
+            },
+        },
+        {
+            keys: ['positionY', 'py'],
+            get: function (t, opts, guide) {
+                return 'translateY(' + t + 'px)';
             },
         },
     ];
@@ -955,8 +1072,8 @@
     /**
      * Performs cleaning tasks on SVG to allow for better dynamic behavior.
      *
-     * @param {Element} svg SVG element to perform cleaning on.
-     * @param {string[]} methods Values: all | text
+     * @param svg SVG element to perform cleaning on.
+     * @param methods Values: all | text
      */
     function cleanSVG(svg, methods = ['all']) {
         if (methods.includes('all') || methods.includes('text')) {
@@ -967,6 +1084,11 @@
                 if (elem.parentElement && elem.parentElement.hasAttribute('y')) {
                     elem.removeAttribute('y');
                 }
+            });
+        }
+        if (methods.includes('all') || methods.includes('decode')) {
+            svg.querySelectorAll('*[id]').forEach(function (elem) {
+                elem.id = decodeIllustrator(elem.id);
             });
         }
     }
@@ -1034,11 +1156,14 @@
          */
         init() {
             this.opts = { ...this.opts, ...getUrlParams() };
+            const htmlElement = this.element;
+            htmlElement.style.opacity = '0';
             fetch(this.opts.svg.toString(), { method: 'GET' })
                 .then((response) => response.text())
                 .then((text) => {
-                this.element.innerHTML = text;
-                const svg = this.element.querySelector('svg');
+                const htmlElement = this.element;
+                htmlElement.innerHTML = text;
+                const svg = htmlElement.querySelector('svg');
                 if (svg) {
                     cleanSVG(svg, this.opts.clean.toString().split(','));
                     const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -1050,6 +1175,8 @@
                     this.instanceSVG = group.innerHTML;
                 }
                 this.initComplete = true;
+                htmlElement.style.transition = 'opacity 0.5s ease 1s';
+                htmlElement.style.opacity = '1';
             })
                 .catch((error) => console.error('Error: ', error));
             setOnDataReceivedCallback(this.onDataReceived.bind(this));
@@ -1078,7 +1205,7 @@
                 window.setTimeout(this.apply.bind(this), 100);
             }
             else {
-                this.dynamics.forEach((d) => d.apply(this.data)); //, this.dataFormats, this.dataFormatsCompact ) )
+                this.dynamics.forEach((d) => d.apply(this.data));
             }
         }
         /**

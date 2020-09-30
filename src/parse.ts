@@ -18,7 +18,7 @@ const COL_ID_TYPE_PREFIXES: Record<string, ColumnType> = {
  *
  * @param text The text to decode.
  */
-function decodeIllustrator(text: string) {
+export function decodeIllustrator(text: string) {
   return text.replace(RE_UNDERSCOREUNICODE, function (match, g1) {
     return String.fromCharCode(parseInt('0x' + g1))
   })
@@ -34,16 +34,33 @@ function jsonEncodeLiteral(text: string) {
     '{' +
     text
       .replace(RE_NOVALUEKEY, function (match, g1) {
-        return match.replace(g1, g1 + ':true')
+        return match.replace(g1, trimChars(g1, [' ', '-']) + ':true')
       })
       .replace(RE_NONJSONCHAR, function (match, g1) {
         if (match !== 'true' && match !== 'false' && !RE_NUMBER.test(match)) {
-          return '"' + match + '"'
+          return '"' + trimChars(match, [' ', '-']) + '"'
         }
-        return match
+        return trimChars(match, [' ', '-'])
       }) +
     '}'
   )
+}
+
+/**
+ * Trims any of the specified characters from the star and end of the text.
+ *
+ * @param text The text to trim.
+ * @param chars List of characters to trim.
+ */
+function trimChars(text: string, chars: string[]) {
+  var start = 0,
+    end = text.length
+
+  while (start < end && chars.indexOf(text[start]) >= 0) ++start
+
+  while (end > start && chars.indexOf(text[end - 1]) >= 0) --end
+
+  return start > 0 || end < text.length ? text.substring(start, end) : text
 }
 
 interface SyntaxParse {
@@ -61,24 +78,58 @@ export function syntax(text: string): SyntaxParse {
     name: '',
     opts: {},
   }
-
-  text = decodeIllustrator(text)
-
   const matches = text.match(RE_DOUBLEBRACE)
   if (matches) {
     text = matches[0].slice(2, -2)
     if (text.includes('|')) {
       const name_opts = text.split('|')
-      obj.name = name_opts[0]
+      obj.name = trimChars(name_opts[0], [' ', '-'])
       obj.opts = JSON.parse(jsonEncodeLiteral(name_opts[1]))
     } else if (text.includes(':')) {
       obj.opts = JSON.parse(jsonEncodeLiteral(text))
     } else {
-      obj.name = text
+      obj.name = trimChars(text, [' ', '-'])
     }
   }
 
   return obj
+}
+
+export function elementsWithOptions(svg: Element, options: Array<string>) {
+  return Array.from(svg.querySelectorAll<SVGElement>('*[id]'))
+    .filter((e) => e.id?.match(RE_DOUBLEBRACE))
+    .filter(function (e) {
+      let syn = syntax(e.id)
+      for (let option in syn.opts) {
+        if (options.includes(option)) {
+          return true
+        }
+      }
+      return false
+    })
+}
+
+export function elementsByName(svg: Element) {
+  const elements = new Map()
+  console.log( svg.querySelectorAll<SVGElement>('*[id]') )
+  Array.from(svg.querySelectorAll<SVGElement>('*[id]'))
+    .filter((e) => e.id?.match(RE_DOUBLEBRACE))
+    .forEach(function (e) {
+      console.log( e )
+      let syn = syntax(e.id)
+      if (syn.name) {
+        elements.set(syn.name, e)
+      }
+    })
+  return elements
+}
+
+export function firstObjectKey(object: Record<string, any>, keys: Array<string>) {
+  for (let key of keys) {
+    if (object.hasOwnProperty(key)) {
+      return key
+    }
+  }
 }
 
 /**
@@ -129,7 +180,7 @@ export function dataStats(data: Data) {
         const stats = stat.split(' ')
         if (stats.length === 2 && stats[0].match(RE_NUMBER) && stats[0].match(RE_NUMBER)) {
           const [min, max] = stats.map(Number)
-          data.renameColumn( col.name, col_base_name )
+          data.renameColumn(col.name, col_base_name)
           data.setColumnStats(col_base_name, { min: min, max: max })
           // if( col_base_name === 'Expenses' ) {
           //   console.log( col_base_name, data.min(col_base_name), min )

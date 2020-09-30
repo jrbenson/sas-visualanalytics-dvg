@@ -1,3 +1,4 @@
+import * as parse from './parse'
 /**
  * Test if page contained in an iFrame.
  *
@@ -14,8 +15,8 @@ export function inIframe(): boolean {
 /**
  * Performs cleaning tasks on SVG to allow for better dynamic behavior.
  *
- * @param {Element} svg SVG element to perform cleaning on.
- * @param {string[]} methods Values: all | text
+ * @param svg SVG element to perform cleaning on.
+ * @param methods Values: all | text
  */
 export function cleanSVG(svg: Element, methods: string[] = ['all']) {
   if (methods.includes('all') || methods.includes('text')) {
@@ -26,6 +27,11 @@ export function cleanSVG(svg: Element, methods: string[] = ['all']) {
       if (elem.parentElement && elem.parentElement.hasAttribute('y')) {
         elem.removeAttribute('y')
       }
+    })
+  }
+  if (methods.includes('all') || methods.includes('decode')) {
+    svg.querySelectorAll('*[id]').forEach(function (elem) {
+      elem.id = parse.decodeIllustrator(elem.id)
     })
   }
 }

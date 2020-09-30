@@ -1,6 +1,7 @@
 import * as parse from './parse'
 import { Data } from './data'
 import Dynamic from './dynamic'
+import DynamicTransform from './dynamic-transform'
 
 /**
  * The dynamic text class replaces mustache style double brace tags with a value from the data.
@@ -11,6 +12,24 @@ export default class DynamicText extends Dynamic {
   constructor(element: Element) {
     super(element)
     this.template = this.element.textContent
+
+    const svgElem = this.element as SVGGraphicsElement
+    const bbox = svgElem.getBBox()
+    const key = parse.firstObjectKey(this.opts, ['align', 'a'])
+    if( key ) {
+      svgElem.setAttribute( 'text-anchor', this.opts[key].toString() )
+      switch( this.opts[key] ) {
+        case 'start':
+          break
+        case 'middle':
+          svgElem.setAttribute( 'x', ( bbox.x + ( bbox.width / 2 ) ) + 'px' )
+          break
+        case 'end':
+          svgElem.setAttribute( 'x', ( bbox.x + bbox.width ) + 'px' )
+          break
+      }
+    }
+
   }
 
   static getDynamics(svg: Element, types = ['all']): Array<Dynamic> {

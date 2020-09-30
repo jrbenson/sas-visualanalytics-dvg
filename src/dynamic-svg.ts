@@ -43,11 +43,15 @@ export default class DynamicSVG extends Dynamic {
   init() {
     this.opts = { ...this.opts, ...ddc.getUrlParams() }
 
+    const htmlElement = this.element as HTMLElement
+    htmlElement.style.opacity = '0'
+  
     fetch(this.opts.svg.toString(), { method: 'GET' })
       .then((response) => response.text())
       .then((text) => {
-        this.element.innerHTML = text
-        const svg = this.element.querySelector('svg')
+        const htmlElement = this.element as HTMLElement
+        htmlElement.innerHTML = text
+        const svg = htmlElement.querySelector('svg')
         if (svg) {
           util.cleanSVG(svg, this.opts.clean.toString().split(','))
 
@@ -62,6 +66,8 @@ export default class DynamicSVG extends Dynamic {
           this.instanceSVG = group.innerHTML
         }
         this.initComplete = true
+        htmlElement.style.transition = 'opacity 0.5s ease 1s'
+        htmlElement.style.opacity = '1'
       })
       .catch((error) => console.error('Error: ', error))
 
@@ -92,7 +98,7 @@ export default class DynamicSVG extends Dynamic {
     if (!this.initComplete) {
       window.setTimeout(this.apply.bind(this), 100)
     } else {
-      this.dynamics.forEach((d) => d.apply(this.data)) //, this.dataFormats, this.dataFormatsCompact ) )
+      this.dynamics.forEach((d) => d.apply(this.data))
     }
   }
 
