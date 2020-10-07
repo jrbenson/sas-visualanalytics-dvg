@@ -1,40 +1,3 @@
-import * as parse from './parse'
-/**
- * Test if page contained in an iFrame.
- *
- * @return Indicator of iFrame containment.
- */
-export function inIframe(): boolean {
-  try {
-    return window.self !== window.top
-  } catch (e) {
-    return true
-  }
-}
-
-/**
- * Performs cleaning tasks on SVG to allow for better dynamic behavior.
- *
- * @param svg SVG element to perform cleaning on.
- * @param methods Values: all | text
- */
-export function cleanSVG(svg: Element, methods: string[] = ['all']) {
-  if (methods.includes('all') || methods.includes('text')) {
-    svg.querySelectorAll('tspan').forEach(function (elem) {
-      if (elem.parentElement && elem.parentElement.hasAttribute('x')) {
-        elem.removeAttribute('x')
-      }
-      if (elem.parentElement && elem.parentElement.hasAttribute('y')) {
-        elem.removeAttribute('y')
-      }
-    })
-  }
-  if (methods.includes('all') || methods.includes('decode')) {
-    svg.querySelectorAll('*[id]').forEach(function (elem) {
-      elem.id = parse.decodeIllustrator(elem.id)
-    })
-  }
-}
 
 export const SAMPLE_SVG = `
 <?xml version="1.0" encoding="UTF-8"?>
@@ -159,3 +122,4 @@ export const SAMPLE_MESSAGE_2 = {
     },
   ],
 }
+

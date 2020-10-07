@@ -1,5 +1,5 @@
 import { Data, ColumnType } from '../src/data'
-import { SAMPLE_MESSAGE_1, SAMPLE_MESSAGE_2 } from '../src/util'
+import { SAMPLE_MESSAGE_1, SAMPLE_MESSAGE_2 } from '../src/samples'
 import { dataStats } from '../src/parse'
 
 const COLS1 = ['ColumnStr', 'ColumnInt', 'ColumnFloat', 'ColumnStrInt']

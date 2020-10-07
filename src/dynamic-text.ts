@@ -1,7 +1,7 @@
 import * as parse from './parse'
 import { Data } from './data'
 import Dynamic from './dynamic'
-import DynamicTransform from './dynamic-transform'
+import DynamicSVG from './dynamic-svg'
 
 /**
  * The dynamic text class replaces mustache style double brace tags with a value from the data.
@@ -15,24 +15,38 @@ export default class DynamicText extends Dynamic {
 
     const svgElem = this.element as SVGGraphicsElement
     const bbox = svgElem.getBBox()
-    const key = parse.firstObjectKey(this.opts, ['align', 'a'])
-    if( key ) {
-      svgElem.setAttribute( 'text-anchor', this.opts[key].toString() )
-      switch( this.opts[key] ) {
+    let anchor = undefined
+    let key = parse.firstObjectKey(this.opts, ['align', 'a'])
+    if (key) {
+      anchor = this.opts[key].toString()
+    } else {
+      const p = this.element.parentElement
+      if (p) {
+        const pOpts = parse.syntax(p.id)?.opts
+        if (pOpts) {
+          key = parse.firstObjectKey(pOpts, ['align', 'a'])
+          if (key) {
+            anchor = pOpts[key].toString()
+          }
+        }
+      }
+    }
+    if (anchor !== undefined) {
+      svgElem.setAttribute('text-anchor', anchor)
+      switch (anchor) {
         case 'start':
           break
         case 'middle':
-          svgElem.setAttribute( 'x', ( bbox.x + ( bbox.width / 2 ) ) + 'px' )
+          svgElem.setAttribute('x', bbox.x + bbox.width / 2 + 'px')
           break
         case 'end':
-          svgElem.setAttribute( 'x', ( bbox.x + bbox.width ) + 'px' )
+          svgElem.setAttribute('x', bbox.x + bbox.width + 'px')
           break
       }
     }
-
   }
 
-  static getDynamics(svg: Element, types = ['all']): Array<Dynamic> {
+  static getDynamics(svg: Element): Array<Dynamic> {
     let elems: Array<Element> = []
     svg.querySelectorAll('text').forEach(function (text) {
       if (text.children.length) {
@@ -45,7 +59,7 @@ export default class DynamicText extends Dynamic {
     return elems.map((e) => new DynamicText(e))
   }
 
-  apply(data: Data) {
+  apply(data: Data, dynSVG: DynamicSVG) {
     if (this.template) {
       this.element.textContent = this.template.replace(
         parse.RE_DOUBLEBRACE,

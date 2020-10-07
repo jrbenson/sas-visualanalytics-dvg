@@ -1,10 +1,44 @@
 import * as parse from './parse'
 import { Data } from './data'
 import Dynamic from './dynamic'
+import DynamicSVG from './dynamic-svg'
 
 interface Transform {
   keys: Array<string>
-  get: (x: number, opts: Record<string, string | number | boolean>, guide?: SVGGraphicsElement) => string
+  get: (x: number, opts: Record<string, string | number | boolean>, guide?: Guide) => string
+}
+
+class Guide {
+  element: SVGGraphicsElement
+  tag: string
+  linear: boolean
+  constructor(element: SVGGraphicsElement) {
+    this.element = element
+    this.tag = this.element.tagName
+    switch (this.tag) {
+      case 'polyline':
+      case 'path':
+        this.linear = false
+        break
+      default:
+        this.linear = true
+    }
+  }
+  get(t: number) {
+    switch (this.tag) {
+      case 'polyline':
+      case 'path':
+      case 'line':
+        const geom = this.element as SVGGeometryElement
+        let cur_pos = geom.getPointAtLength(geom.getTotalLength() * t)
+        let beg_pos = geom.getPointAtLength(0)
+        return { x: cur_pos.x - beg_pos.x, y: cur_pos.y - beg_pos.y }
+      default:
+        const gbox = this.element.getBBox()
+        return { x: gbox.width * t, y: gbox.height * t }
+    }
+    return { x: 0, y: 0 }
+  }
 }
 
 /**
@@ -42,27 +76,38 @@ export default class DynamicTransform extends Dynamic {
       },
     },
     {
-      keys: ['postion', 'p'],
+      keys: ['position', 'p'],
       get: function (t, opts, guide?) {
-        console.log( guide )
-        return 'translate(' + t + 'px,' + t + 'px)'
+        if (guide && guide.linear) {
+          const coords = guide.get(t)
+          return 'translate(' + coords.x + 'px,' + coords.y + 'px)'
+        }
+        return ''
       },
     },
     {
       keys: ['positionX', 'px'],
       get: function (t, opts, guide?) {
-        return 'translateX(' + t + 'px)'
+        if (guide && guide.linear) {
+          const coords = guide.get(t)
+          return 'translateX(' + coords.x + 'px)'
+        }
+        return ''
       },
     },
     {
       keys: ['positionY', 'py'],
       get: function (t, opts, guide?) {
-        return 'translateY(' + t + 'px)'
+        if (guide && guide.linear) {
+          const coords = guide.get(t)
+          return 'translateY(' + coords.y + 'px)'
+        }
+        return ''
       },
     },
   ]
 
-  static getDynamics(svg: Element, types = ['all']): Array<Dynamic> {
+  static getDynamics(svg: Element): Array<Dynamic> {
     const options = ([] as string[]).concat(...DynamicTransform.transforms.map((t) => t.keys))
     return parse.elementsWithOptions(svg, options).map((e) => new DynamicTransform(e))
   }
@@ -70,7 +115,13 @@ export default class DynamicTransform extends Dynamic {
   bbox: { x: number; y: number; width: number; height: number }
   origin: { x: number; y: number }
   base_transforms: Array<string> = []
-  named_elems: Map<string,Element>
+  guide: Guide | undefined = undefined
+  nonlinear_pos_group: SVGGElement
+  nonlinear_pos_ease: number = 0.0
+  nonlinear_pos_beg_t: number = 0.0
+  nonlinear_pos_cur_t: number = 0.0
+  nonlinear_pos_end_t: number = 0.0
+  nonlinear_pos_beg_time: number | undefined = undefined
 
   constructor(element: Element) {
     super(element)
@@ -81,13 +132,13 @@ export default class DynamicTransform extends Dynamic {
     this.origin = this.getOrigin()
     this.base_transforms = this.getBaseTransforms()
     this.wrapWithGroup()
+    this.nonlinear_pos_group = this.wrapWithGroup(false)
 
     svgElem.setAttribute('vector-effect', 'non-scaling-stroke')
     svgElem.style.transitionProperty = 'transform'
     svgElem.style.transitionDuration = '1s'
+    svgElem.style.transitionTimingFunction = 'cubic-bezier(0.25, .1, 0.25, 1)'
     svgElem.style.transformOrigin = this.origin.x + 'px ' + this.origin.y + 'px'
-
-    this.named_elems = parse.elementsByName(element)
   }
 
   getOrigin() {
@@ -97,14 +148,12 @@ export default class DynamicTransform extends Dynamic {
     let origin_v = 0
     const key = parse.firstObjectKey(this.opts, ['origin', 'o'])
     if (key) {
-      const origin_opts = this.opts[key]?.toString().split('-')
-      if (origin_opts) {
-        if (origin_opts.length > 1) {
-          origin_h = Number(origin_opts[0])
-          origin_v = Number(origin_opts[1])
-        } else {
-          origin_h = origin_v = Number(origin_opts[0])
-        }
+      const origin_range = parse.range(this.opts[key]?.toString())
+      if (origin_range[1] !== undefined) {
+        origin_h = origin_range[0]
+        origin_v = origin_range[1]
+      } else if (origin_range[0] !== undefined) {
+        origin_h = origin_v = origin_range[0]
       }
     }
     origin_h = this.bbox.x + this.bbox.width * origin_h
@@ -112,20 +161,27 @@ export default class DynamicTransform extends Dynamic {
     return { x: origin_h, y: origin_v }
   }
 
-  wrapWithGroup() {
+  wrapWithGroup(transferStyles: boolean = true) {
     const svgElem = this.element as SVGGraphicsElement
     const group = document.createElementNS('http://www.w3.org/2000/svg', 'g')
     svgElem.insertAdjacentElement('afterend', group)
     group.append(svgElem)
-    group.classList.add(...svgElem.classList)
-    svgElem.classList.remove(...svgElem.classList)
-    group.style.cssText = svgElem.style.cssText
-    svgElem.style.cssText = ''
-    const cPath = svgElem.getAttribute('clip-path')
-    if (cPath) {
-      group.setAttribute('clip-path', cPath)
-      svgElem.removeAttribute('clip-path')
+    if (transferStyles) {
+      if (svgElem.classList.length > 0) {
+        group.classList.add(...svgElem.classList)
+        svgElem.classList.remove(...svgElem.classList)
+      }
+      if (svgElem.style.cssText) {
+        group.style.cssText = svgElem.style.cssText
+        svgElem.style.cssText = ''
+      }
+      const cPath = svgElem.getAttribute('clip-path')
+      if (cPath) {
+        group.setAttribute('clip-path', cPath)
+        svgElem.removeAttribute('clip-path')
+      }
     }
+    return group
   }
 
   getBaseTransforms() {
@@ -154,8 +210,13 @@ export default class DynamicTransform extends Dynamic {
     return base_transforms
   }
 
-  apply(data: Data) {
+  apply(data: Data, dynSVG: DynamicSVG) {
     const svgElem = this.element as SVGGraphicsElement
+
+    const gkey = parse.firstObjectKey(this.opts, ['guide', 'g'])
+    if (gkey && !this.guide) {
+      this.guide = new Guide(dynSVG.refs.get(this.opts[gkey].toString()) as SVGGraphicsElement)
+    }
 
     let transform_strs: Array<string> = []
 
@@ -165,6 +226,12 @@ export default class DynamicTransform extends Dynamic {
       transform_strs.push('translate(' + this.origin.x + 'px,' + this.origin.y + 'px)')
     }
 
+    const pos_transforms = DynamicTransform.transforms.filter((t) => t.keys[0].startsWith('p'))
+    const pos_keys = pos_transforms
+      .map((t) => t.keys)
+      .flat()
+      .filter((k) => k.startsWith('p'))
+
     for (let transform of DynamicTransform.transforms) {
       const key = parse.firstObjectKey(this.opts, transform.keys)
       if (key) {
@@ -172,17 +239,18 @@ export default class DynamicTransform extends Dynamic {
         const col = parse.columnFromData(col_str, data)
         if (col?.stats) {
           const val = data.get(0, col.name) as number
-          if (val) {
+          if (val !== undefined) {
             const norm = (val - col.stats.min) / (col.stats.max - col.stats.min)
-            const gkey = parse.firstObjectKey(this.opts, ['guide', 'g'])
-            let guide = undefined
-            if ( gkey ) {
-              guide = this.named_elems.get( this.opts[gkey].toString() ) as SVGGraphicsElement
-            }
-            if ( guide ) {
-              transform_strs.push(transform.get(norm, this.opts, guide))
+            if (this.guide) {
+              transform_strs.push(transform.get(norm, this.opts, this.guide))
             } else {
               transform_strs.push(transform.get(norm, this.opts))
+            }
+            if (pos_keys.includes(key) && this.guide && !this.guide.linear) {
+              this.nonlinear_pos_beg_t = this.nonlinear_pos_cur_t
+              this.nonlinear_pos_end_t = norm
+              this.nonlinear_pos_beg_time = undefined
+              requestAnimationFrame(this.animNonLinearPos)
             }
           }
         }
@@ -190,5 +258,25 @@ export default class DynamicTransform extends Dynamic {
     }
 
     svgElem.style.transform = transform_strs.join(' ')
+  }
+
+  animNonLinearPos = (time: number) => {
+    if (this.nonlinear_pos_beg_time === undefined) {
+      this.nonlinear_pos_beg_time = time
+    }
+    const elapsed = time - this.nonlinear_pos_beg_time
+    const x = elapsed / 1000
+    const r = x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2
+    const t = this.nonlinear_pos_beg_t + r * (this.nonlinear_pos_end_t - this.nonlinear_pos_beg_t)
+    this.nonlinear_pos_cur_t = t
+
+    if (this.guide) {
+      const coord = this.guide.get(t)
+      this.nonlinear_pos_group.style.transform = 'translate(' + coord.x + 'px,' + coord.y + 'px)'
+    }
+
+    if (elapsed < 1000) {
+      window.requestAnimationFrame(this.animNonLinearPos)
+    }
   }
 }

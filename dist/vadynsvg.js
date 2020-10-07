@@ -1,4 +1,4 @@
-(function () {
+var dynsvg = (function (exports) {
     'use strict';
 
     /*
@@ -600,8 +600,9 @@
     const RE_UNDERSCOREUNICODE = /_x([0-9A-Za-z]+)_/g;
     const RE_NOVALUEKEY = /(?:^|,)(\w+)(?:$|,)/g;
     const RE_NONJSONCHAR = /([^:,]+)/g;
-    const RE_NUMBER = /^[-+]?[0-9]*\.?[0-9]+$/g;
+    const RE_NUMBERONLY = /^[-+]?[0-9]*\.?[0-9]+$/g;
     const RE_COLUMNID = /^[@#$][0-9]+$/g;
+    const TRIM_CHARS = [' ', '-', '_'];
     const COL_ID_TYPE_PREFIXES = {
         '@': ColumnType.String,
         '#': ColumnType.Number,
@@ -626,13 +627,13 @@
         return ('{' +
             text
                 .replace(RE_NOVALUEKEY, function (match, g1) {
-                return match.replace(g1, trimChars(g1, [' ', '-']) + ':true');
+                return match.replace(g1, trimChars(g1, TRIM_CHARS) + ':true');
             })
                 .replace(RE_NONJSONCHAR, function (match, g1) {
-                if (match !== 'true' && match !== 'false' && !RE_NUMBER.test(match)) {
-                    return '"' + trimChars(match, [' ', '-']) + '"';
+                if (match !== 'true' && match !== 'false' && !RE_NUMBERONLY.test(match)) {
+                    return '"' + trimChars(match, TRIM_CHARS) + '"';
                 }
-                return trimChars(match, [' ', '-']);
+                return trimChars(match, TRIM_CHARS);
             }) +
             '}');
     }
@@ -665,14 +666,14 @@
             text = matches[0].slice(2, -2);
             if (text.includes('|')) {
                 const name_opts = text.split('|');
-                obj.name = trimChars(name_opts[0], [' ', '-']);
+                obj.name = trimChars(name_opts[0], TRIM_CHARS);
                 obj.opts = JSON.parse(jsonEncodeLiteral(name_opts[1]));
             }
             else if (text.includes(':')) {
                 obj.opts = JSON.parse(jsonEncodeLiteral(text));
             }
             else {
-                obj.name = trimChars(text, [' ', '-']);
+                obj.name = trimChars(text, TRIM_CHARS);
             }
         }
         return obj;
@@ -692,17 +693,52 @@
     }
     function elementsByName(svg) {
         const elements = new Map();
-        console.log(svg.querySelectorAll('*[id]'));
         Array.from(svg.querySelectorAll('*[id]'))
             .filter((e) => e.id?.match(RE_DOUBLEBRACE))
             .forEach(function (e) {
-            console.log(e);
             let syn = syntax(e.id);
             if (syn.name) {
                 elements.set(syn.name, e);
             }
         });
         return elements;
+    }
+    function range(text) {
+        let delim = undefined;
+        text = text.replace(/_/g, ' ');
+        if (text.includes('..')) {
+            delim = '..';
+        }
+        else if (text.includes('to')) {
+            delim = 'to';
+        }
+        else if (text.includes(';')) {
+            delim = ';';
+        }
+        if (delim) {
+            let vals = text.split(delim);
+            if (delim === ';') {
+                vals = vals.map((v) => trimChars(v, TRIM_CHARS));
+            }
+            else {
+                vals = vals.map(function (v) {
+                    while (v.includes('--')) {
+                        v = v.replace('--', '-');
+                    }
+                    if (v.charAt(v.length - 1) === '-') {
+                        v = v.substr(0, v.length - 1);
+                    }
+                    return v;
+                });
+            }
+            if (vals.length > 1) {
+                return { 0: Number(vals[0].trim()), 1: Number(vals[1].trim()) };
+            }
+        }
+        else {
+            return { 0: Number(text.trim()), 1: undefined };
+        }
+        return { 0: undefined, 1: undefined };
     }
     function firstObjectKey(object, keys) {
         for (let key of keys) {
@@ -756,7 +792,7 @@
                     const stat = syntax(col_name).name.toLowerCase();
                     const col_base_name = col_name.replace(RE_DOUBLEBRACE, '').trim();
                     const stats = stat.split(' ');
-                    if (stats.length === 2 && stats[0].match(RE_NUMBER) && stats[0].match(RE_NUMBER)) {
+                    if (stats.length === 2 && stats[0].match(RE_NUMBERONLY) && stats[0].match(RE_NUMBERONLY)) {
                         const [min, max] = stats.map(Number);
                         data.renameColumn(col.name, col_base_name);
                         data.setColumnStats(col_base_name, { min: min, max: max });
@@ -807,14 +843,14 @@
          * @param svg {SVGElement} The root SVG element to start the search from.
          * @return Array of dynamics that match the desired pattern.
          */
-        static getDynamics(svg, types = ['all']) {
+        static getDynamics(svg) {
             return [];
         }
         /**
          * Override with static method for selecting viable elements for this dynamic from SVG.
          * @param {DataFrame} data The root SVG element to start the search from.
          */
-        apply(data) { }
+        apply(data, state) { }
     }
 
     /**
@@ -826,22 +862,38 @@
             this.template = this.element.textContent;
             const svgElem = this.element;
             const bbox = svgElem.getBBox();
-            const key = firstObjectKey(this.opts, ['align', 'a']);
+            let anchor = undefined;
+            let key = firstObjectKey(this.opts, ['align', 'a']);
             if (key) {
-                svgElem.setAttribute('text-anchor', this.opts[key].toString());
-                switch (this.opts[key]) {
+                anchor = this.opts[key].toString();
+            }
+            else {
+                const p = this.element.parentElement;
+                if (p) {
+                    const pOpts = syntax(p.id)?.opts;
+                    if (pOpts) {
+                        key = firstObjectKey(pOpts, ['align', 'a']);
+                        if (key) {
+                            anchor = pOpts[key].toString();
+                        }
+                    }
+                }
+            }
+            if (anchor !== undefined) {
+                svgElem.setAttribute('text-anchor', anchor);
+                switch (anchor) {
                     case 'start':
                         break;
                     case 'middle':
-                        svgElem.setAttribute('x', (bbox.x + (bbox.width / 2)) + 'px');
+                        svgElem.setAttribute('x', bbox.x + bbox.width / 2 + 'px');
                         break;
                     case 'end':
-                        svgElem.setAttribute('x', (bbox.x + bbox.width) + 'px');
+                        svgElem.setAttribute('x', bbox.x + bbox.width + 'px');
                         break;
                 }
             }
         }
-        static getDynamics(svg, types = ['all']) {
+        static getDynamics(svg) {
             let elems = [];
             svg.querySelectorAll('text').forEach(function (text) {
                 if (text.children.length) {
@@ -854,7 +906,7 @@
             elems = elems.filter((e) => e.textContent && e.textContent.match(RE_DOUBLEBRACE));
             return elems.map((e) => new DynamicText(e));
         }
-        apply(data) {
+        apply(data, dynSVG) {
             if (this.template) {
                 this.element.textContent = this.template.replace(RE_DOUBLEBRACE, function (match) {
                     const syntax$1 = syntax(match);
@@ -888,6 +940,35 @@
         }
     }
 
+    class Guide {
+        constructor(element) {
+            this.element = element;
+            this.tag = this.element.tagName;
+            switch (this.tag) {
+                case 'polyline':
+                case 'path':
+                    this.linear = false;
+                    break;
+                default:
+                    this.linear = true;
+            }
+        }
+        get(t) {
+            switch (this.tag) {
+                case 'polyline':
+                case 'path':
+                case 'line':
+                    const geom = this.element;
+                    let cur_pos = geom.getPointAtLength(geom.getTotalLength() * t);
+                    let beg_pos = geom.getPointAtLength(0);
+                    return { x: cur_pos.x - beg_pos.x, y: cur_pos.y - beg_pos.y };
+                default:
+                    const gbox = this.element.getBBox();
+                    return { x: gbox.width * t, y: gbox.height * t };
+            }
+            return { x: 0, y: 0 };
+        }
+    }
     /**
      * The dynamic text class replaces mustache style double brace tags with a value from the data.
      */
@@ -895,18 +976,42 @@
         constructor(element) {
             super(element);
             this.base_transforms = [];
+            this.guide = undefined;
+            this.nonlinear_pos_ease = 0.0;
+            this.nonlinear_pos_beg_t = 0.0;
+            this.nonlinear_pos_cur_t = 0.0;
+            this.nonlinear_pos_end_t = 0.0;
+            this.nonlinear_pos_beg_time = undefined;
+            this.animNonLinearPos = (time) => {
+                if (this.nonlinear_pos_beg_time === undefined) {
+                    this.nonlinear_pos_beg_time = time;
+                }
+                const elapsed = time - this.nonlinear_pos_beg_time;
+                const x = elapsed / 1000;
+                const r = x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+                const t = this.nonlinear_pos_beg_t + r * (this.nonlinear_pos_end_t - this.nonlinear_pos_beg_t);
+                this.nonlinear_pos_cur_t = t;
+                if (this.guide) {
+                    const coord = this.guide.get(t);
+                    this.nonlinear_pos_group.style.transform = 'translate(' + coord.x + 'px,' + coord.y + 'px)';
+                }
+                if (elapsed < 1000) {
+                    window.requestAnimationFrame(this.animNonLinearPos);
+                }
+            };
             const svgElem = this.element;
             this.bbox = svgElem.getBBox();
             this.origin = this.getOrigin();
             this.base_transforms = this.getBaseTransforms();
             this.wrapWithGroup();
+            this.nonlinear_pos_group = this.wrapWithGroup(false);
             svgElem.setAttribute('vector-effect', 'non-scaling-stroke');
             svgElem.style.transitionProperty = 'transform';
             svgElem.style.transitionDuration = '1s';
+            svgElem.style.transitionTimingFunction = 'cubic-bezier(0.25, .1, 0.25, 1)';
             svgElem.style.transformOrigin = this.origin.x + 'px ' + this.origin.y + 'px';
-            this.named_elems = elementsByName(element);
         }
-        static getDynamics(svg, types = ['all']) {
+        static getDynamics(svg) {
             const options = [].concat(...DynamicTransform.transforms.map((t) => t.keys));
             return elementsWithOptions(svg, options).map((e) => new DynamicTransform(e));
         }
@@ -917,35 +1022,40 @@
             let origin_v = 0;
             const key = firstObjectKey(this.opts, ['origin', 'o']);
             if (key) {
-                const origin_opts = this.opts[key]?.toString().split('-');
-                if (origin_opts) {
-                    if (origin_opts.length > 1) {
-                        origin_h = Number(origin_opts[0]);
-                        origin_v = Number(origin_opts[1]);
-                    }
-                    else {
-                        origin_h = origin_v = Number(origin_opts[0]);
-                    }
+                const origin_range = range(this.opts[key]?.toString());
+                if (origin_range[1] !== undefined) {
+                    origin_h = origin_range[0];
+                    origin_v = origin_range[1];
+                }
+                else if (origin_range[0] !== undefined) {
+                    origin_h = origin_v = origin_range[0];
                 }
             }
             origin_h = this.bbox.x + this.bbox.width * origin_h;
             origin_v = this.bbox.y + this.bbox.height * origin_v;
             return { x: origin_h, y: origin_v };
         }
-        wrapWithGroup() {
+        wrapWithGroup(transferStyles = true) {
             const svgElem = this.element;
             const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
             svgElem.insertAdjacentElement('afterend', group);
             group.append(svgElem);
-            group.classList.add(...svgElem.classList);
-            svgElem.classList.remove(...svgElem.classList);
-            group.style.cssText = svgElem.style.cssText;
-            svgElem.style.cssText = '';
-            const cPath = svgElem.getAttribute('clip-path');
-            if (cPath) {
-                group.setAttribute('clip-path', cPath);
-                svgElem.removeAttribute('clip-path');
+            if (transferStyles) {
+                if (svgElem.classList.length > 0) {
+                    group.classList.add(...svgElem.classList);
+                    svgElem.classList.remove(...svgElem.classList);
+                }
+                if (svgElem.style.cssText) {
+                    group.style.cssText = svgElem.style.cssText;
+                    svgElem.style.cssText = '';
+                }
+                const cPath = svgElem.getAttribute('clip-path');
+                if (cPath) {
+                    group.setAttribute('clip-path', cPath);
+                    svgElem.removeAttribute('clip-path');
+                }
             }
+            return group;
         }
         getBaseTransforms() {
             let base_transforms = [];
@@ -970,14 +1080,23 @@
             }
             return base_transforms;
         }
-        apply(data) {
+        apply(data, dynSVG) {
             const svgElem = this.element;
+            const gkey = firstObjectKey(this.opts, ['guide', 'g']);
+            if (gkey && !this.guide) {
+                this.guide = new Guide(dynSVG.refs.get(this.opts[gkey].toString()));
+            }
             let transform_strs = [];
             if (this.base_transforms.length > 0) {
                 transform_strs.push('translate(' + -this.origin.x + 'px,' + -this.origin.y + 'px)');
                 transform_strs.push(...this.base_transforms);
                 transform_strs.push('translate(' + this.origin.x + 'px,' + this.origin.y + 'px)');
             }
+            const pos_transforms = DynamicTransform.transforms.filter((t) => t.keys[0].startsWith('p'));
+            const pos_keys = pos_transforms
+                .map((t) => t.keys)
+                .flat()
+                .filter((k) => k.startsWith('p'));
             for (let transform of DynamicTransform.transforms) {
                 const key = firstObjectKey(this.opts, transform.keys);
                 if (key) {
@@ -985,18 +1104,19 @@
                     const col = columnFromData(col_str, data);
                     if (col?.stats) {
                         const val = data.get(0, col.name);
-                        if (val) {
+                        if (val !== undefined) {
                             const norm = (val - col.stats.min) / (col.stats.max - col.stats.min);
-                            const gkey = firstObjectKey(this.opts, ['guide', 'g']);
-                            let guide = undefined;
-                            if (gkey) {
-                                guide = this.named_elems.get(this.opts[gkey].toString());
-                            }
-                            if (guide) {
-                                transform_strs.push(transform.get(norm, this.opts, guide));
+                            if (this.guide) {
+                                transform_strs.push(transform.get(norm, this.opts, this.guide));
                             }
                             else {
                                 transform_strs.push(transform.get(norm, this.opts));
+                            }
+                            if (pos_keys.includes(key) && this.guide && !this.guide.linear) {
+                                this.nonlinear_pos_beg_t = this.nonlinear_pos_cur_t;
+                                this.nonlinear_pos_end_t = norm;
+                                this.nonlinear_pos_beg_time = undefined;
+                                requestAnimationFrame(this.animNonLinearPos);
                             }
                         }
                     }
@@ -1036,37 +1156,138 @@
             },
         },
         {
-            keys: ['postion', 'p'],
+            keys: ['position', 'p'],
             get: function (t, opts, guide) {
-                console.log(guide);
-                return 'translate(' + t + 'px,' + t + 'px)';
+                if (guide && guide.linear) {
+                    const coords = guide.get(t);
+                    return 'translate(' + coords.x + 'px,' + coords.y + 'px)';
+                }
+                return '';
             },
         },
         {
             keys: ['positionX', 'px'],
             get: function (t, opts, guide) {
-                return 'translateX(' + t + 'px)';
+                if (guide && guide.linear) {
+                    const coords = guide.get(t);
+                    return 'translateX(' + coords.x + 'px)';
+                }
+                return '';
             },
         },
         {
             keys: ['positionY', 'py'],
             get: function (t, opts, guide) {
-                return 'translateY(' + t + 'px)';
+                if (guide && guide.linear) {
+                    const coords = guide.get(t);
+                    return 'translateY(' + coords.y + 'px)';
+                }
+                return '';
             },
         },
     ];
 
     /**
-     * Test if page contained in an iFrame.
-     *
-     * @return Indicator of iFrame containment.
+     * The main class that controls the initialization and lifecycle of making the SVG
+     * dynamic and responding to message events from the VA Data-driven Content framework.
      */
-    function inIframe() {
-        try {
-            return window.self !== window.top;
+    class DynamicSVG {
+        /**
+         * Attach to the indicate element DOM element and fill it with the target SVG. Also
+         * perform all parsing and precomputation steps.
+         * @param element The root DOM element to use for placement of SVG.
+         */
+        constructor(element) {
+            this.data = new Data([], []); // DataFrame for data response
+            this.refs = new Map();
+            this.message = { resultName: '', version: '', rowCount: 0, availableRowCount: 0, data: [], columns: [] }; // Data message to be received from VA
+            this.resultName = ''; // Result name required to send messages back to VA
+            this.initComplete = false; // Flag to help delay update execution
+            this.instanceSVG = ''; // Repatable body of original SVG code
+            this.dynamics = [];
+            this.element = element;
+            this.opts = {
+                svg: 'test.svg',
+                clean: 'all',
+                dynamics: 'all',
+            };
+            this.init();
         }
-        catch (e) {
-            return true;
+        /**
+         * Handle initialiation of page based on URL options.
+         */
+        init() {
+            this.opts = { ...this.opts, ...getUrlParams() };
+            const htmlElement = this.element;
+            htmlElement.style.opacity = '0';
+            fetch(this.opts.svg.toString(), { method: 'GET' })
+                .then((response) => response.text())
+                .then((text) => {
+                const htmlElement = this.element;
+                htmlElement.innerHTML = text;
+                const svg = htmlElement.querySelector('svg');
+                if (svg) {
+                    cleanSVG(svg, this.opts.clean.toString().split(','));
+                    const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                    group.classList.add('__instance__');
+                    group.id = '__instance_0001__';
+                    group.append(...[...svg.children].filter((e) => e.tagName !== 'style'));
+                    svg.append(group);
+                    this.refs = elementsByName(svg);
+                    this.dynamics = DynamicSVG.getDynamics(group);
+                    this.instanceSVG = group.innerHTML;
+                }
+                this.initComplete = true;
+                htmlElement.style.transition = 'opacity 0.5s ease 1s';
+                htmlElement.style.opacity = '1';
+            })
+                .catch((error) => console.error('Error: ', error));
+            setOnDataReceivedCallback(this.onDataReceived.bind(this));
+            setupResizeListener(this.draw.bind(this));
+        }
+        /**
+         * Performs cleaning tasks on SVG to allow for better dynamic behavior.
+         * @param svg SVG element to perform cleaning on.
+         * @param types Values: all | text
+         */
+        static getDynamics(svg, types = ['all']) {
+            let dynamics = [];
+            if (types.includes('all') || types.includes('text')) {
+                dynamics.push(...DynamicText.getDynamics(svg));
+            }
+            if (types.includes('all') || types.includes('shapes')) {
+                dynamics.push(...DynamicTransform.getDynamics(svg));
+            }
+            return dynamics;
+        }
+        /**
+         * Applies the current _data to all dynamics.
+         */
+        apply() {
+            if (!this.initComplete) {
+                window.setTimeout(this.apply.bind(this), 100);
+            }
+            else {
+                this.dynamics.forEach((d) => d.apply(this.data, this));
+            }
+        }
+        /**
+         * Handle resize events or other layout changes.
+         */
+        draw() {
+            return;
+        }
+        /**
+         * Callback to handle data update from VA DDC.
+         * @param message Message object from VA DDC data update.
+         */
+        onDataReceived(message) {
+            //console.log(JSON.stringify(message))
+            this.message = message;
+            this.resultName = this.message.resultName;
+            this.data = Data.fromVA(this.message);
+            this.data = dataStats(this.data);
+            this.apply();
         }
     }
     /**
@@ -1092,6 +1313,7 @@
             });
         }
     }
+
     const SAMPLE_MESSAGE_2 = {
         version: '1',
         resultName: 'dd91',
@@ -1127,108 +1349,6 @@
     };
 
     /**
-     * The main class that controls the initialization and lifecycle of making the SVG
-     * dynamic and responding to message events from the VA Data-driven Content framework.
-     */
-    class DynamicSVG extends Dynamic {
-        /**
-         * Attach to the indicate element DOM element and fill it with the target SVG. Also
-         * perform all parsing and precomputation steps.
-         * @param element The root DOM element to use for placement of SVG.
-         */
-        constructor(element) {
-            super(element);
-            this.message = { resultName: '', version: '', rowCount: 0, availableRowCount: 0, data: [], columns: [] }; // Data message to be received from VA
-            this.resultName = ''; // Result name required to send messages back to VA
-            this.data = new Data([], []); // DataFrame for data response
-            this.initComplete = false; // Flag to help delay update execution
-            this.instanceSVG = ''; // Repatable body of original SVG code
-            this.dynamics = [];
-            this.opts = {
-                svg: 'test.svg',
-                clean: 'all',
-                dynamics: 'all',
-            };
-            this.init();
-        }
-        /**
-         * Handle initialiation of page based on URL options.
-         */
-        init() {
-            this.opts = { ...this.opts, ...getUrlParams() };
-            const htmlElement = this.element;
-            htmlElement.style.opacity = '0';
-            fetch(this.opts.svg.toString(), { method: 'GET' })
-                .then((response) => response.text())
-                .then((text) => {
-                const htmlElement = this.element;
-                htmlElement.innerHTML = text;
-                const svg = htmlElement.querySelector('svg');
-                if (svg) {
-                    cleanSVG(svg, this.opts.clean.toString().split(','));
-                    const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-                    group.classList.add('__instance__');
-                    group.id = '__instance_0001__';
-                    group.append(...[...svg.children].filter((e) => e.tagName !== 'style'));
-                    svg.append(group);
-                    this.dynamics = DynamicSVG.getDynamics(group);
-                    this.instanceSVG = group.innerHTML;
-                }
-                this.initComplete = true;
-                htmlElement.style.transition = 'opacity 0.5s ease 1s';
-                htmlElement.style.opacity = '1';
-            })
-                .catch((error) => console.error('Error: ', error));
-            setOnDataReceivedCallback(this.onDataReceived.bind(this));
-            setupResizeListener(this.draw.bind(this));
-        }
-        /**
-         * Performs cleaning tasks on SVG to allow for better dynamic behavior.
-         * @param svg SVG element to perform cleaning on.
-         * @param types Values: all | text
-         */
-        static getDynamics(svg, types = ['all']) {
-            let dynamics = [];
-            if (types.includes('all') || types.includes('text')) {
-                dynamics.push(...DynamicText.getDynamics(svg));
-            }
-            if (types.includes('all') || types.includes('shapes')) {
-                dynamics.push(...DynamicTransform.getDynamics(svg));
-            }
-            return dynamics;
-        }
-        /**
-         * Applies the current _data to all dynamics.
-         */
-        apply() {
-            if (!this.initComplete) {
-                window.setTimeout(this.apply.bind(this), 100);
-            }
-            else {
-                this.dynamics.forEach((d) => d.apply(this.data));
-            }
-        }
-        /**
-         * Handle resize events or other layout changes.
-         */
-        draw() {
-            return;
-        }
-        /**
-         * Callback to handle data update from VA DDC.
-         * @param message Message object from VA DDC data update.
-         */
-        onDataReceived(message) {
-            //console.log(JSON.stringify(message))
-            this.message = message;
-            this.resultName = this.message.resultName;
-            this.data = Data.fromVA(this.message);
-            this.data = dataStats(this.data);
-            this.apply();
-        }
-    }
-
-    /**
      * DOM loaded callback to kick off initialization and callback registration.
      */
     document.addEventListener('DOMContentLoaded', function () {
@@ -1238,5 +1358,22 @@
             dynSVG.onDataReceived(SAMPLE_MESSAGE_2);
         }
     });
+    /**
+     * Test if page contained in an iFrame.
+     *
+     * @return Indicator of iFrame containment.
+     */
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        }
+        catch (e) {
+            return true;
+        }
+    }
 
-}());
+    exports.inIframe = inIframe;
+
+    return exports;
+
+}({}));

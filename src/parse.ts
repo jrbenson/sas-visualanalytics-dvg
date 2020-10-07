@@ -4,8 +4,11 @@ export const RE_DOUBLEBRACE = /{{([^}]+)}}/g
 export const RE_UNDERSCOREUNICODE = /_x([0-9A-Za-z]+)_/g
 export const RE_NOVALUEKEY = /(?:^|,)(\w+)(?:$|,)/g
 export const RE_NONJSONCHAR = /([^:,]+)/g
-export const RE_NUMBER = /^[-+]?[0-9]*\.?[0-9]+$/g
+export const RE_NUMBER = /[-+]?[0-9]*\.?[0-9]+/g
+export const RE_NUMBERONLY = /^[-+]?[0-9]*\.?[0-9]+$/g
 export const RE_COLUMNID = /^[@#$][0-9]+$/g
+
+export const TRIM_CHARS = [' ', '-', '_']
 
 const COL_ID_TYPE_PREFIXES: Record<string, ColumnType> = {
   '@': ColumnType.String,
@@ -34,13 +37,13 @@ function jsonEncodeLiteral(text: string) {
     '{' +
     text
       .replace(RE_NOVALUEKEY, function (match, g1) {
-        return match.replace(g1, trimChars(g1, [' ', '-']) + ':true')
+        return match.replace(g1, trimChars(g1, TRIM_CHARS) + ':true')
       })
       .replace(RE_NONJSONCHAR, function (match, g1) {
-        if (match !== 'true' && match !== 'false' && !RE_NUMBER.test(match)) {
-          return '"' + trimChars(match, [' ', '-']) + '"'
+        if (match !== 'true' && match !== 'false' && !RE_NUMBERONLY.test(match)) {
+          return '"' + trimChars(match, TRIM_CHARS) + '"'
         }
-        return trimChars(match, [' ', '-'])
+        return trimChars(match, TRIM_CHARS)
       }) +
     '}'
   )
@@ -83,12 +86,12 @@ export function syntax(text: string): SyntaxParse {
     text = matches[0].slice(2, -2)
     if (text.includes('|')) {
       const name_opts = text.split('|')
-      obj.name = trimChars(name_opts[0], [' ', '-'])
+      obj.name = trimChars(name_opts[0], TRIM_CHARS)
       obj.opts = JSON.parse(jsonEncodeLiteral(name_opts[1]))
     } else if (text.includes(':')) {
       obj.opts = JSON.parse(jsonEncodeLiteral(text))
     } else {
-      obj.name = trimChars(text, [' ', '-'])
+      obj.name = trimChars(text, TRIM_CHARS)
     }
   }
 
@@ -110,18 +113,50 @@ export function elementsWithOptions(svg: Element, options: Array<string>) {
 }
 
 export function elementsByName(svg: Element) {
-  const elements = new Map()
-  console.log( svg.querySelectorAll<SVGElement>('*[id]') )
+  const elements: Map<string, Element> = new Map()
   Array.from(svg.querySelectorAll<SVGElement>('*[id]'))
     .filter((e) => e.id?.match(RE_DOUBLEBRACE))
     .forEach(function (e) {
-      console.log( e )
       let syn = syntax(e.id)
       if (syn.name) {
         elements.set(syn.name, e)
       }
     })
   return elements
+}
+
+export function range(text: string) {
+  let delim = undefined
+  text = text.replace(/_/g, ' ')
+  if (text.includes('..')) {
+    delim = '..'
+  } else if (text.includes('to')) {
+    delim = 'to'
+  } else if (text.includes(';')) {
+    delim = ';'
+  }
+  if (delim) {
+    let vals = text.split(delim)
+    if (delim === ';') {
+      vals = vals.map((v) => trimChars(v, TRIM_CHARS))
+    } else {
+      vals = vals.map(function (v) {
+        while (v.includes('--')) {
+          v = v.replace('--', '-')
+        }
+        if (v.charAt(v.length - 1) === '-') {
+          v = v.substr(0, v.length - 1)
+        }
+        return v
+      })
+    }
+    if (vals.length > 1) {
+      return { 0: Number(vals[0].trim()), 1: Number(vals[1].trim()) }
+    }
+  } else {
+    return { 0: Number(text.trim()), 1: undefined }
+  }
+  return { 0: undefined, 1: undefined }
 }
 
 export function firstObjectKey(object: Record<string, any>, keys: Array<string>) {
@@ -178,7 +213,7 @@ export function dataStats(data: Data) {
         const stat = syntax(col_name).name.toLowerCase()
         const col_base_name = col_name.replace(RE_DOUBLEBRACE, '').trim()
         const stats = stat.split(' ')
-        if (stats.length === 2 && stats[0].match(RE_NUMBER) && stats[0].match(RE_NUMBER)) {
+        if (stats.length === 2 && stats[0].match(RE_NUMBERONLY) && stats[0].match(RE_NUMBERONLY)) {
           const [min, max] = stats.map(Number)
           data.renameColumn(col.name, col_base_name)
           data.setColumnStats(col_base_name, { min: min, max: max })
