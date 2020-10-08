@@ -68,7 +68,7 @@ export default class DynamicTransform extends Dynamic {
       keys: ['rotate', 'r'],
       get: function (t, opts, guide?) {
         let limit = 1.0
-        const key = parse.firstObjectKey(opts, ['rotateLimit', 'rl'])
+        const key = parse.firstObjectKey(opts, ['rotateRatio', 'rr'])
         if (key) {
           limit = Number(opts[key])
         }
