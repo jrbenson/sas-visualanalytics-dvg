@@ -74,10 +74,12 @@ export default class DynamicText extends Dynamic {
             col = data.getColumn(syntax.name)
           }
           if (col) {
-            if (syntax.opts.hasOwnProperty('name') && syntax.opts.name) {
+            const nkey = parse.firstObjectKey(syntax.opts, ['name', 'n'])
+            if (nkey && syntax.opts[nkey]) {
               return col.name
             } else {
-              if (syntax.opts.hasOwnProperty('c') && syntax.opts.c) {
+              const ckey = parse.firstObjectKey(syntax.opts, ['compact', 'c'])
+              if (ckey && syntax.opts[ckey]) {
                 return data.getFormatted(0, col.name, true)
               } else {
                 return data.getFormatted(0, col.name)
