@@ -1,0 +1,9 @@
+<svg width="300" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="150" fill="#E5E5E5"/>
+<g id="text-alignment">
+<rect width="300" height="150" fill="white"/>
+<text id="{{align:start}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="18" letter-spacing="0em"><tspan x="0" y="19.4829">{{#0|name}}: {{#0}}&#10;</tspan></text>
+<text id="{{align:middle}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="18" letter-spacing="0em"><tspan x="67.1191" y="60.4829">{{#0|name}}: {{#0}}&#10;</tspan></text>
+<text id="{{align:end}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="18" letter-spacing="0em"><tspan x="134.238" y="101.483">{{#0|name}}: {{#0}}&#10;</tspan></text>
+</g>
+</svg>

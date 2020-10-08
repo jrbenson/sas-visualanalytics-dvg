@@ -1,0 +1,7 @@
+<svg width="300" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="150" fill="#E5E5E5"/>
+<g id="text-templating">
+<rect width="300" height="150" fill="white"/>
+<text id="Text" fill="black" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="18" letter-spacing="0em"><tspan x="0" y="19.4829">Measure: {{#0|name}}&#10;</tspan><tspan x="0" y="44.4829">Value: {{#0}}&#10;</tspan><tspan x="0" y="69.4829">Compact: {{#0|c}}&#10;</tspan><tspan x="0" y="94.4829">&#10;</tspan><tspan x="0" y="119.483">{{#1|name}} for {{@0}} is {{#1|c}}</tspan></text>
+</g>
+</svg>
