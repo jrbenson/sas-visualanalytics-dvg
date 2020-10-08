@@ -920,11 +920,13 @@ var dynsvg = (function (exports) {
                         col = data.getColumn(syntax$1.name);
                     }
                     if (col) {
-                        if (syntax$1.opts.hasOwnProperty('name') && syntax$1.opts.name) {
+                        const nkey = firstObjectKey(syntax$1.opts, ['name', 'n']);
+                        if (nkey && syntax$1.opts[nkey]) {
                             return col.name;
                         }
                         else {
-                            if (syntax$1.opts.hasOwnProperty('c') && syntax$1.opts.c) {
+                            const ckey = firstObjectKey(syntax$1.opts, ['compact', 'c']);
+                            if (ckey && syntax$1.opts[ckey]) {
                                 return data.getFormatted(0, col.name, true);
                             }
                             else {
@@ -1148,7 +1150,7 @@ var dynsvg = (function (exports) {
             keys: ['rotate', 'r'],
             get: function (t, opts, guide) {
                 let limit = 1.0;
-                const key = firstObjectKey(opts, ['rotateLimit', 'rl']);
+                const key = firstObjectKey(opts, ['rotateRatio', 'rr']);
                 if (key) {
                     limit = Number(opts[key]);
                 }
