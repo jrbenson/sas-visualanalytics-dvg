@@ -2,9 +2,19 @@
 
 This project provides a SAS Visual Analytics (VA) data-driven content object that uses annotations on provided data and SVG file to create a dynamic illustration that responds to data updates.
 
+## VA Data Annotation Syntax
+
+`NAME {{MIN..MAX}}` <br/>
+In order to tell the dynamic object what the correct minimum and maximum for numeric columns should be the name of the data item itself must be annotated in Visual Analytics. This is done by including the range expression within a double brace annotation anywhere in the name. The annotation will be removed and so will not be part of the displayed name.
+
+As an example a data item with the name "`Expenses`" would need to be renamed "`Expenses {{0..1000}}`" in order for it to be successfully understood by the dynamic SVG system.
+
+<sub><sup>**Adding Range Annotation to Data**</small><br/>
+![Result](doc/va-data-range.gif)
+
 ## SVG Annotation Syntax
 
-`{{`_`[NAME]`_`|`_`[OPT]`_`:`_`[VAL]`_`,…}}`
+`{{[NAME]|(…,[OPT]:[VAL],…)}}`
 
 ### Text
 
@@ -20,13 +30,13 @@ Templating annotations are used to dynamically modify the characters of the text
 <sub><sup>**Result**</small><br/>
 ![Result](doc/text-templating.gif)
 
-`{{`_`COLUMN`_`}}` <br/>
+`{{COLUMN}}` <br/>
 These annotations must be placed within the text content of a `<text>` or `<tspan>` element. They are simplified from the standard syntax in that they are not allowed to be assigned a name. In place of of the name the annotation may simply contain a reference to the _`COLUMN`_ to insert the value from.
 
-`{{`_`COLUMN`_`|c}}` <br/>
+`{{COLUMN|c}}` <br/>
 Adding the `c` option to the annotation will result in the column's value being presented using the compact version of its format. This is ignored for non-numerics.
 
-`{{`_`COLUMN`_`|name}}` <br/>
+`{{COLUMN|name}}` <br/>
 Adding the `name` option to the annotation will result in the name of the column being inserted instead of its value. This is useful for cases where the dynamics are not set to specific columns and instead are provided by index position.
 
 #### **Alignment**
@@ -58,7 +68,7 @@ The origin annotation is used by both the scale and rotate transforms to determi
 <sub><sup>**Result**</sup></sub><br/>
 ![Result](doc/transform-origin.gif)
 
-`{{…,origin/o:`_`X`_`;`_`Y`_`,…}}`<br/>
+`{{…,origin/o:X;Y,…}}`<br/>
 The origin of all transforms is by default the upper left of the element's bounding box unless specified otherwise. This option allows the origin for transforms to be positioned anywhere within the element's bounding box. The _`X`_ and _`Y`_ value may be any number between `0.0` and `1.0` inclusive and represent the proportion from the element's upper left to bottom right corner at which to place the origin.
 
 #### **Scale**
@@ -71,13 +81,13 @@ The scale annotations are used to change the size of elements dynamically based 
 <sub><sup>**Result**</sup></sub><br/>
 ![Result](doc/transform-scale.gif)
 
-`{{…,scale/s:`_`COLUMN`_`,…}}`<br/>
+`{{…,scale/s:COLUMN,…}}`<br/>
 The scale transform scales the element in both the horizontal and vertical direction such that the element is at its initial size when _`COLUMN`_ is at its maximum value and is scaled to 0% when _`COLUMN`_ is at its minimum value.
 
-`{{…,scaleX/sx:`_`COLUMN`_`,…}}`<br/>
+`{{…,scaleX/sx:COLUMN,…}}`<br/>
 The scale x transform scales the element in only the horizontal direction such that the element is at its initial width when _`COLUMN`_ is at its maximum value and is scaled to 0% when _`COLUMN`_ is at its minimum value.
 
-`{{…,scaleY/sy:`_`COLUMN`_`,…}}`<br/>
+`{{…,scaleY/sy:COLUMN,…}}`<br/>
 The scale y transform scales the element in only the vertical direction such that the element is at its initial height when _`COLUMN`_ is at its maximum value and is scaled to 0% when _`COLUMN`_ is at its minimum value.
 
 #### **Rotate**
@@ -90,10 +100,10 @@ The scale y transform scales the element in only the vertical direction such tha
 
 The rotate annotations are used to change the rotational orientation of elements dynamically based on numeric data values.
 
-`{{…,rotate/r:`_`COLUMN`_ `,…}}`<br/>
+`{{…,rotate/r:COLUMN`_ `,…}}`<br/>
 The rotate transform rotates the element such that the element is at its initial rotation when _`COLUMN`_ is at its minimum value and is, by default, rotated 1 revolution clockwise when _`COLUMN`_ is at its maximum value.
 
-`{{…,rotateRatio/rr:`_`RATIO`_`,…}}`<br/>
+`{{…,rotateRatio/rr:RATIO,…}}`<br/>
 The rotate ratio provides the amount of a single revolution for the rotation to occur within. A _`RATIO`_ of `0.5` would for example rotate the object from 0 to 180 degrees.
 
 #### **Position**
@@ -114,16 +124,14 @@ Special behavior is given to guides that can be used to define a path for the mo
 <sub><sup>**Result**</sup></sub><br/>
 ![Result](doc/transform-position-path.gif)
 
-`{{…,position/p:`_`COLUMN`_`,…}}`<br/>
+`{{…,position/p:COLUMN,…}}`<br/>
 The position transform translates the element in both the horizontal and vertical direction based on the associated guide element such that the element is at its initial position when _`COLUMN`_ is at its minimum value and is translated to the end of the guide when _`COLUMN`_ is at its maximum value.
 
-`{{…,positionX/px:`_`COLUMN`_`,…}}`<br/>
+`{{…,positionX/px:COLUMN,…}}`<br/>
 The position x transform translates the element in only the horizontal direction based on the associated guide element such that the element is at its initial position when _`COLUMN`_ is at its minimum value and is translated to the end of the guide when _`COLUMN`_ is at its maximum value.
 
-`{{…,positionY/py:`_`COLUMN`_`,…}}`<br/>
+`{{…,positionY/py:COLUMN,…}}`<br/>
 The position y transform translates the element in only the vertical direction based on the associated guide element such that the element is at its initial position when _`COLUMN`_ is at its minimum value and is translated to the end of the guide when _`COLUMN`_ is at its maximum value.
 
-`{{…,guide/g:`_`NAME`_`,…}}`<br/>
+`{{…,guide/g:NAME,…}}`<br/>
 The guide option is required for the position transform to function. The guide is specified by providing the _`NAME`_ which is assigned to an element via its id. For example, for `<rect id="My Rect {{Guide01}}"/>` the name of the element that should be used in the guide option is `Guide01`. Different elements are treated differently as guides. The default is to use the width and height of the bounding box of the element as the amount of the translation. A `<line>` element uses the offset from its start to it's end, meaning that it can be oriented in any direction while a `<rect>` when used as a guide will always result in a translate occurring to the right and down. More freeform elements like a `<path>` and `<polyline>` result in the translation happening along the path they represent.
-
-## VA Data Annotation Syntax

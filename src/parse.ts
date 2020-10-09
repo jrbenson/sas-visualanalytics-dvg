@@ -207,19 +207,18 @@ export function columnFromData(col_str: string, data: Data) {
  */
 export function dataStats(data: Data) {
   for (let col_name of data.cols) {
-    if (col_name.match(RE_DOUBLEBRACE)) {
+    const match = col_name.match(RE_DOUBLEBRACE)
+    if (match) {
       const col = data.getColumn(col_name)
       if (col) {
         const stat = syntax(col_name).name.toLowerCase()
         const col_base_name = col_name.replace(RE_DOUBLEBRACE, '').trim()
-        const stats = stat.split(' ')
-        if (stats.length === 2 && stats[0].match(RE_NUMBERONLY) && stats[0].match(RE_NUMBERONLY)) {
-          const [min, max] = stats.map(Number)
+        const r = range(match[0].slice(2, -2))
+        if (r[1] !== undefined) {
+          const min = Number(r[0])
+          const max = Number(r[1])
           data.renameColumn(col.name, col_base_name)
           data.setColumnStats(col_base_name, { min: min, max: max })
-          // if( col_base_name === 'Expenses' ) {
-          //   console.log( col_base_name, data.min(col_base_name), min )
-          // }
         } else {
           const target_col = data.getColumn(col_base_name)
           if (target_col) {
@@ -243,6 +242,5 @@ export function dataStats(data: Data) {
       }
     }
   }
-
   return data
 }
