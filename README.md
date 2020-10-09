@@ -2,19 +2,62 @@
 
 This project provides a SAS Visual Analytics (VA) data-driven content object that uses annotations on provided data and SVG file to create a dynamic illustration that responds to data updates.
 
+## Usage
+
+## General Annotation Syntax
+
+The general syntax for all the annotations is that they are contained within double curly braces `{{…}}`, contain a list of parameters delimited by pipe characters `{{…|[PARAM]|[PARAM]|[PARAM]|…]}}`, and some parameters accept a simplified JSON-style syntax of comma delimited key value pairs separated by a colon where the value can be optional `{{[PARAM]|[…,KEY:[VAL],KEY:[VAL],…]}}`.
+
+In this system, there are only two forms of this syntax in use in the annotations. The first is a single value parameter form `{{PARAM}}` and the other is a form that takes a single value as the first parameter and the second as a list of key-value pairs of options `{{PARAM|KEY:VAL,KEY,KEY:VAL}}`.
+
+### Column References
+
+The primary feature of this system is the ability to map a column in a data table to the attributes of an SVG element using only the id of the element in your preferred vector editor. Therefore, making references to a column is a key part of the syntax. Say that the SVG will be responding to this simple data table (the data range annotations are covered in a later section):
+
+| Expenses {{0..1000}} | Revenue {{0..1000}} | Department | Year |
+|----------------------|---------------------|------------|------|
+| 765.4                | 843.2               | Toys       | 2020 |
+
+If you wanted to make the reference be exactly to a column then you can reference it by name. In this case you could map the scale option to Expenses using this annotation: `{{scale:Expenses}}`. Note that the name is considered to be the columns name with the range annotation removed and any leading or trailing whitespace trimmed.
+
+If you want your dynamic illustration to be more flexible and be able to use a column regardless of its name then you can reference it by type and index using the following conventions.
+
+`#I` <br/>
+The `#` character indicates a numeric type and `I` provides the zero-based index of the column. For example, `#0` would reference the Expenses column in the sample table and `#1` would reference the Revenue column.
+
+`@I` <br/>
+The `@` character indicates a character type and `I` provides the zero-based index of the column. For example, `@0` would reference the Department column in the sample table.
+
+`$I` <br/>
+The `$` character indicates a date type and `I` provides the zero-based index of the column. For example, `$0` would reference the Year column in the sample table.
+
+`?I` <br/>
+The `?` character indicates any type and `I` provides the zero-based index of the column. For example, `?2` would reference the Department column in the sample table.
+
+### Ranges and Coordinates
+
+In cases where a parameter or value is a numeric range or a coordinate there are a few ways to represent them: `0..1000`, `0to1000`, or `0;1000`.
+
+The use of `..` or `to` are equivalent and will accept negative values. The use of `;` will result in the numbers being taken by their absolute value. The reason for this difference is to help with the way that many vector editors will encode the ids of the layers. Because a space character is not valid for an id in many parsers the editors will replace them with `_` or `-` characters when exported. This creates an issue since if in the editor an element is named `My Rect {{ origin :-5 .. 7 }}` what the system will receive is `My-Rect-{{-origin-:-5-..-7-}}`. The information about the fact that the first value is negative and the second is positive cannot be recovered. The special treatment of `;` is included so that for a case like `My Rect {{ origin : .5 ; 1 }}` all `-` characters are treated as if they were whitespace, allowing the syntax to remain whitespace insensitive at the expense of the ability to represent negative values.
+
 ## VA Data Annotation Syntax
+
+As much as possible the system tries to keep all annotation context contained within the SVG file. However, for numerics, being able to get the true minimum and maximum value from a column is not possible based on the data received from VA since the data received may be filtered. Additionally, it is not always the case that the current minimum and maximum value in the data is the range in which it should be displayed. Therefore some annotations have to be provided in the name of the data item itself.
 
 `NAME {{MIN..MAX}}` <br/>
 In order to tell the dynamic object what the correct minimum and maximum for numeric columns should be the name of the data item itself must be annotated in Visual Analytics. This is done by including the range expression within a double brace annotation anywhere in the name. The annotation will be removed and so will not be part of the displayed name.
 
-As an example a data item with the name "`Expenses`" would need to be renamed "`Expenses {{0..1000}}`" in order for it to be successfully understood by the dynamic SVG system.
+As an example a data item with the name `Expenses` would need to be renamed `Expenses {{0..1000}}` in order for it to be successfully understood by the dynamic SVG system.
 
 <sub><sup>**Adding Range Annotation to Data**</small><br/>
 ![Result](doc/va-data-range.gif)
 
 ## SVG Annotation Syntax
 
-`{{[NAME]|(…,[OPT]:[VAL],…)}}`
+`{{[NAME]|(…,[OPT]:[VAL],…)}}` <br/>
+All element annotations follow the pattern of first having an optional `NAME` which should be followed by a `|` if additional options will be specified. If there will be no options the `|` should be omitted. The `NAME` will be used as an identifier when annotations need to reference another and so should be unique. If they are not unique then the last one defined in the parse order of the SVG will take precedence.
+
+If options are provided without a name the `|` should also be omitted. The structure of the options follows JSON notation conventions with the exception of not requiring strings be quoted and also assuming that the presence of only an option name indicates a true boolean value.
 
 ### Text
 
