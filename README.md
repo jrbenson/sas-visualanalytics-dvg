@@ -2,7 +2,43 @@
 
 This project provides a SAS Visual Analytics (VA) data-driven content object that uses annotations on provided data and SVG file to create a dynamic illustration that responds to data updates.
 
-## Usage
+## Quick Start Guide
+
+To use this system in a Visual Analytics report you must use a Data-driven content object.
+
+<sub><sup>**Adding a Data-driven Content Object**</sup></sub><br/>
+![](doc/va-ddc-add.gif)
+
+Then you must provide a URL to the VA Data-driven Content object's "URL" option. This URL is to the HTML page that runs the dynamic SVG and takes an "svg" parameter which is a URL to the desired SVG file. The SVG URL must be resolvable from the context of the HTML page. Using the samples provided in this repository for example either of the following will work:
+
+- `https://jrbenson.github.io/sas-va-ddc-dynsvg/dist/?svg=https://jrbenson.github.io/sas-va-ddc-dynsvg/svg/airplane-top.svg`
+- `https://jrbenson.github.io/sas-va-ddc-dynsvg/dist/?svg=../svg/airplane-top.svg`
+
+<sub><sup>**Setting URL of VA Data-driven Content**</sup></sub><br/>
+![](doc/va-ddc-url.gif)
+
+Any measures in the data that will be used to dynamically alter the SVG need to be annotated with their minimum to maximum data range.
+
+<sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
+![](doc/va-data-range.gif)
+
+And finally the data must be assigned to the "Variables" role of the Data-driven content object.
+
+<sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
+![](doc/va-ddc-roles.gif)
+
+## Annotating an SVG File
+
+To make your SVG file dynamic it must be correctly annotated. Any vector editing software that allows the ids of the elements to be set by the user may be used to add the annotations.
+
+<sub><sup>**Adding Annotation to SVG Element Id**</sup></sub><br/>
+![](doc/edit-annotate.gif)
+
+Different SVG editors have different export behavior, but be sure through the export options that these three things are true:
+
+- The ids are exported into the SVG.
+- Elements that aren't visible are still exported.
+- Text is not converted into fixed outlines (if you want the text to be dynamic).
 
 ## General Annotation Syntax
 
@@ -15,7 +51,7 @@ In this system, there are only two forms of this syntax in use in the annotation
 The primary feature of this system is the ability to map a column in a data table to the attributes of an SVG element using only the id of the element in your preferred vector editor. Therefore, making references to a column is a key part of the syntax. Say that the SVG will be responding to this simple data table (the data range annotations are covered in a later section):
 
 | Expenses {{0..1000}} | Revenue {{0..1000}} | Department | Year |
-|----------------------|---------------------|------------|------|
+| -------------------- | ------------------- | ---------- | ---- |
 | 765.4                | 843.2               | Toys       | 2020 |
 
 If you wanted to make the reference be exactly to a column then you can reference it by name. In this case you could map the scale option to Expenses using this annotation: `{{scale:Expenses}}`. Note that the name is considered to be the columns name with the range annotation removed and any leading or trailing whitespace trimmed.
@@ -49,8 +85,8 @@ In order to tell the dynamic object what the correct minimum and maximum for num
 
 As an example a data item with the name `Expenses` would need to be renamed `Expenses {{0..1000}}` in order for it to be successfully understood by the dynamic SVG system.
 
-<sub><sup>**Adding Range Annotation to Data**</small><br/>
-![Result](doc/va-data-range.gif)
+<sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
+![](doc/va-data-range.gif)
 
 ## SVG Annotation Syntax
 
@@ -144,7 +180,7 @@ The scale y transform scales the element in only the vertical direction such tha
 The rotate annotations are used to change the rotational orientation of elements dynamically based on numeric data values.
 
 `{{…,rotate/r:COLUMN`_ `,…}}`<br/>
-The rotate transform rotates the element such that the element is at its initial rotation when _`COLUMN`_ is at its minimum value and is, by default, rotated 1 revolution clockwise when _`COLUMN`_ is at its maximum value.
+The rotate transform rotates the element such that the element is at its initial rotation when _`COLUMN`_ is at its minimum value and is, by default, rotated 1 revolution clockwise when _`COLUMN`\_ is at its maximum value.
 
 `{{…,rotateRatio/rr:RATIO,…}}`<br/>
 The rotate ratio provides the amount of a single revolution for the rotation to occur within. A _`RATIO`_ of `0.5` would for example rotate the object from 0 to 180 degrees.
