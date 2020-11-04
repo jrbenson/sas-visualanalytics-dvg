@@ -377,20 +377,20 @@
 </g>
 <g id="labels">
 	<g id="_x31_00_x2C_000">
-		<text transform="matrix(1 0 0 1 435.9999 211.0479)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="24px">100k</text>
+		<text transform="matrix(1 0 0 1 434.9999 211.0479)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="21px">100k</text>
 	</g>
 	<g id="_x30__1_">
-		<text transform="matrix(1 0 0 1 9.7201 211.0479)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="24px">0</text>
+		<text transform="matrix(1 0 0 1 11.5052 211.0479)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="21px">0</text>
 	</g>
 </g>
 <g id="_x7B__x7B_align:middle_x7D__x7D__2_">
 	<g id="_x7B__x7B_Brand_x7D__x7D__2_">
-		<text transform="matrix(1 0 0 1 165.8412 274.5598)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="32px">{{Brand}}</text>
+		<text transform="matrix(1 0 0 1 165.8412 270.5598)" fill="#5E7475" font-family="'AvenirNext-Medium'" font-size="32px">{{Brand}}</text>
 	</g>
 </g>
 <g id="_x7B__x7B_align:middle_x7D__x7D__3_">
 	
-		<text id="_x7B__x7B_Mileage_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 86.1732 211.4318)" fill="#C97531" font-family="'AvenirNext-Bold'" font-size="54px">{{Mileage}}</text>
+		<text id="_x7B__x7B_Mileage_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 86.1733 211.4318)" fill="#C97531" font-family="'AvenirNext-Bold'" font-size="54px">{{Mileage}}</text>
 </g>
 <g id="_x7B__x7B_p:Mileage_x2C_g:Guide_x2C_o:0.5_x3B_0.5_x7D__x7D_">
 	<g id="tire">
