@@ -10,8 +10,7 @@
     "test": "jest --config jestconfig.json",
     "build:es6": "tsc",
     "build:iife": "rollup -c",
-    "build:iife:min": "rollup --config rollup.config.min.js",
-    "build": "npm run build:es6 && npm run build:iife && npm run build:iife:min",
+    "build": "npm run build:es6 && npm run build:iife",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run format"
