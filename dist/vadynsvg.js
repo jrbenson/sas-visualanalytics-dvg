@@ -909,15 +909,15 @@ var dynsvg = (function (exports) {
             if (this.template) {
                 this.element.textContent = this.template.replace(RE_DOUBLEBRACE, function (match) {
                     const syntax$1 = syntax(match);
-                    const col_id = columnIdentifier(syntax$1.name);
-                    let col;
-                    if (col_id) {
-                        const [type, index] = col_id;
-                        col = data.getColumn(index, type);
-                    }
-                    else {
-                        col = data.getColumn(syntax$1.name);
-                    }
+                    // const col_id = parse.columnIdentifier(syntax.name)
+                    //let col
+                    // if (col_id) {
+                    //   const [type, index] = col_id
+                    //   col = data.getColumn(index, type)
+                    // } else {
+                    //   col = data.getColumn(syntax.name)
+                    // }
+                    const col = columnFromData(syntax$1.name, data);
                     if (col) {
                         const nkey = firstObjectKey(syntax$1.opts, ['name', 'n']);
                         if (nkey && syntax$1.opts[nkey]) {
@@ -938,6 +938,92 @@ var dynsvg = (function (exports) {
                     }
                 }.bind({ data: data }));
             }
+        }
+    }
+
+    function getAbsoluteOrigin(element, relativeOrigin) {
+        const bbox = element.getBBox();
+        return { x: bbox.x + bbox.width * relativeOrigin.x, y: bbox.y + bbox.height * relativeOrigin.y };
+    }
+    function wrapWithGroup(element, transferStyles = true) {
+        const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        element.insertAdjacentElement('afterend', group);
+        group.append(element);
+        if (transferStyles) {
+            if (element.classList.length > 0) {
+                group.classList.add(...element.classList);
+                element.classList.remove(...element.classList);
+            }
+            if (element.style.cssText) {
+                group.style.cssText = element.style.cssText;
+                element.style.cssText = '';
+            }
+            const cPath = element.getAttribute('clip-path');
+            if (cPath) {
+                group.setAttribute('clip-path', cPath);
+                element.removeAttribute('clip-path');
+            }
+        }
+        return group;
+    }
+    function getBaseTransforms(element) {
+        let base_transforms = [];
+        if (element.transform.baseVal.numberOfItems > 0) {
+            for (let i = 0; i < element.transform.baseVal.numberOfItems; i += 1) {
+                const transform = element.transform.baseVal.getItem(i);
+                base_transforms.push('matrix(' +
+                    transform.matrix.a +
+                    ',' +
+                    transform.matrix.b +
+                    ',' +
+                    transform.matrix.c +
+                    ',' +
+                    transform.matrix.d +
+                    ',' +
+                    transform.matrix.e +
+                    ',' +
+                    transform.matrix.f +
+                    ')');
+            }
+        }
+        return base_transforms;
+    }
+
+    class Easer {
+        constructor(callback) {
+            this._begT = 0.0;
+            this._curT = 0.0;
+            this._endT = 1.0;
+            this._begTime = undefined;
+            this._frameRequestId = 0;
+            this.step = (time) => {
+                if (this._begTime === undefined) {
+                    this._begTime = time;
+                }
+                const elapsed = time - this._begTime;
+                const x = elapsed / 1000;
+                const r = x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+                this._curT = this._begT + r * (this._endT - this._begT);
+                if (this._callback) {
+                    this._callback(this._curT);
+                }
+                if (elapsed < 1000) {
+                    this._frameRequestId = window.requestAnimationFrame(this.step);
+                }
+            };
+            this._callback = callback;
+        }
+        get curT() {
+            return this._curT;
+        }
+        ease(tBeg = 0.0, tEnd = 1.0) {
+            if (this._frameRequestId) {
+                window.cancelAnimationFrame(this._frameRequestId);
+            }
+            this._begT = tBeg;
+            this._endT = tEnd;
+            this._begTime = undefined;
+            this._frameRequestId = window.requestAnimationFrame(this.step);
         }
     }
 
@@ -967,7 +1053,6 @@ var dynsvg = (function (exports) {
                     const gbox = this.element.getBBox();
                     return { x: gbox.width * t, y: gbox.height * t };
             }
-            return { x: 0, y: 0 };
         }
     }
     /**
@@ -978,36 +1063,18 @@ var dynsvg = (function (exports) {
             super(element);
             this.base_transforms = [];
             this.guide = undefined;
-            this.nonlinear_pos_ease = 0.0;
-            this.nonlinear_pos_beg_t = 0.0;
-            this.nonlinear_pos_cur_t = 0.0;
-            this.nonlinear_pos_end_t = 0.0;
-            this.nonlinear_pos_beg_time = undefined;
-            this.animNonLinearPos = (time) => {
-                if (this.nonlinear_pos_beg_time === undefined) {
-                    this.nonlinear_pos_beg_time = time;
-                }
-                const elapsed = time - this.nonlinear_pos_beg_time;
-                const x = elapsed / 1000;
-                const r = x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
-                const t = this.nonlinear_pos_beg_t + r * (this.nonlinear_pos_end_t - this.nonlinear_pos_beg_t);
-                this.nonlinear_pos_cur_t = t;
-                if (this.guide) {
-                    const coord = this.guide.get(t);
-                    this.nonlinear_pos_group.style.transform = 'translate(' + coord.x + 'px,' + coord.y + 'px)';
-                }
-                if (elapsed < 1000) {
-                    window.requestAnimationFrame(this.animNonLinearPos);
-                }
-            };
+            this.nonlinear_pos_easer = new Easer(this.setNonlinearPosition.bind(this));
             const svgElem = this.element;
             this.bbox = svgElem.getBBox();
             this.origin = this.getOrigin();
-            this.base_transforms = this.getBaseTransforms();
-            this.wrapWithGroup();
-            this.nonlinear_pos_group = this.wrapWithGroup(false);
+            this.base_transforms = getBaseTransforms(svgElem);
+            wrapWithGroup(svgElem);
+            this.nonlinear_pos_group = wrapWithGroup(svgElem);
             svgElem.setAttribute('vector-effect', 'non-scaling-stroke');
-            svgElem.style.transitionProperty = 'transform';
+            let transProps = [];
+            transProps.concat(...svgElem.style.transitionProperty.split(','));
+            transProps.push('transform');
+            svgElem.style.transitionProperty = transProps.join(',');
             svgElem.style.transitionDuration = '1s';
             svgElem.style.transitionTimingFunction = 'cubic-bezier(0.25, .1, 0.25, 1)';
             svgElem.style.transformOrigin = this.origin.x + 'px ' + this.origin.y + 'px';
@@ -1017,69 +1084,19 @@ var dynsvg = (function (exports) {
             return elementsWithOptions(svg, options).map((e) => new DynamicTransform(e));
         }
         getOrigin() {
-            const svgElem = this.element;
-            this.bbox = svgElem.getBBox();
-            let origin_h = 0;
-            let origin_v = 0;
+            let relOrigin = { x: 0, y: 0 };
             const key = firstObjectKey(this.opts, ['origin', 'o']);
             if (key) {
                 const origin_range = range(this.opts[key]?.toString());
                 if (origin_range[1] !== undefined) {
-                    origin_h = origin_range[0];
-                    origin_v = origin_range[1];
+                    relOrigin.x = origin_range[0];
+                    relOrigin.y = origin_range[1];
                 }
                 else if (origin_range[0] !== undefined) {
-                    origin_h = origin_v = origin_range[0];
+                    relOrigin.x = relOrigin.y = origin_range[0];
                 }
             }
-            origin_h = this.bbox.x + this.bbox.width * origin_h;
-            origin_v = this.bbox.y + this.bbox.height * origin_v;
-            return { x: origin_h, y: origin_v };
-        }
-        wrapWithGroup(transferStyles = true) {
-            const svgElem = this.element;
-            const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-            svgElem.insertAdjacentElement('afterend', group);
-            group.append(svgElem);
-            if (transferStyles) {
-                if (svgElem.classList.length > 0) {
-                    group.classList.add(...svgElem.classList);
-                    svgElem.classList.remove(...svgElem.classList);
-                }
-                if (svgElem.style.cssText) {
-                    group.style.cssText = svgElem.style.cssText;
-                    svgElem.style.cssText = '';
-                }
-                const cPath = svgElem.getAttribute('clip-path');
-                if (cPath) {
-                    group.setAttribute('clip-path', cPath);
-                    svgElem.removeAttribute('clip-path');
-                }
-            }
-            return group;
-        }
-        getBaseTransforms() {
-            let base_transforms = [];
-            const svgElem = this.element;
-            if (svgElem.transform.baseVal.numberOfItems > 0) {
-                for (let i = 0; i < svgElem.transform.baseVal.numberOfItems; i += 1) {
-                    const transform = svgElem.transform.baseVal.getItem(i);
-                    base_transforms.push('matrix(' +
-                        transform.matrix.a +
-                        ',' +
-                        transform.matrix.b +
-                        ',' +
-                        transform.matrix.c +
-                        ',' +
-                        transform.matrix.d +
-                        ',' +
-                        transform.matrix.e +
-                        ',' +
-                        transform.matrix.f +
-                        ')');
-                }
-            }
-            return base_transforms;
+            return getAbsoluteOrigin(this.element, relOrigin);
         }
         apply(data, dynSVG) {
             const svgElem = this.element;
@@ -1114,16 +1131,19 @@ var dynsvg = (function (exports) {
                                 transform_strs.push(transform.get(norm, this.opts));
                             }
                             if (pos_keys.includes(key) && this.guide && !this.guide.linear) {
-                                this.nonlinear_pos_beg_t = this.nonlinear_pos_cur_t;
-                                this.nonlinear_pos_end_t = norm;
-                                this.nonlinear_pos_beg_time = undefined;
-                                requestAnimationFrame(this.animNonLinearPos);
+                                this.nonlinear_pos_easer.ease(this.nonlinear_pos_easer.curT, norm);
                             }
                         }
                     }
                 }
             }
             svgElem.style.transform = transform_strs.join(' ');
+        }
+        setNonlinearPosition(t) {
+            if (this.guide) {
+                const coord = this.guide.get(t);
+                this.nonlinear_pos_group.style.transform = 'translate(' + coord.x + 'px,' + coord.y + 'px)';
+            }
         }
     }
     DynamicTransform.transforms = [
@@ -1184,6 +1204,71 @@ var dynsvg = (function (exports) {
                     return 'translateY(' + coords.y + 'px)';
                 }
                 return '';
+            },
+        },
+    ];
+
+    class DynamicStyle extends Dynamic {
+        // baseFill: string
+        // baseStroke: string
+        constructor(element) {
+            super(element);
+            this.baseAlpha = 1.0;
+            const svgElem = this.element;
+            let transProps = svgElem.style.transitionProperty.split(',');
+            transProps.push('fill');
+            transProps.push('stroke');
+            transProps.push('opacity');
+            console.log(transProps);
+            svgElem.style.transitionProperty = transProps.join(',');
+            svgElem.style.transitionDuration = '1s';
+            this.setBaseStyles();
+        }
+        static getDynamics(svg) {
+            const options = [].concat(...DynamicStyle.styles.map((s) => s.keys));
+            return elementsWithOptions(svg, options).map((e) => new DynamicStyle(e));
+        }
+        setBaseStyles() {
+            const svgElem = this.element;
+            if (svgElem.hasAttribute('opacity')) {
+                this.baseAlpha = Number(svgElem.getAttribute('opacity'));
+            }
+        }
+        apply(data, dynSVG) {
+            const svgElem = this.element;
+            for (let style of DynamicStyle.styles) {
+                const key = firstObjectKey(this.opts, style.keys);
+                if (key) {
+                    const col_str = this.opts[key].toString();
+                    const col = columnFromData(col_str, data);
+                    if (col?.stats) {
+                        const val = data.get(0, col.name);
+                        if (val !== undefined) {
+                            const norm = (val - col.stats.min) / (col.stats.max - col.stats.min);
+                            style.set(svgElem, norm, this);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    DynamicStyle.styles = [
+        {
+            keys: ['fill', 'f'],
+            set: function (e, t, dynStyle) {
+                e.style.fill = '#ff0000';
+            },
+        },
+        {
+            keys: ['line', 'l'],
+            set: function (e, t, dynStyle) {
+                e.style.stroke = '#ff0000';
+            },
+        },
+        {
+            keys: ['alpha', 'a'],
+            set: function (e, t, dynStyle) {
+                e.style.opacity = (dynStyle.baseAlpha * t).toString();
             },
         },
     ];
@@ -1256,8 +1341,11 @@ var dynsvg = (function (exports) {
             if (types.includes('all') || types.includes('text')) {
                 dynamics.push(...DynamicText.getDynamics(svg));
             }
-            if (types.includes('all') || types.includes('shapes')) {
+            if (types.includes('all') || types.includes('transforms')) {
                 dynamics.push(...DynamicTransform.getDynamics(svg));
+            }
+            if (types.includes('all') || types.includes('styles')) {
+                dynamics.push(...DynamicStyle.getDynamics(svg));
             }
             return dynamics;
         }
@@ -1332,7 +1420,7 @@ var dynsvg = (function (exports) {
             },
             {
                 name: 'bi102',
-                label: 'Expenses {{0 300}}',
+                label: 'Expenses {{0..300}}',
                 type: 'number',
                 usage: 'quantitative',
                 aggregation: 'average',
@@ -1340,7 +1428,7 @@ var dynsvg = (function (exports) {
             },
             {
                 name: 'bi103',
-                label: 'Revenue {{0.5 4820.50}}',
+                label: 'Revenue {{0.5..4820.50}}',
                 type: 'number',
                 usage: 'quantitative',
                 aggregation: 'average',

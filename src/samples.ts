@@ -106,7 +106,7 @@ export const SAMPLE_MESSAGE_2 = {
     },
     {
       name: 'bi102',
-      label: 'Expenses {{0 300}}',
+      label: 'Expenses {{0..300}}',
       type: 'number',
       usage: 'quantitative',
       aggregation: 'average',
@@ -114,7 +114,7 @@ export const SAMPLE_MESSAGE_2 = {
     },
     {
       name: 'bi103',
-      label: 'Revenue {{0.5 4820.50}}',
+      label: 'Revenue {{0.5..4820.50}}',
       type: 'number',
       usage: 'quantitative',
       aggregation: 'average',

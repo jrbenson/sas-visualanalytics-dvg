@@ -2,6 +2,7 @@ import * as ddc from 'sas-va-ddc'
 import Dynamic from './dynamic'
 import DynamicText from './dynamic-text'
 import DynamicTransform from './dynamic-transform'
+import DynamicStyle from './dynamic-style'
 import { Data } from './data'
 import * as parse from './parse'
 
@@ -91,8 +92,11 @@ export default class DynamicSVG{
     if (types.includes('all') || types.includes('text')) {
       dynamics.push(...DynamicText.getDynamics(svg))
     }
-    if (types.includes('all') || types.includes('shapes')) {
+    if (types.includes('all') || types.includes('transforms')) {
       dynamics.push(...DynamicTransform.getDynamics(svg))
+    }
+    if (types.includes('all') || types.includes('styles')) {
+      dynamics.push(...DynamicStyle.getDynamics(svg))
     }
     return dynamics
   }

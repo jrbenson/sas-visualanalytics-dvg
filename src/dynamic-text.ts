@@ -65,14 +65,15 @@ export default class DynamicText extends Dynamic {
         parse.RE_DOUBLEBRACE,
         function (match: string) {
           const syntax = parse.syntax(match)
-          const col_id = parse.columnIdentifier(syntax.name)
-          let col
-          if (col_id) {
-            const [type, index] = col_id
-            col = data.getColumn(index, type)
-          } else {
-            col = data.getColumn(syntax.name)
-          }
+          // const col_id = parse.columnIdentifier(syntax.name)
+          //let col
+          // if (col_id) {
+          //   const [type, index] = col_id
+          //   col = data.getColumn(index, type)
+          // } else {
+          //   col = data.getColumn(syntax.name)
+          // }
+          const col = parse.columnFromData(syntax.name, data)
           if (col) {
             const nkey = parse.firstObjectKey(syntax.opts, ['name', 'n'])
             if (nkey && syntax.opts[nkey]) {
