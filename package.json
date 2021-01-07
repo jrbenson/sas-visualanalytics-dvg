@@ -36,7 +36,6 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "dataframe-js": "^1.4.3",
     "sas-va-ddc": "git+https://github.com/jrbenson/sas-va-ddc.git"
   }
 }
