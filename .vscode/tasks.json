@@ -7,15 +7,15 @@
       "problemMatcher": ["$tsc"],
       "group": "build",
       "label": "build",
-      "detail": "build package and single iife files"
+      "detail": "build package"
     },
     {
       "type": "npm",
-      "script": "build:es6",
+      "script": "build:watch",
       "problemMatcher": ["$tsc"],
       "group": "build",
-      "label": "build lite",
-      "detail": "build package only"
+      "label": "watch",
+      "detail": "build package in watch mode"
     }
   ]
 }

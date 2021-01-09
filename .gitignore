@@ -3,7 +3,9 @@
 Thumbs.db
 
 # Ignore built ts files
-lib/**/*
+dist/**/*
+!dist/vadynsvg.min.js
+!dist/index.html
 
 # Dependency directory
 node_modules

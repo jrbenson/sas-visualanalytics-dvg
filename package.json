@@ -4,13 +4,14 @@
   "description": "",
   "author": "Riley Benson",
   "license": "Apache-2.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.js",
+  "main": "dist/index",
+  "module": "dist/index.es.js",
+  "browser": "dist/vadynsvg.min.js",
+  "types": "dist/index",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build:es6": "tsc",
-    "build:iife": "rollup -c",
-    "build": "npm run build:es6 && npm run build:iife",
+    "build": "rollup -c",
+    "build:watch": "rollup -cw",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run format"
@@ -25,17 +26,21 @@
   },
   "homepage": "https://github.com/jrbenson/sas-va-ddc-dynsvg#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
-    "@types/jest": "^26.0.13",
-    "jest": "^26.4.2",
-    "rollup": "^2.26.11",
-    "rollup-plugin-generate-html-template": "git+https://github.com/lgirma/rollup-plugin-generate-html-template.git",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "rollup": "^2.36.1",
+    "rollup-plugin-clean": "^1.0.0",
     "rollup-plugin-terser": "^7.0.2",
-    "ts-jest": "^26.3.0",
-    "typescript": "^4.0.2"
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
   },
   "dependencies": {
+    "rollup-plugin-typescript2": "^0.29.0",
     "sas-va-ddc": "git+https://github.com/jrbenson/sas-va-ddc.git"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
