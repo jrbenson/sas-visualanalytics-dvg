@@ -1,5 +1,5 @@
 import DynamicSVG from './dynamic-svg'
-import { SAMPLE_MESSAGE_2 } from './samples'
+import { SAMPLE_MESSAGE_2 } from './utils/samples'
 
 /**
  * DOM loaded callback to kick off initialization and callback registration.

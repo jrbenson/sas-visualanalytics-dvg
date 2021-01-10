@@ -1,10 +1,10 @@
 import * as ddc from 'sas-va-ddc'
-import Dynamic from './dynamic'
-import DynamicText from './dynamic-text'
-import DynamicTransform from './dynamic-transform'
-import DynamicStyle from './dynamic-style'
-import { Data } from './data'
-import * as parse from './parse'
+import Component from './components/component'
+import TextComponent from './components/text'
+import TransformComponent from './components/transform'
+import StyleComponent from './components/style'
+import { Data } from './data/data'
+import * as parse from './utils/parse'
 
 /**
  * The main class that controls the initialization and lifecycle of making the SVG
@@ -22,7 +22,7 @@ export default class DynamicSVG{
   private initComplete: boolean = false // Flag to help delay update execution
 
   private instanceSVG: string = '' // Repatable body of original SVG code
-  private dynamics: Dynamic[] = []
+  private dynamics: Component[] = []
 
   /**
    * Attach to the indicate element DOM element and fill it with the target SVG. Also
@@ -87,16 +87,16 @@ export default class DynamicSVG{
    * @param svg SVG element to perform cleaning on.
    * @param types Values: all | text
    */
-  static getDynamics(svg: Element, types: string[] | undefined = ['all']): Array<Dynamic> {
-    let dynamics: Array<Dynamic> = []
+  static getDynamics(svg: Element, types: string[] | undefined = ['all']): Array<Component> {
+    let dynamics: Array<Component> = []
     if (types.includes('all') || types.includes('text')) {
-      dynamics.push(...DynamicText.getDynamics(svg))
+      dynamics.push(...TextComponent.getDynamics(svg))
     }
     if (types.includes('all') || types.includes('transforms')) {
-      dynamics.push(...DynamicTransform.getDynamics(svg))
+      dynamics.push(...TransformComponent.getDynamics(svg))
     }
     if (types.includes('all') || types.includes('styles')) {
-      dynamics.push(...DynamicStyle.getDynamics(svg))
+      dynamics.push(...StyleComponent.getDynamics(svg))
     }
     return dynamics
   }

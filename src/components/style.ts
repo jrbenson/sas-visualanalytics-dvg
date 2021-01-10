@@ -1,16 +1,16 @@
-import * as parse from './parse'
-import * as svg from './svg'
-import { Data } from './data'
-import Easer from './easer'
-import Dynamic from './dynamic'
-import DynamicSVG from './dynamic-svg'
+import * as parse from '../utils/parse'
+import * as svg from '../utils/svg'
+import { Data } from '../data/data'
+import Easer from '../utils/easer'
+import Component from './component'
+import DynamicSVG from '../dynamic-svg'
 
 interface Style {
   keys: Array<string>
-  set: (e: SVGGraphicsElement, t: number, dynStyle: DynamicStyle) => void
+  set: (e: SVGGraphicsElement, t: number, dynStyle: StyleComponent) => void
 }
 
-export default class DynamicStyle extends Dynamic {
+export default class StyleComponent extends Component {
   static styles: Array<Style> = [
     {
       keys: ['fill', 'f'],
@@ -32,9 +32,9 @@ export default class DynamicStyle extends Dynamic {
     },
   ]
 
-  static getDynamics(svg: Element): Array<Dynamic> {
-    const options = ([] as string[]).concat(...DynamicStyle.styles.map((s) => s.keys))
-    return parse.elementsWithOptions(svg, options).map((e) => new DynamicStyle(e))
+  static getDynamics(svg: Element): Array<Component> {
+    const options = ([] as string[]).concat(...StyleComponent.styles.map((s) => s.keys))
+    return parse.elementsWithOptions(svg, options).map((e) => new StyleComponent(e))
   }
 
   baseAlpha: number = 1.0
@@ -66,7 +66,7 @@ export default class DynamicStyle extends Dynamic {
 
   apply(data: Data, dynSVG: DynamicSVG) {
     const svgElem = this.element as SVGGraphicsElement
-    for (let style of DynamicStyle.styles) {
+    for (let style of StyleComponent.styles) {
       const key = parse.firstObjectKey(this.opts, style.keys)
       if (key) {
         const col_str = this.opts[key].toString()

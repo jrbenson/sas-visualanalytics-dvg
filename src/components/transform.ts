@@ -1,9 +1,9 @@
-import * as parse from './parse'
-import * as svg from './svg'
-import { Data } from './data'
-import Easer from './easer'
-import Dynamic from './dynamic'
-import DynamicSVG from './dynamic-svg'
+import * as parse from '../utils/parse'
+import * as svg from '../utils/svg'
+import { Data } from '../data/data'
+import Easer from '../utils/easer'
+import Component from './component'
+import DynamicSVG from '../dynamic-svg'
 
 interface Transform {
   keys: Array<string>
@@ -43,9 +43,9 @@ class Guide {
 }
 
 /**
- * The dynamic text class replaces mustache style double brace tags with a value from the data.
+ * The transform component replaces mustache style double brace tags with a value from the data.
  */
-export default class DynamicTransform extends Dynamic {
+export default class TransformComponent extends Component {
   static transforms: Array<Transform> = [
     {
       keys: ['scale', 's'],
@@ -108,9 +108,9 @@ export default class DynamicTransform extends Dynamic {
     },
   ]
 
-  static getDynamics(svg: Element): Array<Dynamic> {
-    const options = ([] as string[]).concat(...DynamicTransform.transforms.map((t) => t.keys))
-    return parse.elementsWithOptions(svg, options).map((e) => new DynamicTransform(e))
+  static getDynamics(svg: Element): Array<Component> {
+    const options = ([] as string[]).concat(...TransformComponent.transforms.map((t) => t.keys))
+    return parse.elementsWithOptions(svg, options).map((e) => new TransformComponent(e))
   }
 
   bbox: { x: number; y: number; width: number; height: number }
@@ -172,13 +172,13 @@ export default class DynamicTransform extends Dynamic {
       transform_strs.push('translate(' + this.origin.x + 'px,' + this.origin.y + 'px)')
     }
 
-    const pos_transforms = DynamicTransform.transforms.filter((t) => t.keys[0].startsWith('p'))
+    const pos_transforms = TransformComponent.transforms.filter((t) => t.keys[0].startsWith('p'))
     const pos_keys = pos_transforms
       .map((t) => t.keys)
       .flat()
       .filter((k) => k.startsWith('p'))
 
-    for (let transform of DynamicTransform.transforms) {
+    for (let transform of TransformComponent.transforms) {
       const key = parse.firstObjectKey(this.opts, transform.keys)
       if (key) {
         const col_str = this.opts[key].toString()

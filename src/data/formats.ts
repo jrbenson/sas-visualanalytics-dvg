@@ -8,6 +8,8 @@ const BASIC_FORMATS: Record<string, string> = {
   YEN: 'NLMNLJPY',
 }
 
+const FORMAT_FAIL_OUTPUT = '???'
+
 /**
  * Extracts the hours, minutes, and seconds from a duration in seconds.
  *
@@ -91,7 +93,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
                 ('' + parts.s).padStart(2, '0')
               )
             }
-            return '???'
+            return FORMAT_FAIL_OUTPUT
           },
         }
       } else if (format.name.startsWith('HOUR')) {
@@ -101,7 +103,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
               const hours = Math.floor(value / (60 * 60))
               return new Intl.NumberFormat(navigator.language).format(hours)
             }
-            return '???'
+            return FORMAT_FAIL_OUTPUT
           },
         }
       } else if (format.name.startsWith('HHMM')) {
@@ -111,7 +113,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
               const parts = timeFromSeconds(value)
               return ('' + parts.h).padStart(2, '0') + ':' + ('' + parts.m).padStart(2, '0')
             }
-            return '???'
+            return FORMAT_FAIL_OUTPUT
           },
         }
       } else if (format.name.startsWith('MMSS')) {
@@ -123,7 +125,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
               const seconds = Math.ceil((secs % (60 * 60)) % 60)
               return ('' + minutes).padStart(2, '0') + ':' + ('' + seconds).padStart(2, '0')
             }
-            return '???'
+            return FORMAT_FAIL_OUTPUT
           },
         }
       } else if (format.name.startsWith('NLMNL')) {
@@ -145,7 +147,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
           if (typeof value === 'number') {
             return new Intl.NumberFormat(navigator.language, format_opts).format(value)
           }
-          return '???'
+          return FORMAT_FAIL_OUTPUT
         },
       }
     } else if (column.type === 'date') {
@@ -154,7 +156,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
           if (typeof value === 'string') {
             return value
           }
-          return '???'
+          return FORMAT_FAIL_OUTPUT
         },
       }
     }
@@ -164,7 +166,7 @@ export function parseVAFormat(column: ddc.VAColumn, compact: boolean = false): F
       if (typeof value === 'string') {
         return value
       }
-      return '???'
+      return FORMAT_FAIL_OUTPUT
     },
   }
 }

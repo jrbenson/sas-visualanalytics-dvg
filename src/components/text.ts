@@ -1,12 +1,12 @@
-import * as parse from './parse'
-import { Data } from './data'
-import Dynamic from './dynamic'
-import DynamicSVG from './dynamic-svg'
+import * as parse from '../utils/parse'
+import { Data } from '../data/data'
+import Component from './component'
+import DynamicSVG from '../dynamic-svg'
 
 /**
- * The dynamic text class replaces mustache style double brace tags with a value from the data.
+ * The text component replaces mustache style double brace tags with a value from the data.
  */
-export default class DynamicText extends Dynamic {
+export default class TextComponent extends Component {
   template: string | null
 
   constructor(element: Element) {
@@ -46,7 +46,7 @@ export default class DynamicText extends Dynamic {
     }
   }
 
-  static getDynamics(svg: Element): Array<Dynamic> {
+  static getDynamics(svg: Element): Array<Component> {
     let elems: Array<Element> = []
     svg.querySelectorAll('text').forEach(function (text) {
       if (text.children.length) {
@@ -56,7 +56,7 @@ export default class DynamicText extends Dynamic {
       }
     })
     elems = elems.filter((e) => e.textContent && e.textContent.match(parse.RE_DOUBLEBRACE))
-    return elems.map((e) => new DynamicText(e))
+    return elems.map((e) => new TextComponent(e))
   }
 
   apply(data: Data, dynSVG: DynamicSVG) {

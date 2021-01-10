@@ -1,4 +1,4 @@
-import { Data, Column, ColumnType } from './data'
+import { Data, Column, ColumnType } from '../data/data'
 
 export const RE_DOUBLEBRACE = /{{([^}]+)}}/g
 export const RE_UNDERSCOREUNICODE = /_x([0-9A-Za-z]+)_/g
@@ -13,7 +13,7 @@ export const TRIM_CHARS = [' ', '-', '_']
 const COL_ID_TYPE_PREFIXES: Record<string, ColumnType> = {
   '@': ColumnType.String,
   '#': ColumnType.Number,
-  $: ColumnType.Date,
+  '$': ColumnType.Date,
 }
 
 /**
@@ -28,7 +28,7 @@ export function decodeIllustrator(text: string) {
 }
 
 /**
- * Encodes object literal into formal JSON syntax with quotes.
+ * Encodes simplpified object literal into formal JSON syntax with quotes.
  *
  * @param text The text to encode to proper JSON.
  */
@@ -98,6 +98,12 @@ export function syntax(text: string): SyntaxParse {
   return obj
 }
 
+/**
+ * Returns a list of SVGElements that have the requested options.
+ *
+ * @param svg The parent element to search through the children of.
+ * @param options List of option strings to match against.
+ */
 export function elementsWithOptions(svg: Element, options: Array<string>) {
   return Array.from(svg.querySelectorAll<SVGElement>('*[id]'))
     .filter((e) => e.id?.match(RE_DOUBLEBRACE))
@@ -112,6 +118,11 @@ export function elementsWithOptions(svg: Element, options: Array<string>) {
     })
 }
 
+/**
+ * Returns a map of the name (in annotation syntx) of an element to a refernce to that element.
+ *
+ * @param svg The parent element to search through the children of.
+ */
 export function elementsByName(svg: Element) {
   const elements: Map<string, Element> = new Map()
   Array.from(svg.querySelectorAll<SVGElement>('*[id]'))
@@ -125,6 +136,11 @@ export function elementsByName(svg: Element) {
   return elements
 }
 
+/**
+ * Parses the various range syntax into its two numbers if possible.
+ *
+ * @param text The text to parse into a tupled range.
+ */
 export function range(text: string) {
   let delim = undefined
   text = text.replace(/_/g, ' ')
@@ -170,7 +186,7 @@ export function firstObjectKey(object: Record<string, any>, keys: Array<string>)
 /**
  * Detects type from @, #, and $ prefixes for string, number, and time and position.
  *
- * @param data The column id to parse.
+ * @param col_id The column id to parse.
  */
 export function columnIdentifier(col_id: string): [ColumnType, number] | undefined {
   let match = col_id.match(RE_COLUMNID)
@@ -184,9 +200,9 @@ export function columnIdentifier(col_id: string): [ColumnType, number] | undefin
 }
 
 /**
- * Returns column from data based on identifier.
+ * Returns column from data from either a name or type and index.
  *
- * @param data The column id to lookup.
+ * @param col_str The string that is either a name or type/index.
  */
 export function columnFromData(col_str: string, data: Data) {
   const col_id = columnIdentifier(col_str)

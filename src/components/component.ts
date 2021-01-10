@@ -1,11 +1,11 @@
-import * as parse from './parse'
-import { Data } from './data'
-import DynamicSVG from './dynamic-svg'
+import * as parse from '../utils/parse'
+import { Data } from '../data/data'
+import DynamicSVG from '../dynamic-svg'
 
 /**
- * Base class for dynamics, which are called during update to apply data to the SVG.
+ * Base class for components, which are called during update to apply data to the SVG.
  */
-export default class Dynamic {
+export default class Component {
   element: Element
   opts: Record<string, string | number | boolean>
 
@@ -21,9 +21,9 @@ export default class Dynamic {
   /**
    * Override with static method for selecting viable elements for this dynamic from SVG.
    * @param svg {SVGElement} The root SVG element to start the search from.
-   * @return Array of dynamics that match the desired pattern.
+   * @return Array of components that match the desired pattern.
    */
-  static getDynamics(svg: Element): Array<Dynamic> {
+  static getDynamics(svg: Element): Array<Component> {
     return []
   }
 
