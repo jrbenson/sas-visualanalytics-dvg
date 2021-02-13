@@ -12,7 +12,7 @@ To use this system in a Visual Analytics report you must use a Data-driven conte
 Then you must provide a URL to the VA Data-driven Content object's "URL" option. This URL is to the HTML page that runs the dynamic SVG and takes an "svg" parameter which is a URL to the desired SVG file. The SVG URL must be resolvable from the context of the HTML page. Using the samples provided in this repository for example either of the following will work:
 
 - `https://jrbenson.github.io/sas-va-ddc-dynsvg/?svg=https://jrbenson.github.io/sas-va-ddc-dynsvg/svg/airplane-top.svg`
-- `https://jrbenson.github.io/sas-va-ddc-dynsvg/?svg=../svg/airplane-top.svg`
+- `https://jrbenson.github.io/sas-va-ddc-dynsvg/?svg=svg/airplane-top.svg`
 
 <sub><sup>**Setting URL of VA Data-driven Content**</sup></sub><br/>
 ![](doc/va-ddc-url.gif)
