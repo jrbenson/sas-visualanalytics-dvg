@@ -1,0 +1,106 @@
+<!--
+Copyright 2018 SAS Institute Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html,
+      body,
+      svg {
+        overflow: hidden;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://sassoftware.github.io/sas-visualanalytics-thirdpartyvisualizations/util/contentUtil.js"></script>
+    <script src="https://sassoftware.github.io/sas-visualanalytics-thirdpartyvisualizations/util/messagingUtil.js"></script>
+    <script src="https://jrbenson.github.io/dynamic-vector-graphics/dist/dynsvg.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let dynSVG = new dynsvg.DynamicSVG(document.body, va.messagingUtil.getUrlParams())
+
+        function dataRecievedCallback(message) {
+          let data = new dynsvg.Data({
+            values: message.data,
+            columns: message.columns.map((c) => c.label),
+            formats: message.columns.map(function (c) {
+              return {
+                name: c.format ? c.format.name : undefined,
+                type: c.type,
+                precision: c.format ? c.format.precision : undefined,
+                width: c.format ? c.format.width : undefined,
+              }
+            }),
+          })
+          dynSVG.udpate(data)
+        } 
+
+        va.messagingUtil.setOnDataReceivedCallback(dataRecievedCallback)
+        va.contentUtil.setupResizeListener(dynSVG.draw.bind(dynSVG))
+
+        if (!inIframe()) {
+          dataRecievedCallback(SAMPLE_VA_MESSAGE)
+        }
+      })
+
+      function inIframe() {
+        try {
+          return window.self !== window.top
+        } catch (e) {
+          return true
+        }
+      }
+
+      const SAMPLE_VA_MESSAGE = {
+        version: '1',
+        resultName: 'dd91',
+        rowCount: 1,
+        availableRowCount: 1,
+        data: [['Bead', 'Dec', 112.81571032867849, 1329.474768526684]],
+        columns: [
+          { name: 'bi100', label: 'Department', type: 'string' },
+          {
+            name: 'bi101',
+            label: 'Date',
+            type: 'date',
+            usage: 'categorical',
+            format: { name: 'MONTH', width: 3, precision: 0, formatString: 'MONTH3' },
+          },
+          {
+            name: 'bi102',
+            label: 'Expenses {{0..300}}',
+            type: 'number',
+            usage: 'quantitative',
+            aggregation: 'average',
+            format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+          },
+          {
+            name: 'bi103',
+            label: 'Revenue {{0.5..4820.50}}',
+            type: 'number',
+            usage: 'quantitative',
+            aggregation: 'average',
+            format: { name: 'DOLLAR', width: 15, precision: 2, formatString: 'DOLLAR15.2' },
+          },
+        ],
+      }
+    </script>
+  </body>
+</html>

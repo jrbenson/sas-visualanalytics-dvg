@@ -1,11 +1,3 @@
 # OS metadata
 .DS_Store
 Thumbs.db
-
-# Ignore built ts files
-dist/**/*
-!dist/vadynsvg.min.js
-!dist/index.html
-
-# Dependency directory
-node_modules
