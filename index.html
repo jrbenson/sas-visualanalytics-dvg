@@ -37,7 +37,7 @@ limitations under the License.
         let ddcDVG = new dvg.DVG(document.body, va.messagingUtil.getUrlParams())
 
         function dataRecievedCallback(message) {
-          let data = new dvg.Data({
+          ddcDVG.update({
             values: message.data,
             columns: message.columns.map((c) => c.label),
             formats: message.columns.map(function (c) {
@@ -49,7 +49,6 @@ limitations under the License.
               }
             }),
           })
-          ddcDVG.udpate(data)
         } 
 
         va.messagingUtil.setOnDataReceivedCallback(dataRecievedCallback)
