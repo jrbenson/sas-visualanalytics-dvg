@@ -4,12 +4,12 @@
 	 viewBox="0 0 1920 1200" style="enable-background:new 0 0 1920 1200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#AAD1D6;}
-	.st1{opacity:0.25;clip-path:url(#SVGID_3_);}
+	.st1{opacity:0.25;clip-path:url(#SVGID_2_);}
 	.st2{fill:none;stroke:#D7FFFB;stroke-width:2;stroke-miterlimit:10;}
 	.st3{fill:#8BB4B7;}
 	.st4{filter:url(#Adobe_OpacityMaskFilter);}
 	.st5{fill:#FFFFFF;}
-	.st6{mask:url(#SVGID_2_);}
+	.st6{mask:url(#SVGID_11_);}
 	.st7{fill:#7C400F;}
 	.st8{font-family:'HelveticaNeueLTStd-HvCn';}
 	.st9{font-size:20px;}
@@ -119,11 +119,14 @@
 	.st113{font-family:'HelveticaNeueLTStd-Cn';}
 	.st114{font-size:58px;}
 	.st115{font-size:51.5989px;}
-	.st116{font-size:70.027px;}
-	.st117{fill:none;}
-	.st118{font-size:36px;}
-	.st119{fill:#A6CCD1;}
-	.st120{font-size:40px;}
+	.st116{display:none;}
+	.st117{display:inline;fill:#23383F;}
+	.st118{font-size:70.027px;}
+	.st119{display:inline;fill:#7C400F;}
+	.st120{fill:none;}
+	.st121{font-size:36px;}
+	.st122{fill:#A6CCD1;}
+	.st123{font-size:40px;}
 </style>
 <font horiz-adv-x="1000">
 <!-- Copyright 1990, 2002 Adobe Systems Incorporated. All rights reserved. Helvetica is a trademark of Linotype Corp. registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions in the name of Linotype Corp. or its licensee Linotype GmbH. -->
@@ -7705,7 +7708,7 @@ AAAAAAAAAAAAAACaHQoIVac1qtsaAAAAAElFTkSuQmCC" transform="matrix(0.4794 0 0 0.479
 				<path id="SVGID_1_" d="M1900,1200H20c-11,0-20-9-20-20V20C0,9,9,0,20,0h1880c11,0,20,9,20,20v1160
 					C1920,1191,1911,1200,1900,1200z"/>
 			</defs>
-			<clipPath id="SVGID_3_">
+			<clipPath id="SVGID_2_">
 				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 			</clipPath>
 			<g class="st1">
@@ -15534,24 +15537,24 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 	<g id="FL_1_">
 		<g>
 			<defs>
-				<rect id="SVGID_5_" x="1288" y="866" width="59.6" height="100"/>
+				<rect id="SVGID_3_" x="1288" y="866" width="59.6" height="100"/>
 			</defs>
-			<clipPath id="SVGID_7_">
-				<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+			<clipPath id="SVGID_5_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
 			</clipPath>
-			<g style="clip-path:url(#SVGID_7_);">
+			<g style="clip-path:url(#SVGID_5_);">
 				
 					<use xlink:href="#mapPersonIconShadow"  width="59.6" height="100" x="-29.8" y="-50" transform="matrix(1 0 0 -1 1316.8125 917.0187)" style="overflow:visible;"/>
 			</g>
 		</g>
 		<g>
 			<defs>
-				<rect id="SVGID_9_" x="1288" y="866" width="59.6" height="100"/>
+				<rect id="SVGID_7_" x="1288" y="866" width="59.6" height="100"/>
 			</defs>
-			<clipPath id="SVGID_11_">
-				<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+			<clipPath id="SVGID_9_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
 			</clipPath>
-			<g style="clip-path:url(#SVGID_11_);">
+			<g style="clip-path:url(#SVGID_9_);">
 				
 					<use xlink:href="#mapPersonIconTransparent"  width="59.6" height="100" x="-29.8" y="-50" transform="matrix(1 0 0 -1 1316.8125 917.0187)" style="overflow:visible;"/>
 			</g>
@@ -15561,9 +15564,9 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 			</filter>
 		</defs>
-		<mask maskUnits="userSpaceOnUse" x="1287" y="866" width="60.6" height="101" id="SVGID_2_">
+		<mask maskUnits="userSpaceOnUse" x="1287" y="866" width="60.6" height="101" id="SVGID_11_">
 			<g class="st4">
-				<rect id="_x7B__x7B_sy:FullyVaccinedPercent_x2C_o:0.5to1_x7D__x7D__1_" x="1290" y="870" class="st5" width="56" height="84"/>
+				<rect id="mask" x="1290" y="870" class="st5" width="56" height="84"/>
 			</g>
 		</mask>
 		<g class="st6">
@@ -18198,24 +18201,24 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 		<text transform="matrix(1 0 0 1 1582.8638 958.0605)" class="st10 st113 st115">of</text>
 	</g>
 </g>
-<g id="_x7B__x7B_align:start_x7D__x7D_">
-	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population|c}}</text>
+<g id="_x7B__x7B_align:start_x7D__x7D_" class="st116">
+	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st117 st8 st118">{{Population|c}}</text>
 </g>
-<g id="_x7B__x7B_align:end_x7D__x7D_">
+<g id="_x7B__x7B_align:end_x7D__x7D_" class="st116">
 	
-		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 495.4351 956.8945)" class="st7 st8 st116">{{TotalVaccineDosesAdministered|c}}</text>
+		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 495.4351 956.8945)" class="st119 st8 st118">{{TotalVaccineDosesAdministered|c}}</text>
 </g>
 <g id="description">
 	<g>
-		<rect x="131.7" y="46.9" class="st117" width="1676.5" height="96.8"/>
-		<text transform="matrix(1 0 0 1 131.7332 72.6311)" class="st91 st113 st118">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin leo dui, ut gravida augue ornare nec. Nulla non </text>
-		<text transform="matrix(1 0 0 1 131.7332 114.6311)" class="st91 st113 st118">arcu libero. Donec mollis vehicula lacus, nec interdum dolor posuere id. </text>
+		<rect x="131.7" y="46.9" class="st120" width="1676.5" height="96.8"/>
+		<text transform="matrix(1 0 0 1 131.7332 72.6311)" class="st91 st113 st121">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin leo dui, ut gravida augue ornare nec. Nulla non </text>
+		<text transform="matrix(1 0 0 1 131.7332 114.6311)" class="st91 st113 st121">arcu libero. Donec mollis vehicula lacus, nec interdum dolor posuere id. </text>
 	</g>
 </g>
 <g id="tab">
 	<g>
 		<path class="st91" d="M0,130V20C0,9,9,0,20,0h110L0,130z"/>
-		<text transform="matrix(1 0 0 1 29.7214 50.4272)" class="st119 st8 st120">6</text>
+		<text transform="matrix(1 0 0 1 29.7214 50.4272)" class="st122 st8 st123">6</text>
 	</g>
 </g>
 </svg>
