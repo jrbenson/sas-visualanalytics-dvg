@@ -1,0 +1,30 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="index">
+<g id="Core {{r:#0,o:0.5;0.5}}">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="115" y="115" width="410" height="410">
+<circle id="Ellipse 5" cx="320" cy="320" r="205" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="Group 1">
+<rect id="Rectangle 6" x="165" y="461" width="53" height="282" transform="rotate(-180 165 461)" fill="black" fill-opacity="0.25"/>
+<rect id="Rectangle 7" x="528" y="461" width="53" height="282" transform="rotate(-180 528 461)" fill="black" fill-opacity="0.25"/>
+<path id="Rectangle 5" d="M482 461L482 179M159 461L159 179" stroke="black" stroke-width="12"/>
+</g>
+</g>
+</g>
+<text id="{{a:middle}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="18" letter-spacing="0em"><tspan x="255.214" y="409.74">{{#0|n}} : {{#0|c}}</tspan></text>
+<text id="{{a:middle}}_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="18" letter-spacing="0em"><tspan x="253.29" y="237.74">{{@0|n}} : {{@0}}</tspan></text>
+<g id="DVG" clip-path="url(#clip0)">
+<path id="D" d="M247 320C247 341.72 229.583 359 208.5 359C204.504 359 200.639 358.379 197 357.225V381.936C200.728 382.635 204.571 383 208.5 383C243.018 383 271 354.794 271 320C271 285.206 243.018 257 208.5 257C204.571 257 200.728 257.365 197 258.064V282.775C200.639 281.621 204.504 281 208.5 281C229.583 281 247 298.28 247 320Z" fill="black"/>
+<path id="G" d="M419 357.225C403.44 352.29 392 337.603 392 320C392 298.28 409.417 281 430.5 281C434.864 281 439.072 281.741 443 283.108V258.26C438.961 257.434 434.781 257 430.5 257C395.982 257 368 285.206 368 320C368 354.794 395.982 383 430.5 383C434.781 383 438.961 382.566 443 381.74V320H419V357.225Z" fill="black"/>
+<path id="V" d="M338.95 257H364.368L320.468 382.87L275 257H300.518L320.071 311.13L338.95 257Z" fill="black"/>
+</g>
+<circle id="Outer Ring" cx="320" cy="320" r="244" stroke="black" stroke-width="24"/>
+<circle id="Inner Ring" cx="320" cy="320" r="202" stroke="black" stroke-width="12"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="246" height="126" fill="white" transform="translate(197 257)"/>
+</clipPath>
+</defs>
+</svg>
