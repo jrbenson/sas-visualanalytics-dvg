@@ -15580,8 +15580,7 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		
-			<text id="_x7B__x7B_Vaccine_Doses_Administered__x28__x25__Population_x29__x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st7 st8 st9">00%</text>
+		<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st7 st8 st9">{{FullyVaccinedPercent}}</text>
 		<text transform="matrix(1 0 0 1 1350.0001 910.7197)" class="st10 st11 st9">FL</text>
 	</g>
 	<g id="NC_2_">
@@ -18197,12 +18196,12 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 		<text transform="matrix(1 0 0 1 1582.8638 958.0605)" class="st10 st113 st115">of</text>
 	</g>
 </g>
+<g id="_x7B__x7B_align:start_x7D__x7D_">
+	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population|c}}</text>
+</g>
 <g id="_x7B__x7B_align:end_x7D__x7D_">
 	
 		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 495.4351 956.8945)" class="st7 st8 st116">{{TotalVaccineDosesAdministered|c}}</text>
-</g>
-<g id="_x7B__x7B_align:start_x7D__x7D_">
-	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population|c}}</text>
 </g>
 <g id="description">
 	<g>
