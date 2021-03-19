@@ -10,11 +10,11 @@
 	.st4{filter:url(#Adobe_OpacityMaskFilter);}
 	.st5{fill:#FFFFFF;}
 	.st6{mask:url(#SVGID_11_);}
-	.st7{fill:#23383F;}
-	.st8{font-family:'HelveticaNeueLTStd-Roman';}
+	.st7{fill:#7C400F;}
+	.st8{font-family:'HelveticaNeueLTStd-HvCn';}
 	.st9{font-size:20px;}
-	.st10{fill:#7C400F;}
-	.st11{font-family:'HelveticaNeueLTStd-HvCn';}
+	.st10{fill:#23383F;}
+	.st11{font-family:'HelveticaNeueLTStd-Roman';}
 	.st12{filter:url(#Adobe_OpacityMaskFilter_1_);}
 	.st13{mask:url(#SVGID_4_);}
 	.st14{filter:url(#Adobe_OpacityMaskFilter_2_);}
@@ -15579,10 +15579,10 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 			</g>
 		</g>
 	</g>
-	<text transform="matrix(1 0 0 1 1350.0001 910.7197)" class="st7 st8 st9">FL</text>
-</g>
-<g id="_x7B__x7B_align:start_x7D__x7D__1_">
-	<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st10 st11 st9">{{FullyVaccinedPercent}}</text>
+	<g id="_x7B__x7B_align:start_x7D__x7D__1_">
+		<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st7 st8 st9">{{FullyVaccinedPercent}}</text>
+	</g>
+	<text transform="matrix(1 0 0 1 1350.0001 910.7197)" class="st10 st11 st9">FL</text>
 </g>
 <g id="state_icons">
 	<g id="NC_2_">
@@ -15634,8 +15634,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1415.0001 699.7197)" class="st7 st8 st9">NC</text>
-		<text transform="matrix(1 0 0 1 1415.0001 719.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1415.0001 699.7197)" class="st10 st11 st9">NC</text>
+		<text transform="matrix(1 0 0 1 1415.0001 719.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="SC_2_">
 		<g>
@@ -15686,8 +15686,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1360.0001 756.7197)" class="st7 st8 st9">SC</text>
-		<text transform="matrix(1 0 0 1 1360.0001 776.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1360.0001 756.7197)" class="st10 st11 st9">SC</text>
+		<text transform="matrix(1 0 0 1 1360.0001 776.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="GA_2_">
 		<g>
@@ -15738,8 +15738,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1305.0001 806.7197)" class="st7 st8 st9">GA</text>
-		<text transform="matrix(1 0 0 1 1305.0001 826.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1305.0001 806.7197)" class="st10 st11 st9">GA</text>
+		<text transform="matrix(1 0 0 1 1305.0001 826.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="TN_2_">
 		<g>
@@ -15790,8 +15790,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1221.0001 677.7197)" class="st7 st8 st9">TN</text>
-		<text transform="matrix(1 0 0 1 1221.0001 697.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1221.0001 677.7197)" class="st10 st11 st9">TN</text>
+		<text transform="matrix(1 0 0 1 1221.0001 697.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="KY_2_">
 		<g>
@@ -15842,8 +15842,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1267.0001 607.7197)" class="st7 st8 st9">KY</text>
-		<text transform="matrix(1 0 0 1 1267.0001 627.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1267.0001 607.7197)" class="st10 st11 st9">KY</text>
+		<text transform="matrix(1 0 0 1 1267.0001 627.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="WV_2_">
 		<g>
@@ -15894,8 +15894,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1361.0001 563.7197)" class="st7 st8 st9">WV</text>
-		<text transform="matrix(1 0 0 1 1361.0001 583.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1361.0001 563.7197)" class="st10 st11 st9">WV</text>
+		<text transform="matrix(1 0 0 1 1361.0001 583.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="OH_2_">
 		<g>
@@ -15946,8 +15946,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1319.0001 492.7197)" class="st7 st8 st9">OH</text>
-		<text transform="matrix(1 0 0 1 1319.0001 512.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1319.0001 492.7197)" class="st10 st11 st9">OH</text>
+		<text transform="matrix(1 0 0 1 1319.0001 512.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="IN_2_">
 		<g>
@@ -15998,8 +15998,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1227.0001 526.7197)" class="st7 st8 st9">IN</text>
-		<text transform="matrix(1 0 0 1 1227.0001 546.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1227.0001 526.7197)" class="st10 st11 st9">IN</text>
+		<text transform="matrix(1 0 0 1 1227.0001 546.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="IL_2_">
 		<g>
@@ -16050,8 +16050,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1128.0001 526.7197)" class="st7 st8 st9">IL</text>
-		<text transform="matrix(1 0 0 1 1128.0001 546.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1128.0001 526.7197)" class="st10 st11 st9">IL</text>
+		<text transform="matrix(1 0 0 1 1128.0001 546.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MO_2_">
 		<g>
@@ -16102,8 +16102,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1046.0001 600.7197)" class="st7 st8 st9">MO</text>
-		<text transform="matrix(1 0 0 1 1046.0001 620.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1046.0001 600.7197)" class="st10 st11 st9">MO</text>
+		<text transform="matrix(1 0 0 1 1046.0001 620.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="IA_1_">
 		<g>
@@ -16154,8 +16154,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1016.0001 438.7197)" class="st7 st8 st9">IA</text>
-		<text transform="matrix(1 0 0 1 1016.0001 458.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1016.0001 438.7197)" class="st10 st11 st9">IA</text>
+		<text transform="matrix(1 0 0 1 1016.0001 458.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MI_1_">
 		<g>
@@ -16206,8 +16206,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1279.0001 394.7197)" class="st7 st8 st9">MI</text>
-		<text transform="matrix(1 0 0 1 1279.0001 414.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1279.0001 394.7197)" class="st10 st11 st9">MI</text>
+		<text transform="matrix(1 0 0 1 1279.0001 414.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="WI_2_">
 		<g>
@@ -16258,8 +16258,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1119.0001 347.7197)" class="st7 st8 st9">WI</text>
-		<text transform="matrix(1 0 0 1 1119.0001 367.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1119.0001 347.7197)" class="st10 st11 st9">WI</text>
+		<text transform="matrix(1 0 0 1 1119.0001 367.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MN_2_">
 		<g>
@@ -16310,8 +16310,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 995.0001 301.7197)" class="st7 st8 st9">MN</text>
-		<text transform="matrix(1 0 0 1 995.0001 321.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 995.0001 301.7197)" class="st10 st11 st9">MN</text>
+		<text transform="matrix(1 0 0 1 995.0001 321.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="NM_2_">
 		<g>
@@ -16362,8 +16362,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 672 719.7197)" class="st7 st8 st9">NM</text>
-		<text transform="matrix(1 0 0 1 672 739.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 672 719.7197)" class="st10 st11 st9">NM</text>
+		<text transform="matrix(1 0 0 1 672 739.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="CO_2_">
 		<g>
@@ -16414,8 +16414,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 687 559.7197)" class="st7 st8 st9">CO</text>
-		<text transform="matrix(1 0 0 1 687 579.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 687 559.7197)" class="st10 st11 st9">CO</text>
+		<text transform="matrix(1 0 0 1 687 579.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="WY_2_">
 		<g>
@@ -16466,8 +16466,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 635 412.7197)" class="st7 st8 st9">WY</text>
-		<text transform="matrix(1 0 0 1 635 432.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 635 412.7197)" class="st10 st11 st9">WY</text>
+		<text transform="matrix(1 0 0 1 635 432.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MT_2_">
 		<g>
@@ -16518,8 +16518,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 575 262.7197)" class="st7 st8 st9">MT</text>
-		<text transform="matrix(1 0 0 1 575 282.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 575 262.7197)" class="st10 st11 st9">MT</text>
+		<text transform="matrix(1 0 0 1 575 282.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="ID_2_">
 		<g>
@@ -16570,8 +16570,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 445 362.7197)" class="st7 st8 st9">ID</text>
-		<text transform="matrix(1 0 0 1 445 382.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 445 362.7197)" class="st10 st11 st9">ID</text>
+		<text transform="matrix(1 0 0 1 445 382.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="OR_2_">
 		<g>
@@ -16622,8 +16622,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 270 384.7197)" class="st7 st8 st9">OR</text>
-		<text transform="matrix(1 0 0 1 270 404.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 270 384.7197)" class="st10 st11 st9">OR</text>
+		<text transform="matrix(1 0 0 1 270 404.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="CA_2_">
 		<g>
@@ -16674,8 +16674,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 286 624.7197)" class="st7 st8 st9">CA</text>
-		<text transform="matrix(1 0 0 1 286 644.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 286 624.7197)" class="st10 st11 st9">CA</text>
+		<text transform="matrix(1 0 0 1 286 644.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="NV_2_">
 		<g>
@@ -16726,8 +16726,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 374 544.7197)" class="st7 st8 st9">NV</text>
-		<text transform="matrix(1 0 0 1 374 564.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 374 544.7197)" class="st10 st11 st9">NV</text>
+		<text transform="matrix(1 0 0 1 374 564.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="UT_2_">
 		<g>
@@ -16778,8 +16778,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 524 556.7197)" class="st7 st8 st9">UT</text>
-		<text transform="matrix(1 0 0 1 524 576.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 524 556.7197)" class="st10 st11 st9">UT</text>
+		<text transform="matrix(1 0 0 1 524 576.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="AZ_2_">
 		<g>
@@ -16830,8 +16830,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 514 726.7197)" class="st7 st8 st9">AZ</text>
-		<text transform="matrix(1 0 0 1 514 746.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 514 726.7197)" class="st10 st11 st9">AZ</text>
+		<text transform="matrix(1 0 0 1 514 746.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="AK_2_">
 		<g>
@@ -16882,8 +16882,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 315 906.7197)" class="st7 st8 st9">AK</text>
-		<text transform="matrix(1 0 0 1 315 926.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 315 906.7197)" class="st10 st11 st9">AK</text>
+		<text transform="matrix(1 0 0 1 315 926.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="HI_2_">
 		<g>
@@ -16934,8 +16934,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 666 1005.7197)" class="st7 st8 st9">HI</text>
-		<text transform="matrix(1 0 0 1 666 1025.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 666 1005.7197)" class="st10 st11 st9">HI</text>
+		<text transform="matrix(1 0 0 1 666 1025.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="WA_1_">
 		<g>
@@ -16986,8 +16986,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 277 246.7197)" class="st7 st8 st9">WA</text>
-		<text transform="matrix(1 0 0 1 277 266.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 277 246.7197)" class="st10 st11 st9">WA</text>
+		<text transform="matrix(1 0 0 1 277 266.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="TX_1_">
 		<g>
@@ -17038,8 +17038,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 858.0001 819.7197)" class="st7 st8 st9">TX</text>
-		<text transform="matrix(1 0 0 1 858.0001 839.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 858.0001 819.7197)" class="st10 st11 st9">TX</text>
+		<text transform="matrix(1 0 0 1 858.0001 839.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="OK_1_">
 		<g>
@@ -17090,8 +17090,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 914.0001 686.7197)" class="st7 st8 st9">OK</text>
-		<text transform="matrix(1 0 0 1 914.0001 706.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 914.0001 686.7197)" class="st10 st11 st9">OK</text>
+		<text transform="matrix(1 0 0 1 914.0001 706.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="KS_1_">
 		<g>
@@ -17142,8 +17142,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 884.0001 582.7197)" class="st7 st8 st9">KS</text>
-		<text transform="matrix(1 0 0 1 884.0001 602.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 884.0001 582.7197)" class="st10 st11 st9">KS</text>
+		<text transform="matrix(1 0 0 1 884.0001 602.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="NE_1_">
 		<g>
@@ -17194,8 +17194,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 853.0001 472.7197)" class="st7 st8 st9">NE</text>
-		<text transform="matrix(1 0 0 1 853.0001 492.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 853.0001 472.7197)" class="st10 st11 st9">NE</text>
+		<text transform="matrix(1 0 0 1 853.0001 492.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="SD_1_">
 		<g>
@@ -17246,8 +17246,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 833.0001 358.7197)" class="st7 st8 st9">SD</text>
-		<text transform="matrix(1 0 0 1 833.0001 378.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 833.0001 358.7197)" class="st10 st11 st9">SD</text>
+		<text transform="matrix(1 0 0 1 833.0001 378.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="ND_1_">
 		<g>
@@ -17298,8 +17298,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 833.0001 244.7197)" class="st7 st8 st9">ND</text>
-		<text transform="matrix(1 0 0 1 833.0001 264.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 833.0001 244.7197)" class="st10 st11 st9">ND</text>
+		<text transform="matrix(1 0 0 1 833.0001 264.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="AL_1_">
 		<g>
@@ -17350,8 +17350,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1208.0001 764.7197)" class="st7 st8 st9">AL</text>
-		<text transform="matrix(1 0 0 1 1208.0001 784.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1208.0001 764.7197)" class="st10 st11 st9">AL</text>
+		<text transform="matrix(1 0 0 1 1208.0001 784.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MS_2_">
 		<g>
@@ -17402,8 +17402,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1124.0001 813.7197)" class="st7 st8 st9">MS</text>
-		<text transform="matrix(1 0 0 1 1124.0001 833.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1124.0001 813.7197)" class="st10 st11 st9">MS</text>
+		<text transform="matrix(1 0 0 1 1124.0001 833.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="LA_2_">
 		<g>
@@ -17454,8 +17454,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1047.0001 864.7197)" class="st7 st8 st9">LA</text>
-		<text transform="matrix(1 0 0 1 1047.0001 884.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1047.0001 864.7197)" class="st10 st11 st9">LA</text>
+		<text transform="matrix(1 0 0 1 1047.0001 884.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="AR_2_">
 		<g>
@@ -17506,8 +17506,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1044.0001 723.7197)" class="st7 st8 st9">AR</text>
-		<text transform="matrix(1 0 0 1 1044.0001 743.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1044.0001 723.7197)" class="st10 st11 st9">AR</text>
+		<text transform="matrix(1 0 0 1 1044.0001 743.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="VA_2_">
 		<g>
@@ -17558,8 +17558,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1447.0001 619.7197)" class="st7 st8 st9">VA</text>
-		<text transform="matrix(1 0 0 1 1447.0001 639.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1447.0001 619.7197)" class="st10 st11 st9">VA</text>
+		<text transform="matrix(1 0 0 1 1447.0001 639.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="MD_1_">
 		<g>
@@ -17610,8 +17610,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1587.0001 611.7197)" class="st7 st8 st9">MD</text>
-		<text transform="matrix(1 0 0 1 1587.0001 631.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1587.0001 611.7197)" class="st10 st11 st9">MD</text>
+		<text transform="matrix(1 0 0 1 1587.0001 631.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<line class="st90" x1="1524.5" y1="593.5" x2="1454.5" y2="593.5"/>
@@ -17670,8 +17670,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1557.0001 697.7197)" class="st7 st8 st9">DE</text>
-		<text transform="matrix(1 0 0 1 1557.0001 717.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1557.0001 697.7197)" class="st10 st11 st9">DE</text>
+		<text transform="matrix(1 0 0 1 1557.0001 717.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1508.5,666.5 1497.6,666.5 1491.5,611.5 				"/>
@@ -17731,8 +17731,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1690.0001 611.7197)" class="st7 st8 st9">NJ</text>
-		<text transform="matrix(1 0 0 1 1690.0001 631.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1690.0001 611.7197)" class="st10 st11 st9">NJ</text>
+		<text transform="matrix(1 0 0 1 1690.0001 631.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1632.5,587.5 1600.2,561.5 1523.5,561.5 				"/>
@@ -17791,8 +17791,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1617.0001 268.7197)" class="st7 st8 st9">NH</text>
-		<text transform="matrix(1 0 0 1 1617.0001 288.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1617.0001 268.7197)" class="st10 st11 st9">NH</text>
+		<text transform="matrix(1 0 0 1 1617.0001 288.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1596.7,316.6 1607.5,339 1607.5,405 				"/>
@@ -17851,8 +17851,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1621.0001 442.7197)" class="st7 st8 st9">MA</text>
-		<text transform="matrix(1 0 0 1 1621.0001 462.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1621.0001 442.7197)" class="st10 st11 st9">MA</text>
+		<text transform="matrix(1 0 0 1 1621.0001 462.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="PA_2_">
 		<g>
@@ -17903,8 +17903,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1458.0001 505.7197)" class="st7 st8 st9">PA</text>
-		<text transform="matrix(1 0 0 1 1458.0001 525.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1458.0001 505.7197)" class="st10 st11 st9">PA</text>
+		<text transform="matrix(1 0 0 1 1458.0001 525.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="NY_2_">
 		<g>
@@ -17955,8 +17955,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1505.0001 420.7197)" class="st7 st8 st9">NY</text>
-		<text transform="matrix(1 0 0 1 1505.0001 440.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1505.0001 420.7197)" class="st10 st11 st9">NY</text>
+		<text transform="matrix(1 0 0 1 1505.0001 440.3999)" class="st7 st8 st9">00%</text>
 	</g>
 	<g id="VT_2_">
 		<g>
@@ -18007,8 +18007,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1531.0001 323.7197)" class="st7 st8 st9">VT</text>
-		<text transform="matrix(1 0 0 1 1531.0001 343.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1531.0001 323.7197)" class="st10 st11 st9">VT</text>
+		<text transform="matrix(1 0 0 1 1531.0001 343.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1518.3,345.2 1568.5,369 1568.5,411 				"/>
@@ -18067,8 +18067,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1757.0001 543.7197)" class="st7 st8 st9">CT</text>
-		<text transform="matrix(1 0 0 1 1757.0001 563.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1757.0001 543.7197)" class="st10 st11 st9">CT</text>
+		<text transform="matrix(1 0 0 1 1757.0001 563.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1694.2,542.5 1591.2,542.5 1572.5,509.5 				"/>
@@ -18128,8 +18128,8 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1727.0001 458.7197)" class="st7 st8 st9">RI</text>
-		<text transform="matrix(1 0 0 1 1727.0001 478.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1727.0001 458.7197)" class="st10 st11 st9">RI</text>
+		<text transform="matrix(1 0 0 1 1727.0001 478.3999)" class="st7 st8 st9">00%</text>
 		<g>
 			<g>
 				<polyline class="st90" points="1675.8,478.8 1657.2,507.5 1600.5,507.5 				"/>
@@ -18188,22 +18188,22 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1708.0001 327.7197)" class="st7 st8 st9">ME</text>
-		<text transform="matrix(1 0 0 1 1708.0001 347.3999)" class="st10 st11 st9">00%</text>
+		<text transform="matrix(1 0 0 1 1708.0001 327.7197)" class="st10 st11 st9">ME</text>
+		<text transform="matrix(1 0 0 1 1708.0001 347.3999)" class="st7 st8 st9">00%</text>
 	</g>
 </g>
 <g id="text">
 	<text transform="matrix(1 0 0 1 1389.4482 1019.498)" class="st112 st113 st114">FULLY VACCINATED</text>
 	<g>
-		<text transform="matrix(1 0 0 1 1582.8638 958.0605)" class="st7 st113 st115">of</text>
+		<text transform="matrix(1 0 0 1 1582.8638 958.0605)" class="st10 st113 st115">of</text>
 	</g>
 </g>
 <g id="_x7B__x7B_align:start_x7D__x7D_">
-	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st7 st11 st116">{{Population|c}}</text>
+	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population|c}}</text>
 </g>
 <g id="_x7B__x7B_align:end_x7D__x7D_">
 	
-		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 495.4351 956.8945)" class="st10 st11 st116">{{TotalVaccineDosesAdministered|c}}</text>
+		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 495.4351 956.8945)" class="st7 st8 st116">{{TotalVaccineDosesAdministered|c}}</text>
 </g>
 <g id="description">
 	<g>
@@ -18215,7 +18215,7 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 <g id="tab">
 	<g>
 		<path class="st91" d="M0,130V20C0,9,9,0,20,0h110L0,130z"/>
-		<text transform="matrix(1 0 0 1 29.7214 50.4272)" class="st119 st11 st120">6</text>
+		<text transform="matrix(1 0 0 1 29.7214 50.4272)" class="st119 st8 st120">6</text>
 	</g>
 </g>
 </svg>
