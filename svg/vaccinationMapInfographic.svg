@@ -15580,7 +15580,9 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 				</g>
 			</g>
 		</g>
-		<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st7 st8 st9">{{FullyVaccinedPercent}}</text>
+		<g id="_x7B__x7B_align:start_x7D__x7D__1_">
+			<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D_" transform="matrix(1 0 0 1 1350.0001 930.3999)" class="st7 st8 st9">{{FullyVaccinedPercent}}</text>
+		</g>
 		<text transform="matrix(1 0 0 1 1350.0001 910.7197)" class="st10 st11 st9">FL</text>
 	</g>
 	<g id="NC_2_">
