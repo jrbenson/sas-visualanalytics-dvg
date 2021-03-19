@@ -18198,14 +18198,11 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 	</g>
 </g>
 <g id="_x7B__x7B_align:end_x7D__x7D_">
-	<g id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_">
-		<text transform="matrix(1 0 0 1 1477.4351 956.8945)" class="st7 st8 st116">0M</text>
-	</g>
+	
+		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D__1_" transform="matrix(1 0 0 1 1477.4351 956.8945)" class="st7 st8 st116">0M</text>
 </g>
 <g id="_x7B__x7B_align:start_x7D__x7D_">
-	<g id="_x7B__x7B_Population_x7C_c_x7D__x7D__1_">
-		<text transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">0M</text>
-	</g>
+	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">0M</text>
 </g>
 <g id="description">
 	<g>
