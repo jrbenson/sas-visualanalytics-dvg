@@ -18199,10 +18199,10 @@ EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRwq/n/BRgA
 </g>
 <g id="_x7B__x7B_align:end_x7D__x7D_">
 	
-		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7D__x7D_" transform="matrix(1 0 0 1 547.4351 956.8945)" class="st7 st8 st116">{{TotalVaccineDosesAdministered}}</text>
+		<text id="_x7B__x7B_TotalVaccineDosesAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 547.4351 956.8945)" class="st7 st8 st116">{{TotalVaccineDosesAdministered}}</text>
 </g>
 <g id="_x7B__x7B_align:start_x7D__x7D_">
-	<text id="_x7B__x7B_Population_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population}}</text>
+	<text id="_x7B__x7B_Population_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1638.3291 956.8945)" class="st10 st8 st116">{{Population}}</text>
 </g>
 <g id="description">
 	<g>
