@@ -24,11 +24,11 @@
 	.st18{fill:#F0932F;}
 	.st19{fill:#FFF8DC;}
 	.st20{font-size:56px;}
-	.st21{font-size:33px;}
-	.st22{font-size:50px;}
-	.st23{fill:#EA623D;}
-	.st24{fill:#FFF0E3;}
-	.st25{opacity:0;}
+	.st21{opacity:0;}
+	.st22{font-size:33px;}
+	.st23{font-size:50px;}
+	.st24{fill:#EA623D;}
+	.st25{fill:#FFF0E3;}
 </style>
 <g id="syringe__x2B__vial">
 	<g id="syringe_and_vial">
@@ -4782,58 +4782,58 @@ rkJggg==" transform="matrix(1 0 0 1 131 68)">
 		</image>
 	</g>
 </g>
-<g id="_x7B__x7B_py:TillImmunity_x2C_g:_x7B__x7B_tillImmunityBox_x7D__x7D__x2C_o:0.5_x3B_1_x7D_">
-	<g id="vial_panel">
-		<g class="st12">
-			<path class="st6" d="M674,892H334V684c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v198C684,887.52,679.52,892,674,892z"/>
-			<path class="st6" d="M242,892h-3v-3h3V892z M329.02,889h-5.93v3h5.93V889z M321.11,889h-5.93v3h5.93V889z M313.2,889h-5.93v3
-				h5.93V889z M305.29,889h-5.93v3h5.93V889z M297.38,889h-5.93v3h5.93V889z M289.47,889h-5.93v3h5.93V889z M281.56,889h-5.93v3
-				h5.93V889z M273.64,889h-5.93v3h5.93V889z M265.73,889h-5.93v3h5.93V889z M257.82,889h-5.93v3h5.93V889z M249.91,889h-5.93v3
-				h5.93V889z M334,889h-3v3h3V889z"/>
+<g id="till_immunity_panel">
+	<g id="_x7B__x7B_py:TillImmunity_x2C_g:_x7B__x7B_tillImmunityBox_x7D__x7D__x2C_o:0.5_x3B_1_x7D_">
+		<g id="vial_panel">
+			<g class="st12">
+				<path class="st6" d="M674,892H334V684c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v198C684,887.52,679.52,892,674,892z"/>
+				<path class="st6" d="M242,892h-3v-3h3V892z M329.02,889h-5.93v3h5.93V889z M321.11,889h-5.93v3h5.93V889z M313.2,889h-5.93v3
+					h5.93V889z M305.29,889h-5.93v3h5.93V889z M297.38,889h-5.93v3h5.93V889z M289.47,889h-5.93v3h5.93V889z M281.56,889h-5.93v3
+					h5.93V889z M273.64,889h-5.93v3h5.93V889z M265.73,889h-5.93v3h5.93V889z M257.82,889h-5.93v3h5.93V889z M249.91,889h-5.93v3
+					h5.93V889z M334,889h-3v3h3V889z"/>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 360.0004 722.9272)" class="st2 st13 st14">Vaccinations Remaining </text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 358.0008 771.7925)" class="st15 st16 st17">TILL IMMUNITY</text>
+			</g>
 		</g>
-		<g>
-			<text transform="matrix(1 0 0 1 360.0004 722.9272)" class="st2 st13 st14">Vaccinations Remaining </text>
-		</g>
-		<g>
-			<text transform="matrix(1 0 0 1 358.0008 771.7925)" class="st15 st16 st17">TILL IMMUNITY</text>
-		</g>
-	</g>
-	<path id="bar_1_" class="st18" d="M657,867H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
-		C659,866.1,658.1,867,657,867z"/>
-	<g id="_x7B__x7B_align:middle_x7D__x7D__1_">
-		<text id="_x7B__x7B_TillImmunity_x7C_c_x7D__x7D__2_" transform="matrix(1 0 0 1 289.7482 849.0001)" class="st19 st16 st20">{{TillImmunity|c}}</text>
-	</g>
-</g>
-<g id="_x7B__x7B_py:PercentVaccinated_x2C_g:_x7B__x7B_vaccinatedBox_x7D__x7D__x2C_o:0.5_x3B_1_x7D_">
-	<g id="syringe_panel">
-		<g class="st12">
-			<path class="st6" d="M674,540H334V329c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v201C684,535.52,679.52,540,674,540z"/>
-			<path class="st6" d="M209,540h-3v-3h3V540z M329,537h-6v3h6V537z M321,537h-6v3h6V537z M313,537h-6v3h6V537z M305,537h-6v3h6V537
-				z M297,537h-6v3h6V537z M289,537h-6v3h6V537z M281,537h-6v3h6V537z M273,537h-6v3h6V537z M265,537h-6v3h6V537z M257,537h-6v3h6
-				V537z M249,537h-6v3h6V537z M241,537h-6v3h6V537z M233,537h-6v3h6V537z M225,537h-6v3h6V537z M217,537h-6v3h6V537z M334,537h-3v3
-				h3V537z"/>
-		</g>
-		<g>
-			<text transform="matrix(1 0 0 1 360.0004 367.9272)" class="st2 st13 st21">Percentage of Population</text>
-		</g>
-		<g id="VACCINATED">
-			<text transform="matrix(1 0 0 1 360.7484 420.7922)" class="st15 st16 st22">VACCINATED</text>
+		<path id="bar_1_" class="st18" d="M657,867H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
+			C659,866.1,658.1,867,657,867z"/>
+		<g id="_x7B__x7B_align:middle_x7D__x7D__1_">
+			<text id="_x7B__x7B_TillImmunity_x7C_c_x7D__x7D__2_" transform="matrix(1 0 0 1 289.7482 849.0001)" class="st19 st16 st20">{{TillImmunity|c}}</text>
 		</g>
 	</g>
-	<path id="bar" class="st23" d="M657,515H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
-		C659,514.1,658.1,515,657,515z"/>
-	<g id="_x7B__x7B_align:middle_x7D__x7D_">
-		
-			<text id="_x7B__x7B_PercentVaccinated_x5F_Percent_x7D__x7D_" transform="matrix(1 0 0 1 121.7484 497.0002)" class="st24 st16 st20">{{PercentVaccinated_Percent}}</text>
-	</g>
-</g>
-<g id="_x7B__x7B_tillImmunityBox_x7D__x7D__1_">
-	<g id="_x7B__x7B_tillImmunityBox_x7D__x7D_" class="st25">
+	<g id="_x7B__x7B_tillImmunityBox_x7D__x7D_" class="st21">
 		<rect x="234" y="692" width="460" height="200"/>
 	</g>
 </g>
-<g id="_x7B__x7B_vaccinatedBox_x7D__x7D__1_">
-	<g id="_x7B__x7B_vaccinatedBox_x7D__x7D_" class="st25">
+<g id="vacinnated_panel">
+	<g id="_x7B__x7B_py:PercentVaccinated_x2C_g:_x7B__x7B_vaccinatedBox_x7D__x7D__x2C_o:0.5_x3B_1_x7D_">
+		<g id="syringe_panel">
+			<g class="st12">
+				<path class="st6" d="M674,540H334V329c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v201C684,535.52,679.52,540,674,540z"/>
+				<path class="st6" d="M209,540h-3v-3h3V540z M329,537h-6v3h6V537z M321,537h-6v3h6V537z M313,537h-6v3h6V537z M305,537h-6v3h6
+					V537z M297,537h-6v3h6V537z M289,537h-6v3h6V537z M281,537h-6v3h6V537z M273,537h-6v3h6V537z M265,537h-6v3h6V537z M257,537h-6
+					v3h6V537z M249,537h-6v3h6V537z M241,537h-6v3h6V537z M233,537h-6v3h6V537z M225,537h-6v3h6V537z M217,537h-6v3h6V537z M334,537
+					h-3v3h3V537z"/>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 360.0004 367.9272)" class="st2 st13 st22">Percentage of Population</text>
+			</g>
+			<g id="VACCINATED">
+				<text transform="matrix(1 0 0 1 360.7484 420.7922)" class="st15 st16 st23">VACCINATED</text>
+			</g>
+		</g>
+		<path id="bar" class="st24" d="M657,515H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
+			C659,514.1,658.1,515,657,515z"/>
+		<g id="_x7B__x7B_align:middle_x7D__x7D_">
+			
+				<text id="_x7B__x7B_PercentVaccinated_x5F_Percent_x7D__x7D_" transform="matrix(1 0 0 1 121.7484 497.0002)" class="st25 st16 st20">{{PercentVaccinated_Percent}}</text>
+		</g>
+	</g>
+	<g id="_x7B__x7B_vaccinatedBox_x7D__x7D_" class="st21">
 		<rect x="119" y="240" width="575" height="300"/>
 	</g>
 </g>
