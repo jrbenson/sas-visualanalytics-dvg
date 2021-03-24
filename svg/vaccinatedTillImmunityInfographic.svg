@@ -4787,8 +4787,8 @@ rkJggg==" transform="matrix(1 0 0 1 131 68)">
 		<rect x="119" y="240" width="100" height="300"/>
 	</g>
 </g>
-<g id="till_immunity_panel">
-	<g id="_x7B__x7B_py:TillImmunity_x2C_g:tillImmunityBox_x2C_o:0.5_x3B_1.0_x7D_">
+<g id="_x7B__x7B_py:TillImmunity_x2C_g:tillImmunityBox_x2C_o:0.5_x3B_1.0_x7D__1_">
+	<g id="panel_1_">
 		<g id="vial_panel">
 			<g class="st13">
 				<path class="st6" d="M674,892H334V684c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v198C684,887.52,679.52,892,674,892z"/>
@@ -4810,12 +4810,14 @@ rkJggg==" transform="matrix(1 0 0 1 131 68)">
 			<text id="_x7B__x7B_TillImmunity_x7C_c_x7D__x7D__2_" transform="matrix(1 0 0 1 289.7482 849.0001)" class="st20 st17 st21">{{TillImmunity|c}}</text>
 		</g>
 	</g>
+</g>
+<g id="tillImmunityBox">
 	<g id="_x7B__x7B_tillImmunityBox_x7D__x7D_" class="st12">
 		<rect x="234" y="692" width="460" height="200"/>
 	</g>
 </g>
-<g id="vacinnated_panel">
-	<g id="_x7B__x7B_py:PercentVaccinated_x2C_g:vaccinatedBox_x2C_o:0.5_x3B_1.0_x7D_">
+<g id="_x7B__x7B_py:PercentVaccinated_x2C_g:vaccinatedBox_x2C_o:0.5_x3B_1.0_x7D__1_">
+	<g id="panel">
 		<g id="syringe_panel">
 			<g class="st13">
 				<path class="st6" d="M674,540H334V329c0-5.52,4.48-10,10-10h330c5.52,0,10,4.48,10,10v201C684,535.52,679.52,540,674,540z"/>
@@ -4838,6 +4840,8 @@ rkJggg==" transform="matrix(1 0 0 1 131 68)">
 				<text id="_x7B__x7B_PercentVaccinated_x5F_Percent_x7D__x7D_" transform="matrix(1 0 0 1 121.7484 497.0002)" class="st25 st17 st21">{{PercentVaccinated_Percent}}</text>
 		</g>
 	</g>
+</g>
+<g id="vaccinatedBox">
 	<g id="_x7B__x7B_vaccinatedBox_x7D__x7D_" class="st12">
 		<rect x="119" y="240" width="575" height="300"/>
 	</g>
