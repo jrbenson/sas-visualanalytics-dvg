@@ -4379,11 +4379,11 @@ M++JYTN9E1MYM8+hM0rmLvVbrmV/WEaqci3ljF/99d8CDACajWekD1u4gQAAAABJRU5ErkJggg==" tr
 	</g>
 </g>
 <defs>
-	<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="119" y="68" width="100" height="487">
+	<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="131" y="68" width="75" height="487">
 		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="119" y="68" width="100" height="487" id="plunger_1_">
+<mask maskUnits="userSpaceOnUse" x="131" y="68" width="75" height="487" id="plunger_1_">
 	<g class="st10">
 		<g>
 			<rect x="119" y="239" class="st6" width="100" height="315"/>
@@ -4781,6 +4781,8 @@ AHBukRT4wcgjI2fk2f/eh5jNNw5/gdVHK5qbRU7p9Xv5nZ8np9/7/wdETLHRZlzMkwAAAABJRU5E
 rkJggg==" transform="matrix(1 0 0 1 131 68)">
 		</image>
 	</g>
+</g>
+<g id="plungerBox">
 	<g id="_x7B__x7B_plungerBox_x7D__x7D_" class="st12">
 		<rect x="119" y="240" width="100" height="300"/>
 	</g>
