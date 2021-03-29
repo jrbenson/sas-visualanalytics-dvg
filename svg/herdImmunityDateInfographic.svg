@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 640 710" style="enable-background:new 0 0 640 710;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#519CB7;}
-	.st1{fill:#C1E0E5;}
-	.st2{fill:#19303A;}
-	.st3{font-family:'RobotoCondensed-Bold';}
-	.st4{font-size:28px;}
-	.st5{font-family:'Roboto-Black';}
-	.st6{font-size:56px;}
-	.st7{font-family:'Roboto-Bold';}
-	.st8{font-size:26px;}
-	.st9{fill:none;stroke:#8ACCDB;stroke-width:3;stroke-miterlimit:10;}
-	.st10{fill:#8ACCDB;}
-	.st11{opacity:0.3;}
-	.st12{opacity:0.5;}
-</style>
+	 viewBox="0 0 640 710" enable-background="new 0 0 640 710" xml:space="preserve">
 <g id="person_and_shadow_1_">
 	
-		<image style="overflow:visible;" width="640" height="707" id="image_3_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAALDCAYAAACFAbHhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+		<image overflow="visible" width="640" height="707" id="image_3_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAALDCAYAAACFAbHhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LjE2
@@ -4125,38 +4110,36 @@ szfUmXGlAAAAAElFTkSuQmCC">
 </g>
 <g id="shield_background_1_">
 	<g id="shield_background">
-		<polygon class="st0" points="474.24,509.8 402.8,549.01 327.37,509.47 265.56,419.42 264.23,203.43 401.17,166.67 541.36,204.1 
-			539.36,417.42 		"/>
+		<polygon fill="#519CB7" points="474.24,509.8 402.8,549.01 327.37,509.47 265.56,419.42 264.23,203.43 401.17,166.67 
+			541.36,204.1 539.36,417.42 		"/>
 	</g>
 </g>
 <g id="shield_graphics">
 	<g>
-		<path class="st1" d="M325,381c-1.65,0-3-1.35-3-3V271h170v107c0,1.65-1.35,3-3,3H325z"/>
-		<path class="st2" d="M487,276v100H327V276H487 M497,266H317v112c0,4.42,3.58,8,8,8h164c4.42,0,8-3.58,8-8V266L497,266z"/>
+		<path fill="#C1E0E5" d="M325,381c-1.65,0-3-1.35-3-3V271h170v107c0,1.65-1.35,3-3,3H325z"/>
+		<path fill="#19303A" d="M487,276v100H327V276H487 M497,266H317v112c0,4.42,3.58,8,8,8h164c4.42,0,8-3.58,8-8V266L497,266z"/>
 		<g>
-			<path class="st2" d="M489,236h-18v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5
+			<path fill="#19303A" d="M489,236h-18v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5
 				c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-12v5c0,4.42-3.58,8-8,8s-8-3.58-8-8v-5h-18
 				c-4.42,0-8,3.58-8,8v52h180v-52C497,239.58,493.42,236,489,236z"/>
 		</g>
 	</g>
-	<path class="st2" d="M463,245c-2.21,0-4-1.79-4-4v-14c0-2.21,1.79-4,4-4s4,1.79,4,4v14C467,243.21,465.21,245,463,245z M439,241
+	<path fill="#19303A" d="M463,245c-2.21,0-4-1.79-4-4v-14c0-2.21,1.79-4,4-4s4,1.79,4,4v14C467,243.21,465.21,245,463,245z M439,241
 		v-14c0-2.21-1.79-4-4-4s-4,1.79-4,4v14c0,2.21,1.79,4,4,4S439,243.21,439,241z M411,241v-14c0-2.21-1.79-4-4-4s-4,1.79-4,4v14
 		c0,2.21,1.79,4,4,4S411,243.21,411,241z M383,241v-14c0-2.21-1.79-4-4-4s-4,1.79-4,4v14c0,2.21,1.79,4,4,4S383,243.21,383,241z
 		 M355,241v-14c0-2.21-1.79-4-4-4s-4,1.79-4,4v14c0,2.21,1.79,4,4,4S355,243.21,355,241z"/>
 	<g>
-		<text transform="matrix(1 0 0 1 312.0762 425.4788)"><tspan x="0" y="0" class="st2 st3 st4">HERD IMMUNITY</tspan><tspan x="40.58" y="30" class="st2 st3 st4">REACHED</tspan></text>
+		<text transform="matrix(1 0 0 1 312.0762 425.4788)"><tspan x="0" y="0" fill="#19303A" font-family="'RobotoCondensed-Bold'" font-size="28px">HERD IMMUNITY</tspan><tspan x="40.58" y="30" fill="#19303A" font-family="'RobotoCondensed-Bold'" font-size="28px">REACHED</tspan></text>
 	</g>
 </g>
-<g id="text">
-	<g id="_x7B__x7B_align:middle_x7D__x7D__1_">
-		<g id="_x7B__x7B_DayImmune_x7D__x7D_">
-			<text transform="matrix(1 0 0 1 221 356.2427)" class="st2 st5 st6">{{DayImmune}}</text>
-		</g>
+<g id="_x7B__x7B_align:middle_x7D__x7D__1_">
+	<g id="_x7B__x7B_DayImmune_x7D__x7D_">
+		<text transform="matrix(1 0 0 1 221 356.2427)" fill="#19303A" font-family="'Roboto-Black'" font-size="56px">{{DayImmune}}</text>
 	</g>
-	<g id="_x7B__x7B_align:middle_x7D__x7D_">
-		<g id="_x7B__x7B_MonthImmune_x7D__x7D_">
-			<text transform="matrix(1 0 0 1 304 280.4775)" class="st1 st7 st8">{{MonthImmune}}</text>
-		</g>
+</g>
+<g id="_x7B__x7B_align:middle_x7D__x7D_">
+	<g id="_x7B__x7B_MonthImmune_x7D__x7D_">
+		<text transform="matrix(1 0 0 1 304 280.4775)" fill="#C1E0E5" font-family="'Roboto-Bold'" font-size="26px">{{MonthImmune}}</text>
 	</g>
 </g>
 <g id="covid_icon_1_">
@@ -4164,63 +4147,63 @@ szfUmXGlAAAAAElFTkSuQmCC">
 		<g>
 			<g>
 				<g>
-					<line class="st9" x1="406.8" y1="474.92" x2="406.8" y2="508.92"/>
+					<line fill="none" stroke="#8ACCDB" stroke-width="3" stroke-miterlimit="10" x1="406.8" y1="474.92" x2="406.8" y2="508.92"/>
 					<g>
-						<circle class="st10" cx="406.8" cy="474.92" r="3.38"/>
+						<circle fill="#8ACCDB" cx="406.8" cy="474.92" r="3.38"/>
 					</g>
 					<g>
-						<path class="st10" d="M403.41,508.92c0,1.87,1.52,3.38,3.38,3.38s3.38-1.52,3.38-3.38c0-1.87-1.52-3.38-3.38-3.38
+						<path fill="#8ACCDB" d="M403.41,508.92c0,1.87,1.52,3.38,3.38,3.38s3.38-1.52,3.38-3.38c0-1.87-1.52-3.38-3.38-3.38
 							S403.41,507.05,403.41,508.92z"/>
 					</g>
 				</g>
 			</g>
 			<g>
 				<g>
-					<line class="st9" x1="394.78" y1="479.9" x2="418.82" y2="503.94"/>
+					<line fill="none" stroke="#8ACCDB" stroke-width="3" stroke-miterlimit="10" x1="394.78" y1="479.9" x2="418.82" y2="503.94"/>
 					<g>
-						<circle class="st10" cx="394.78" cy="479.9" r="3.38"/>
+						<circle fill="#8ACCDB" cx="394.78" cy="479.9" r="3.38"/>
 					</g>
 					<g>
-						<path class="st10" d="M416.42,506.33c1.32,1.32,3.46,1.32,4.79,0c1.32-1.32,1.32-3.46,0-4.79c-1.32-1.32-3.46-1.32-4.79,0
+						<path fill="#8ACCDB" d="M416.42,506.33c1.32,1.32,3.46,1.32,4.79,0c1.32-1.32,1.32-3.46,0-4.79c-1.32-1.32-3.46-1.32-4.79,0
 							C415.1,502.87,415.1,505.01,416.42,506.33z"/>
 					</g>
 				</g>
 			</g>
 			<g>
 				<g>
-					<line class="st9" x1="389.8" y1="491.92" x2="423.8" y2="491.92"/>
+					<line fill="none" stroke="#8ACCDB" stroke-width="3" stroke-miterlimit="10" x1="389.8" y1="491.92" x2="423.8" y2="491.92"/>
 					<g>
-						<circle class="st10" cx="389.8" cy="491.92" r="3.38"/>
+						<circle fill="#8ACCDB" cx="389.8" cy="491.92" r="3.38"/>
 					</g>
 					<g>
-						<path class="st10" d="M423.8,495.3c1.87,0,3.38-1.52,3.38-3.38c0-1.87-1.52-3.38-3.38-3.38c-1.87,0-3.38,1.52-3.38,3.38
+						<path fill="#8ACCDB" d="M423.8,495.3c1.87,0,3.38-1.52,3.38-3.38c0-1.87-1.52-3.38-3.38-3.38c-1.87,0-3.38,1.52-3.38,3.38
 							C420.41,493.79,421.93,495.3,423.8,495.3z"/>
 					</g>
 				</g>
 			</g>
 			<g>
 				<g>
-					<line class="st9" x1="394.78" y1="503.94" x2="418.82" y2="479.9"/>
+					<line fill="none" stroke="#8ACCDB" stroke-width="3" stroke-miterlimit="10" x1="394.78" y1="503.94" x2="418.82" y2="479.9"/>
 					<g>
-						<path class="st10" d="M397.17,506.33c-1.32,1.32-3.46,1.32-4.79,0c-1.32-1.32-1.32-3.46,0-4.79c1.32-1.32,3.46-1.32,4.79,0
+						<path fill="#8ACCDB" d="M397.17,506.33c-1.32,1.32-3.46,1.32-4.79,0c-1.32-1.32-1.32-3.46,0-4.79c1.32-1.32,3.46-1.32,4.79,0
 							C398.49,502.87,398.49,505.01,397.17,506.33z"/>
 					</g>
 					<g>
-						<path class="st10" d="M421.21,482.29c1.32-1.32,1.32-3.46,0-4.79c-1.32-1.32-3.46-1.32-4.79,0c-1.32,1.32-1.32,3.46,0,4.79
+						<path fill="#8ACCDB" d="M421.21,482.29c1.32-1.32,1.32-3.46,0-4.79c-1.32-1.32-3.46-1.32-4.79,0c-1.32,1.32-1.32,3.46,0,4.79
 							C417.75,483.61,419.89,483.61,421.21,482.29z"/>
 					</g>
 				</g>
 			</g>
 			<g>
-				<circle class="st0" cx="406.8" cy="491.92" r="9"/>
-				<circle class="st9" cx="406.8" cy="491.92" r="9"/>
+				<circle fill="#519CB7" cx="406.8" cy="491.92" r="9"/>
+				<circle fill="none" stroke="#8ACCDB" stroke-width="3" stroke-miterlimit="10" cx="406.8" cy="491.92" r="9"/>
 			</g>
 		</g>
 	</g>
 </g>
-<g id="shading" class="st11">
+<g id="shading" opacity="0.3">
 	
-		<image style="overflow:visible;" width="249" height="359" id="image_2_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAFnCAYAAABkVO8XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+		<image overflow="visible" width="249" height="359" id="image_2_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAFnCAYAAABkVO8XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LjE2
@@ -4769,9 +4752,9 @@ BvTIHf8uOqWhQduvIMAn0AmDzaFi2yUF8kUvJ6mpI+/9HwT42fpaSgrkS0teN5u8pORdSdf582XW
 lZQsZan55CUlS1z+LcAAHznHRRdLEnoAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 302.296 188.5017)">
 	</image>
 </g>
-<g id="shine" class="st12">
+<g id="shine" opacity="0.5">
 	
-		<image style="overflow:visible;" width="184" height="285" id="image_1_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAEdCAYAAAC/la0uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAI
+		<image overflow="visible" width="184" height="285" id="image_1_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAEdCAYAAAC/la0uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAI
 V2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
 LyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NzUzLCAyMDIxLzAyLzE1
@@ -5577,7 +5560,7 @@ i+1D3f7/Fw6B6xpbcrUAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 259 163)">
 </g>
 <g id="shield_and_viruses_1_">
 	
-		<image style="overflow:visible;" width="572" height="596" id="image" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjwAAAJUCAYAAAARqPytAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+		<image overflow="visible" width="572" height="596" id="image" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjwAAAJUCAYAAAARqPytAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDA2IDc5LjE2
