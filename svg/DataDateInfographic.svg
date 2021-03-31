@@ -1889,15 +1889,15 @@ w/jAxoPgfhgP42E8jA9sPAjuh/EwHsbD+MDG/w/dkM+Vdb7+nwAAAABJRU5ErkJggg==" transform=
 </g>
 <g id="_x7B__x7B_ta:middle_x7D__x7D__1_">
 	<g id="_x7B__x7B__x23_0_x7D__x7D_">
-		<text transform="matrix(1 0 0 1 137.5358 288.2274)" class="st0 st1 st2">18</text>
+		<text transform="matrix(1 0 0 1 84.5358 288.2274)" class="st0 st1 st2">{{#0}}</text>
 	</g>
 </g>
 <g id="_x7B__x7B_ta:middle_x7D__x7D_">
-	<g id="_x7B__x7B__x40_0_x7D__x7D_">
-		<text transform="matrix(1 0 0 1 162.5358 146.927)" class="st3 st4 st5">Apr</text>
+	<g id="_x7B__x7B__x40_0_x7D__x7D__1_">
+		<text transform="matrix(1 0 0 1 140.5358 146.927)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 </g>
 <g id="text">
-	<text transform="matrix(1 0 0 1 118.5049 32.2418)"><tspan x="0" y="0" class="st6 st7 st8">LAST UPDATE </tspan><tspan x="151.52" y="0" class="st6 st9 st8">*</tspan></text>
+	<text transform="matrix(1 0 0 1 118.5049 32.2418)"><tspan x="0" y="0" class="st6 st7 st8">LAST UPDATE </tspan><tspan x="151.5" y="0" class="st6 st9 st8">*</tspan></text>
 </g>
 </svg>
