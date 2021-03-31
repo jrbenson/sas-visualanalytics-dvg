@@ -4148,13 +4148,13 @@ szfUmXGlAAAAAElFTkSuQmCC">
 	</g>
 </g>
 <g id="_x7B__x7B_ta:middle_x7D__x7D__1_">
-	<g id="_x7B__x7B_DayImmune_x7D__x7D__3_">
-		<text transform="matrix(1 0 0 1 221 356.2427)" class="st2 st5 st6">{{DayImmune}}</text>
+	<g id="_x7B__x7B__x23_0_x7D__x7D_">
+		<text transform="matrix(1 0 0 1 343 356.2427)" class="st2 st5 st6">{{#0}}</text>
 	</g>
 </g>
 <g id="_x7B__x7B_ta:middle_x7D__x7D_">
-	<g id="_x7B__x7B_MonthImmune_x7D__x7D_">
-		<text transform="matrix(1 0 0 1 304 280.4775)" class="st1 st7 st8">{{MonthImmune}}</text>
+	<g id="_x7B__x7B__x40_0_x7D__x7D_">
+		<text transform="matrix(1 0 0 1 374 280.4775)" class="st1 st7 st8">{{@0}}</text>
 	</g>
 </g>
 <g id="covid_icon_1_">
