@@ -5202,7 +5202,7 @@ CoIgCIIgQhUEQRAEEaogCIIgiFAFQRAE4X9V/P8CDADcBG8WcKhA6QAAAABJRU5ErkJggg==" transf
 		<path id="bar_1_" class="st9" d="M657,867H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
 			C659,866.1,658.1,867,657,867z"/>
 		<g id="_x7B__x7B_ta:middle_x7D__x7D__1_">
-			<text id="_x7B__x7B_TillImmunity_x7C_c_x7D__x7D__2_" transform="matrix(1 0 0 1 416.7482 848.0001)" class="st15 st13 st16">{{#1|c}}</text>
+			<text id="_x7B__x7B_TillImmunity_x7C_c_x7D__x7D__2_" transform="matrix(1 0 0 1 416.7482 847.0001)" class="st15 st13 st16">{{#1|c}}</text>
 		</g>
 	</g>
 </g>
@@ -5712,7 +5712,7 @@ Z1qKXAAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 206 297)">
 		<path id="bar" class="st9" d="M657,515H361c-1.1,0-2-0.9-2-2v-71c0-1.1,0.9-2,2-2h296c1.1,0,2,0.9,2,2v71
 			C659,514.1,658.1,515,657,515z"/>
 		<g id="_x7B__x7B_ta:middle_x7D__x7D_">
-			<text id="_x7B__x7B__x3F_2_x7D__x7D_" transform="matrix(1 0 0 1 443.7484 496.0002)" class="st15 st13 st16">{{#0}}</text>
+			<text id="_x7B__x7B__x3F_2_x7D__x7D_" transform="matrix(1 0 0 1 443.7484 495.0002)" class="st15 st13 st16">{{?2}}</text>
 		</g>
 	</g>
 </g>
