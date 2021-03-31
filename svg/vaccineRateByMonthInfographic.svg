@@ -70,7 +70,7 @@
 	<text transform="matrix(1 0 0 1 52.6808 169.8782)"><tspan x="0" y="0" class="st3 st4 st5">100,000</tspan><tspan x="11.79" y="80" class="st3 st4 st5">80,000</tspan><tspan x="11.79" y="160" class="st3 st4 st5">60,000</tspan><tspan x="11.79" y="240" class="st3 st4 st5">40,000</tspan><tspan x="11.79" y="320" class="st3 st4 st5">20,000</tspan><tspan x="63.08" y="400" class="st3 st4 st5">0</tspan></text>
 </g>
 <g id="y_axis_label">
-	<text transform="matrix(1 0 0 1 7.6877 125.3781)" class="st0 st1 st2">Vaccinated</text>
+	<text transform="matrix(1 0 0 1 7.6877 100.3781)"><tspan x="0" y="0" class="st0 st1 st2">Vaccinated</tspan><tspan x="8.64" y="28.8" class="st0 st1 st2">(per 100k)</tspan></text>
 </g>
 <g id="_x7B__x7B_filter:Month_x3D_Dec_x7D__x7D_">
 	<text transform="matrix(1 0 0 1 1627.4126 720.3085)" class="st3 st4 st5">Dec</text>
