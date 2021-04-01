@@ -11978,7 +11978,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		<polygon class="st0" points="107.8,766.5 107.8,766.3 107.5,766.5 107.3,766.5 107.1,766.7 107.3,766.7 107.6,766.5 		"/>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Hawaii_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_HI_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 527.8124 832.0187)" style="overflow:visible;"/>
 	
@@ -11990,7 +11990,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="498" y="782" width="59.62" height="100.04" id="SVGID_1_">
 		<g class="st1">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__25_" x="501" y="786" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__49_" x="501" y="786" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st3">
@@ -12000,11 +12000,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__50_">
-		<text transform="matrix(1 0 0 1 560.0001 840.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 560.0001 840.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 560.0001 820.7197)" class="st7 st8 st6">HI</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Alaska_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_AK_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 176.8125 733.0187)" style="overflow:visible;"/>
 	
@@ -12016,7 +12016,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="147" y="683" width="59.62" height="100.04" id="SVGID_2_">
 		<g class="st9">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__49_" x="150" y="687" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__48_" x="150" y="687" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st10">
@@ -12026,11 +12026,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__49_">
-		<text transform="matrix(1 0 0 1 209.0001 741.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 209.0001 741.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 209.0001 721.7197)" class="st7 st8 st6">AK</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Arizona_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_AZ_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 375.8125 553.0187)" style="overflow:visible;"/>
 	
@@ -12042,7 +12042,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="346" y="503" width="59.62" height="100.04" id="SVGID_3_">
 		<g class="st11">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__48_" x="349" y="507" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__47_" x="349" y="507" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st12">
@@ -12052,11 +12052,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__48_">
-		<text transform="matrix(1 0 0 1 408.0001 561.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 408.0001 561.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 408.0001 541.7197)" class="st7 st8 st6">AZ</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_California_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_CA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 147.8125 451.0187)" style="overflow:visible;"/>
 	
@@ -12068,7 +12068,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="118" y="401" width="59.62" height="100.04" id="SVGID_4_">
 		<g class="st13">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__47_" x="121" y="405" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__46_" x="121" y="405" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st14">
@@ -12078,11 +12078,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__47_">
-		<text transform="matrix(1 0 0 1 180.0001 459.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 180.0001 459.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 180.0001 439.7197)" class="st7 st8 st6">CA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Utah_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_UT_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 379.8125 384.0187)" style="overflow:visible;"/>
 	
@@ -12094,7 +12094,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="350" y="334" width="59.62" height="100.04" id="SVGID_5_">
 		<g class="st15">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__46_" x="353" y="338" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__45_" x="353" y="338" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st16">
@@ -12104,11 +12104,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__46_">
-		<text transform="matrix(1 0 0 1 412.0001 392.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 412.0001 392.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 412.0001 372.7197)" class="st7 st8 st6">UT</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Nevada_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NV_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 235.8125 371.0187)" style="overflow:visible;"/>
 	
@@ -12120,7 +12120,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="206" y="321" width="59.62" height="100.04" id="SVGID_6_">
 		<g class="st17">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__45_" x="209" y="325" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__44_" x="209" y="325" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st18">
@@ -12130,11 +12130,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__45_">
-		<text transform="matrix(1 0 0 1 268.0001 379.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 268.0001 379.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 268.0001 359.7197)" class="st7 st8 st6">NV</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Oregon_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_OR_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 131.8125 211.0188)" style="overflow:visible;"/>
 	
@@ -12146,7 +12146,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="102" y="161" width="59.62" height="100.04" id="SVGID_7_">
 		<g class="st19">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__44_" x="105" y="165" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__43_" x="105" y="165" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st20">
@@ -12156,11 +12156,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__44_">
-		<text transform="matrix(1 0 0 1 164.0001 219.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 164.0001 219.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 164.0001 199.7197)" class="st7 st8 st6">OR</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Washington_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_WA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 138.8125 73.0187)" style="overflow:visible;"/>
 	
@@ -12172,7 +12172,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="109" y="23" width="59.62" height="100.04" id="SVGID_8_">
 		<g class="st21">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__43_" x="112" y="27" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__42_" x="112" y="27" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st22">
@@ -12182,11 +12182,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__43_">
-		<text transform="matrix(1 0 0 1 171.0001 81.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 171.0001 81.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 171.0001 61.7197)" class="st7 st8 st6">WA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Idaho_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_ID_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 306.8125 189.0188)" style="overflow:visible;"/>
 	
@@ -12198,7 +12198,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="277" y="139" width="59.62" height="100.04" id="SVGID_9_">
 		<g class="st23">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__42_" x="280" y="143" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__41_" x="280" y="143" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st24">
@@ -12208,11 +12208,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__42_">
-		<text transform="matrix(1 0 0 1 339.0001 197.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 339.0001 197.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 339.0001 177.7197)" class="st7 st8 st6">ID</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Montana_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MT_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 436.8125 92.0187)" style="overflow:visible;"/>
 	
@@ -12224,7 +12224,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="407" y="42" width="59.62" height="100.04" id="SVGID_10_">
 		<g class="st25">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__41_" x="410" y="46" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__40_" x="410" y="46" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st26">
@@ -12234,11 +12234,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__41_">
-		<text transform="matrix(1 0 0 1 469.0001 100.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 469.0001 100.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 469.0001 80.7197)" class="st7 st8 st6">MT</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Wyoming_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_WY_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 496.8125 239.0188)" style="overflow:visible;"/>
 	
@@ -12250,7 +12250,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="467" y="189" width="59.62" height="100.04" id="SVGID_11_">
 		<g class="st27">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__40_" x="470" y="193" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__39_" x="470" y="193" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st28">
@@ -12260,11 +12260,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__40_">
-		<text transform="matrix(1 0 0 1 529.0001 247.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 529.0001 247.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 529.0001 227.7197)" class="st7 st8 st6">WY</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Colorado_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_CO_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 548.8124 386.0187)" style="overflow:visible;"/>
 	
@@ -12276,7 +12276,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="519" y="336" width="59.62" height="100.04" id="SVGID_12_">
 		<g class="st29">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__39_" x="522" y="340" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__38_" x="522" y="340" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st30">
@@ -12286,11 +12286,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__39_">
-		<text transform="matrix(1 0 0 1 581.0001 394.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 581.0001 394.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 581.0001 374.7197)" class="st7 st8 st6">CO</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_New_Mexico_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NM_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 534.8124 546.0187)" style="overflow:visible;"/>
 	
@@ -12302,7 +12302,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="505" y="496" width="59.62" height="100.04" id="SVGID_13_">
 		<g class="st31">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__38_" x="508" y="500" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__37_" x="508" y="500" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st32">
@@ -12312,11 +12312,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__38_">
-		<text transform="matrix(1 0 0 1 567.0001 554.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 567.0001 554.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 567.0001 534.7197)" class="st7 st8 st6">NM</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Texas_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_TX_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 719.8124 646.0187)" style="overflow:visible;"/>
 	
@@ -12328,7 +12328,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="690" y="596" width="59.62" height="100.04" id="SVGID_14_">
 		<g class="st33">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__37_" x="693" y="600" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__36_" x="693" y="600" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st34">
@@ -12338,11 +12338,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__37_">
-		<text transform="matrix(1 0 0 1 752.0001 654.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 752.0001 654.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 752.0001 634.7197)" class="st7 st8 st6">TX</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Oklahoma_x7D__x7D_">
+<g id="_x7B__x7B_filter:State_x3D_OK_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 775.8124 513.0187)" style="overflow:visible;"/>
 	
@@ -12354,7 +12354,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="746" y="463" width="59.62" height="100.04" id="SVGID_15_">
 		<g class="st35">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__36_" x="749" y="467" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__35_" x="749" y="467" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st36">
@@ -12364,11 +12364,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__36_">
-		<text transform="matrix(1 0 0 1 808.0001 521.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 808.0001 521.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 808.0001 501.7197)" class="st7 st8 st6">OK</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Kansas_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_KS_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 745.8124 409.0187)" style="overflow:visible;"/>
 	
@@ -12380,7 +12380,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="716" y="359" width="59.62" height="100.04" id="SVGID_16_">
 		<g class="st37">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__35_" x="719" y="363" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__34_" x="719" y="363" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st38">
@@ -12390,11 +12390,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__35_">
-		<text transform="matrix(1 0 0 1 778.0001 417.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 778.0001 417.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 778.0001 397.7197)" class="st7 st8 st6">KS</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Nebraska_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NE_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 714.8124 299.0187)" style="overflow:visible;"/>
 	
@@ -12406,7 +12406,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="685" y="249" width="59.62" height="100.04" id="SVGID_17_">
 		<g class="st39">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__34_" x="688" y="253" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__33_" x="688" y="253" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st40">
@@ -12416,11 +12416,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__34_">
-		<text transform="matrix(1 0 0 1 747.0001 307.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 747.0001 307.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 747.0001 287.7197)" class="st7 st8 st6">NE</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_South_Dakota_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_SD_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 694.8124 185.0188)" style="overflow:visible;"/>
 	
@@ -12432,7 +12432,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="665" y="135" width="59.62" height="100.04" id="SVGID_18_">
 		<g class="st41">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__33_" x="668" y="139" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__32_" x="668" y="139" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st42">
@@ -12442,11 +12442,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__33_">
-		<text transform="matrix(1 0 0 1 727.0001 193.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 727.0001 193.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 727.0001 173.7197)" class="st7 st8 st6">SD</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_North_Dakota_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_ND_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 694.8124 71.0187)" style="overflow:visible;"/>
 	
@@ -12458,7 +12458,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="665" y="21" width="59.62" height="100.04" id="SVGID_19_">
 		<g class="st43">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__32_" x="668" y="25" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__31_" x="668" y="25" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st44">
@@ -12468,11 +12468,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__32_">
-		<text transform="matrix(1 0 0 1 727.0001 81.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 727.0001 81.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 727.0001 61.7197)" class="st7 st8 st6">ND</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Minnesota_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MN_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 856.8124 139.0188)" style="overflow:visible;"/>
 	
@@ -12484,7 +12484,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="827" y="89" width="59.62" height="100.04" id="SVGID_20_">
 		<g class="st45">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__31_" x="830" y="93" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__30_" x="830" y="93" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st46">
@@ -12494,11 +12494,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__31_">
-		<text transform="matrix(1 0 0 1 889.0001 149.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 889.0001 149.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 889.0001 129.7197)" class="st7 st8 st6">MN</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Iowa_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_IA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 878.8124 277.0187)" style="overflow:visible;"/>
 	
@@ -12510,7 +12510,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="849" y="227" width="59.62" height="100.04" id="SVGID_21_">
 		<g class="st47">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__30_" x="852" y="231" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__29_" x="852" y="231" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st48">
@@ -12520,11 +12520,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__30_">
-		<text transform="matrix(1 0 0 1 911.0001 285.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 911.0001 285.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 911.0001 265.7197)" class="st7 st8 st6">IA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Louisiana_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_LA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 910.8124 664.0187)" style="overflow:visible;"/>
 	
@@ -12536,7 +12536,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="881" y="614" width="59.62" height="100.04" id="SVGID_22_">
 		<g class="st49">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__26_" x="884" y="618" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__28_" x="884" y="618" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st50">
@@ -12546,11 +12546,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__29_">
-		<text transform="matrix(1 0 0 1 941.0001 695.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 941.0001 695.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 941.0001 675.7197)" class="st7 st8 st6">LA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Mississippi_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MS_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 984.8124 633.0187)" style="overflow:visible;"/>
 	
@@ -12562,7 +12562,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="955" y="583" width="59.62" height="100.04" id="SVGID_23_">
 		<g class="st51">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__28_" x="958" y="587" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__27_" x="958" y="587" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st52">
@@ -12572,11 +12572,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__28_">
-		<text transform="matrix(1 0 0 1 1017.0001 652.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1017.0001 652.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1017.0001 632.7197)" class="st7 st8 st6">MS</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Alabama_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_AL_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1068.8125 593.0187)" style="overflow:visible;"/>
 	
@@ -12588,7 +12588,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1039" y="543" width="59.62" height="100.04" id="SVGID_24_">
 		<g class="st53">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__24_" x="1042" y="547" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__26_" x="1042" y="547" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st54">
@@ -12598,11 +12598,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__27_">
-		<text transform="matrix(1 0 0 1 1101.0001 590.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1101.0001 590.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1101.0001 570.7197)" class="st7 st8 st6">AL</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Arkansas_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_AR_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 904.8124 543.0187)" style="overflow:visible;"/>
 	
@@ -12614,7 +12614,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="875" y="493" width="59.62" height="100.04" id="SVGID_25_">
 		<g class="st55">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__27_" x="878" y="497" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__25_" x="878" y="497" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st56">
@@ -12624,11 +12624,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__26_">
-		<text transform="matrix(1 0 0 1 937.0001 551.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 937.0001 551.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 937.0001 531.7197)" class="st7 st8 st6">AR</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Missouri_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MO_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 908.8124 427.0187)" style="overflow:visible;"/>
 	
@@ -12640,7 +12640,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="879" y="377" width="59.62" height="100.04" id="SVGID_26_">
 		<g class="st57">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__29_" x="882" y="381" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__24_" x="882" y="381" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st58">
@@ -12650,11 +12650,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__25_">
-		<text transform="matrix(1 0 0 1 941.0001 435.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 941.0001 435.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 941.0001 415.7197)" class="st7 st8 st6">MO</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Illinois_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_IL_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 987.8124 355.0187)" style="overflow:visible;"/>
 	
@@ -12666,7 +12666,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="958" y="305" width="59.62" height="100.04" id="SVGID_27_">
 		<g class="st59">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__12_" x="961" y="309" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__23_" x="961" y="309" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st60">
@@ -12676,11 +12676,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__24_">
-		<text transform="matrix(1 0 0 1 1016.0001 332.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1016.0001 332.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1016.0001 312.7197)" class="st7 st8 st6">IL</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Tennessee_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_TN_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1081.8125 500.0187)" style="overflow:visible;"/>
 	
@@ -12692,7 +12692,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1052" y="450" width="59.62" height="100.04" id="SVGID_28_">
 		<g class="st61">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__23_" x="1055" y="454" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__22_" x="1055" y="454" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st62">
@@ -12702,11 +12702,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__23_">
-		<text transform="matrix(1 0 0 1 1114.0001 514.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1114.0001 514.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1114.0001 494.7197)" class="st7 st8 st6">TN</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Kentucky_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_KY_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1127.8125 430.0187)" style="overflow:visible;"/>
 	
@@ -12718,7 +12718,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1098" y="380" width="59.62" height="100.04" id="SVGID_29_">
 		<g class="st63">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__22_" x="1101" y="384" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__21_" x="1101" y="384" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st64">
@@ -12728,11 +12728,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__22_">
-		<text transform="matrix(1 0 0 1 1160.0001 443.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1160.0001 443.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1160.0001 423.7197)" class="st7 st8 st6">KY</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Indiana_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_IN_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1086.8125 363.0187)" style="overflow:visible;"/>
 	
@@ -12744,7 +12744,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1057" y="313" width="59.62" height="100.04" id="SVGID_30_">
 		<g class="st65">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__21_" x="1060" y="317" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__20_" x="1060" y="317" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st66">
@@ -12754,11 +12754,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__21_">
-		<text transform="matrix(1 0 0 1 1119.0001 361.3999)" class="st4 st5 st6">{{}}</text>
+		<text transform="matrix(1 0 0 1 1119.0001 361.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1119.0001 341.7197)" class="st7 st8 st6">IN</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Wisconsin_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_WI_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 980.8124 185.0188)" style="overflow:visible;"/>
 	
@@ -12770,7 +12770,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="951" y="135" width="59.62" height="100.04" id="SVGID_31_">
 		<g class="st67">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__20_" x="954" y="139" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__19_" x="954" y="139" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st68">
@@ -12780,11 +12780,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__20_">
-		<text transform="matrix(1 0 0 1 1013.0001 191.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1013.0001 191.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1013.0001 171.7197)" class="st7 st8 st6">WI</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Michigan_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MI_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1140.8125 232.0188)" style="overflow:visible;"/>
 	
@@ -12796,7 +12796,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1111" y="182" width="59.62" height="100.04" id="SVGID_32_">
 		<g class="st69">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__19_" x="1114" y="186" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__18_" x="1114" y="186" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st70">
@@ -12806,11 +12806,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__19_">
-		<text transform="matrix(1 0 0 1 1173.0001 226.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1173.0001 226.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1173.0001 206.7197)" class="st7 st8 st6">MI</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Ohio_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_OH_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1180.8125 330.0187)" style="overflow:visible;"/>
 	
@@ -12822,7 +12822,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1151" y="280" width="59.62" height="100.04" id="SVGID_33_">
 		<g class="st71">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__18_" x="1154" y="284" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__17_" x="1154" y="284" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st72">
@@ -12832,11 +12832,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__18_">
-		<text transform="matrix(1 0 0 1 1213.0001 340.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1213.0001 340.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1213.0001 320.7197)" class="st7 st8 st6">OH</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_West_Virginia_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_WV_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1223.8125 408.0187)" style="overflow:visible;"/>
 	
@@ -12848,7 +12848,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1194" y="358" width="59.62" height="100.04" id="SVGID_34_">
 		<g class="st73">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__17_" x="1197" y="362" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__16_" x="1197" y="362" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st74">
@@ -12858,11 +12858,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__17_">
-		<text transform="matrix(1 0 0 1 1254.0001 392.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1254.0001 392.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1254.0001 372.7197)" class="st7 st8 st6">WV</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Pennsylvania_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_PA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1318.8125 328.0187)" style="overflow:visible;"/>
 	
@@ -12874,7 +12874,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1289" y="278" width="59.62" height="100.04" id="SVGID_35_">
 		<g class="st75">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__16_" x="1292" y="282" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__15_" x="1292" y="282" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st76">
@@ -12884,11 +12884,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__16_">
-		<text transform="matrix(1 0 0 1 1351.0001 343.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1351.0001 343.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1351.0001 323.7197)" class="st7 st8 st6">PA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_New_York_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NY_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1365.8125 243.0188)" style="overflow:visible;"/>
 	
@@ -12900,7 +12900,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1336" y="193" width="59.62" height="100.04" id="SVGID_36_">
 		<g class="st77">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__15_" x="1339" y="197" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__14_" x="1339" y="197" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st78">
@@ -12910,11 +12910,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__15_">
-		<text transform="matrix(1 0 0 1 1398.0001 258.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1398.0001 258.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1398.0001 238.7197)" class="st7 st8 st6">NY</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Vermont_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_VT_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" id="XMLID_1_" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1391.8125 146.0188)" style="overflow:visible;"/>
 	
@@ -12926,7 +12926,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1362" y="96" width="59.62" height="100.04" id="SVGID_37_">
 		<g class="st79">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__10_" x="1365" y="100" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__13_" x="1365" y="100" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st80">
@@ -12936,7 +12936,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__14_">
-		<text transform="matrix(1 0 0 1 1424.0001 161.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1424.0001 161.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1424.0001 141.7197)" class="st7 st8 st6">VT</text>
 	<g>
@@ -12948,7 +12948,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_New_Hampshire_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NH_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1477.8125 91.0187)" style="overflow:visible;"/>
 	
@@ -12960,7 +12960,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1448" y="41" width="59.62" height="100.04" id="SVGID_38_">
 		<g class="st83">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__13_" x="1451" y="45" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__12_" x="1451" y="45" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st84">
@@ -12970,7 +12970,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__13_">
-		<text transform="matrix(1 0 0 1 1510.0001 106.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1510.0001 106.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1510.0001 86.7197)" class="st7 st8 st6">NH</text>
 	<g>
@@ -12982,7 +12982,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Maine_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_ME_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1568.8125 150.0188)" style="overflow:visible;"/>
 	
@@ -12994,7 +12994,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1539" y="100" width="59.62" height="100.04" id="SVGID_39_">
 		<g class="st85">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__14_" x="1542" y="104" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__11_" x="1542" y="104" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st86">
@@ -13004,11 +13004,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__12_">
-		<text transform="matrix(1 0 0 1 1601.0001 165.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1601.0001 165.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1601.0001 145.7197)" class="st7 st8 st6">ME</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Massachusetts_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1481.8125 265.0187)" style="overflow:visible;"/>
 	
@@ -13020,7 +13020,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1452" y="215" width="59.62" height="100.04" id="SVGID_40_">
 		<g class="st87">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__11_" x="1455" y="219" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__10_" x="1455" y="219" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st88">
@@ -13030,11 +13030,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__11_">
-		<text transform="matrix(1 0 0 1 1514.0001 280.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1514.0001 280.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1514.0001 260.7197)" class="st7 st8 st6">MA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Rhode_Island_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_RI_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1587.8125 281.0187)" style="overflow:visible;"/>
 	
@@ -13046,7 +13046,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1558" y="231" width="59.62" height="100.04" id="SVGID_41_">
 		<g class="st89">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D_" x="1561" y="235" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__9_" x="1561" y="235" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st90">
@@ -13056,7 +13056,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__10_">
-		<text transform="matrix(1 0 0 1 1621.0001 294.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1621.0001 294.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1621.0001 274.7197)" class="st7 st8 st6">RI</text>
 	<g>
@@ -13068,7 +13068,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Connecticut_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_CT_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1617.8125 366.0187)" style="overflow:visible;"/>
 	
@@ -13080,7 +13080,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1588" y="316" width="59.62" height="100.04" id="SVGID_42_">
 		<g class="st91">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__9_" x="1591" y="320" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__8_" x="1591" y="320" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st92">
@@ -13090,7 +13090,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__9_">
-		<text transform="matrix(1 0 0 1 1651.0001 379.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1651.0001 379.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1651.0001 359.7197)" class="st7 st8 st6">CT</text>
 	<g>
@@ -13103,7 +13103,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_New_Jersey_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NJ_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1550.8125 434.0187)" style="overflow:visible;"/>
 	
@@ -13115,7 +13115,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1521" y="384" width="59.62" height="100.04" id="SVGID_43_">
 		<g class="st93">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__8_" x="1524" y="388" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__7_" x="1524" y="388" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st94">
@@ -13125,7 +13125,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__8_">
-		<text transform="matrix(1 0 0 1 1584.0001 447.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1584.0001 447.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1584.0001 427.7197)" class="st7 st8 st6">NJ</text>
 	<g>
@@ -13137,7 +13137,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Maryland_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_MD_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1447.8125 434.0187)" style="overflow:visible;"/>
 	
@@ -13149,7 +13149,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1418" y="384" width="59.62" height="100.04" id="SVGID_44_">
 		<g class="st95">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__7_" x="1421" y="388" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__6_" x="1421" y="388" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st96">
@@ -13159,7 +13159,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__7_">
-		<text transform="matrix(1 0 0 1 1481.0001 447.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1481.0001 447.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1481.0001 427.7197)" class="st7 st8 st6">MD</text>
 	<g>
@@ -13171,7 +13171,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Delaware_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_DE_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1417.8125 520.0187)" style="overflow:visible;"/>
 	
@@ -13183,7 +13183,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1388" y="470" width="59.62" height="100.04" id="SVGID_45_">
 		<g class="st97">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__6_" x="1391" y="474" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__5_" x="1391" y="474" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st98">
@@ -13193,7 +13193,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__6_">
-		<text transform="matrix(1 0 0 1 1451.0001 533.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1451.0001 533.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1451.0001 513.7197)" class="st7 st8 st6">DE</text>
 	<g>
@@ -13206,7 +13206,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Virginia_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_VA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1307.8125 442.0187)" style="overflow:visible;"/>
 	
@@ -13218,7 +13218,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1278" y="392" width="59.62" height="100.04" id="SVGID_46_">
 		<g class="st99">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__5_" x="1281" y="396" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__4_" x="1281" y="396" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st100">
@@ -13228,11 +13228,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__5_">
-		<text transform="matrix(1 0 0 1 1341.0001 455.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1341.0001 455.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1341.0001 435.7197)" class="st7 st8 st6">VA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_North_Carolina_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_NC_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1277.8125 512.0187)" style="overflow:visible;"/>
 	
@@ -13244,7 +13244,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1248" y="462" width="59.62" height="100.04" id="SVGID_47_">
 		<g class="st101">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__4_" x="1251" y="466" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__3_" x="1251" y="466" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st102">
@@ -13254,11 +13254,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__4_">
-		<text transform="matrix(1 0 0 1 1311.0001 529.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1311.0001 529.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1311.0001 509.7197)" class="st7 st8 st6">NC</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_South_Carolina_x7D__x7D__1_">
+<g id="_x7B__x7B_filter:State_x3D_SC_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1223.8125 560.0187)" style="overflow:visible;"/>
 	
@@ -13270,7 +13270,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1194" y="510" width="59.62" height="100.04" id="SVGID_48_">
 		<g class="st103">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__3_" x="1197" y="514" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__2_" x="1197" y="514" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st104">
@@ -13280,11 +13280,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__3_">
-		<text transform="matrix(1 0 0 1 1254.0001 592.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text transform="matrix(1 0 0 1 1254.0001 592.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1254.0001 572.7197)" class="st7 st8 st6">SC</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Georgia_x7D__x7D_">
+<g id="_x7B__x7B_filter:State_x3D_GA_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1165.8125 629.0187)" style="overflow:visible;"/>
 	
@@ -13296,7 +13296,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1136" y="579" width="59.62" height="100.04" id="SVGID_49_">
 		<g class="st105">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__1_" x="1139" y="583" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D__1_" x="1139" y="583" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st106">
@@ -13306,11 +13306,11 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__2_">
-		<text transform="matrix(1 0 0 1 1198.0001 644.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text id="_x7B__x7B__x23_2_x7C_c_x7D__x7D__1_" transform="matrix(1 0 0 1 1198.0001 644.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1198.0001 624.7197)" class="st7 st8 st6">GA</text>
 </g>
-<g id="_x7B__x7B_filter:State_x3D_Florida_x7D__x7D_">
+<g id="_x7B__x7B_filter:State_x3D_FL_x7D__x7D_">
 	
 		<use xlink:href="#mapPersonIconShadow"  width="59.62" height="100.04" x="-29.81" y="-50.02" transform="matrix(1 0 0 -1 1202.8125 724.0187)" style="overflow:visible;"/>
 	
@@ -13322,7 +13322,7 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 	</defs>
 	<mask maskUnits="userSpaceOnUse" x="1173" y="674" width="59.62" height="100.04" id="SVGID_50_">
 		<g class="st107">
-			<rect id="_x7B__x7B_sy:FullyVaccinedNumeric_x2C_o:0.5to1_x7D__x7D__2_" x="1176" y="678" class="st2" width="56" height="84"/>
+			<rect id="_x7B__x7B_sy:_x23_2_x2C_o:0.5to1_x7D__x7D_" x="1176" y="678" class="st2" width="56" height="84"/>
 		</g>
 	</mask>
 	<g class="st108">
@@ -13332,16 +13332,15 @@ SUVORK5CYII=" transform="matrix(1 0 0 1 -26 -25.6001)">
 		</g>
 	</g>
 	<g id="_x7B__x7B_ta:start_x7D__x7D__1_">
-		<text id="_x7B__x7B_FullyVaccinedPercent_x7D__x7D__1_" transform="matrix(1 0 0 1 1236.0001 737.3999)" class="st4 st5 st6">{{FullyVaccinedPercent}}</text>
+		<text id="_x7B__x7B__x23_2_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1236.0001 737.3999)" class="st4 st5 st6">{{#2|c}}</text>
 	</g>
 	<text transform="matrix(1 0 0 1 1236.0001 717.7197)" class="st7 st8 st6">FL</text>
 </g>
 <g id="_x7B__x7B_ta:start_x7D__x7D_">
-	<text id="_x7B__x7B_CurrentPopulation_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1527 805.8945)" class="st7 st5 st109">{{CurrentPopulation|c}}</text>
+	<text id="_x7B__x7B__x23_1_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1527 805.8945)" class="st7 st5 st109">{{#1|c}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D_">
-	
-		<text id="_x7B__x7B_SecondVaccineDoseAdministered_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 387.4351 805.8945)" class="st4 st5 st109">{{SecondVaccineDoseAdministered|c}}</text>
+	<text id="_x7B__x7B__x23_0_x7C_c_x7D__x7D_" transform="matrix(1 0 0 1 1258.4351 805.8945)" class="st4 st5 st109">{{#0|c}}</text>
 </g>
 <g id="static_text">
 	<text transform="matrix(1 0 0 1 1284.1947 869.895)" class="st110 st111 st112">FULLY VACCINATED</text>
