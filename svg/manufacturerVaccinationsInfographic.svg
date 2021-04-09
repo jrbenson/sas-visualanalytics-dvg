@@ -6,7 +6,6 @@
 	.st0{fill:#FFFFFF;}
 	.st1{font-family:'Roboto-Black';}
 	.st2{font-size:44px;}
-	.st3{letter-spacing:-1;}
 </style>
 <g id="johnson_and_johnson">
 	
@@ -20564,7 +20563,7 @@ XO8AAAAASUVORK5CYII=" transform="matrix(0.567 0 0 0.567 65.453 182.0285)">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D_">
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 91.709 317.3936)"><tspan x="0" y="0" class="st0 st1 st2 st3">{</tspan><tspan x="12.69" y="0" class="st0 st1 st2 st3">{</tspan><tspan x="25.79" y="0" class="st0 st1 st2">#</tspan><tspan x="51.07" y="0" class="st0 st1 st2">0</tspan><tspan x="75.96" y="0" class="st0 st1 st2">|</tspan><tspan x="86.36" y="0" class="st0 st1 st2 st3">c</tspan><tspan x="107.95" y="0" class="st0 st1 st2 st3">}</tspan><tspan x="120.63" y="0" class="st0 st1 st2">}</tspan></text>
+				<text transform="matrix(1 0 0 1 88.0239 317.3936)" class="st0 st1 st2">{{#0|c}}</text>
 			</g>
 		</g>
 	</g>
