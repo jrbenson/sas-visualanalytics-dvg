@@ -6,8 +6,9 @@
 	.st0{fill:#FFFFFF;}
 	.st1{font-family:'Roboto-Black';}
 	.st2{font-size:44px;}
+	.st3{letter-spacing:-1;}
 </style>
-<g id="_x7B__x7B_filter:_x40_0_x3D_JohnsonAndJohnson_x7D__x7D_">
+<g id="johnson_and_johnson">
 	
 		<image style="overflow:visible;" width="450" height="750" id="vial" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAALuCAYAAAA9nhaVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
@@ -6944,13 +6945,13 @@ AsX/L8AAe7P5u+ivHY4AAAAASUVORK5CYII=" transform="matrix(0.567 0 0 0.567 525.453 
 	</image>
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__2_">
 		<g>
-			<g>
-				<text transform="matrix(1 0 0 1 548.0239 317.3936)" class="st0 st1 st2">{{#0|c}}</text>
+			<g id="_x7B__x7B__x23_2_x7C_c_x7D__x7D__9_">
+				<text transform="matrix(1 0 0 1 548.0239 317.3936)" class="st0 st1 st2">{{#2|c}}</text>
 			</g>
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:_x40_0_x3D_Pfizer_x7D__x7D_">
+<g id="pfizer">
 	
 		<image style="overflow:visible;" width="450" height="750" id="vial_2_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAALuCAYAAAA9nhaVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
@@ -13848,13 +13849,13 @@ SUVORK5CYII=" transform="matrix(0.567 0 0 0.567 295.453 182.0285)">
 	</image>
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__1_">
 		<g>
-			<g>
-				<text transform="matrix(1 0 0 1 318.0239 317.3936)" class="st0 st1 st2">{{#0|c}}</text>
+			<g id="_x7B__x7B__x23_1_x7C_c_x7D__x7D__9_">
+				<text transform="matrix(1 0 0 1 318.0239 317.3936)" class="st0 st1 st2">{{#1|c}}</text>
 			</g>
 		</g>
 	</g>
 </g>
-<g id="_x7B__x7B_filter:_x40_0_x3D_Moderna_x7D__x7D_">
+<g id="moderna">
 	
 		<image style="overflow:visible;" width="450" height="750" id="vial_1_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAALuCAYAAAA9nhaVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
@@ -20563,7 +20564,7 @@ XO8AAAAASUVORK5CYII=" transform="matrix(0.567 0 0 0.567 65.453 182.0285)">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D_">
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 88.0239 317.3936)" class="st0 st1 st2">{{#0|c}}</text>
+				<text transform="matrix(1 0 0 1 91.709 317.3936)"><tspan x="0" y="0" class="st0 st1 st2 st3">{</tspan><tspan x="12.69" y="0" class="st0 st1 st2 st3">{</tspan><tspan x="25.79" y="0" class="st0 st1 st2">#</tspan><tspan x="51.07" y="0" class="st0 st1 st2">0</tspan><tspan x="75.96" y="0" class="st0 st1 st2">|</tspan><tspan x="86.36" y="0" class="st0 st1 st2 st3">c</tspan><tspan x="107.95" y="0" class="st0 st1 st2 st3">}</tspan><tspan x="120.63" y="0" class="st0 st1 st2">}</tspan></text>
 			</g>
 		</g>
 	</g>
