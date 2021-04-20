@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1760 780" style="enable-background:new 0 0 1760 780;" xml:space="preserve">
+	 viewBox="0 0 1780 780" style="enable-background:new 0 0 1780 780;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#1B2C30;}
 	.st1{font-family:'Roboto-Bold';}
-	.st2{font-size:26px;}
+	.st2{font-size:24px;}
 	.st3{fill:#36545B;}
 	.st4{font-family:'Roboto-Regular';}
-	.st5{font-size:24px;}
+	.st5{font-size:21px;}
 	.st6{filter:url(#Adobe_OpacityMaskFilter);}
 	.st7{fill:#FFFFFF;}
 	.st8{mask:url(#liquid_12_);}
@@ -64,17 +64,17 @@
 	.st58{fill:none;stroke:#1A282D;stroke-miterlimit:10;stroke-dasharray:2;}
 </style>
 <g id="x_axis_label">
-	<text transform="matrix(1 0 0 1 903.9045 768.1663)" class="st0 st1 st2">Month</text>
+	<text transform="matrix(1 0 0 1 926.804 768.1663)" class="st0 st1 st2">Month</text>
 </g>
 <g id="y_axis_tick_labels">
-	<text transform="matrix(1 0 0 1 51.9845 169.8782)"><tspan x="0" y="0" class="st3 st4 st5">100,000</tspan><tspan x="13.48" y="80" class="st3 st4 st5">80,000</tspan><tspan x="13.48" y="160" class="st3 st4 st5">60,000</tspan><tspan x="13.48" y="240" class="st3 st4 st5">40,000</tspan><tspan x="13.48" y="320" class="st3 st4 st5">20,000</tspan><tspan x="72.09" y="400" class="st3 st4 st5">0</tspan></text>
+	<text transform="matrix(1 0 0 1 122.1788 169.8782)"><tspan x="0" y="0" class="st3 st4 st5">100</tspan><tspan x="11.79" y="80" class="st3 st4 st5">80</tspan><tspan x="11.79" y="160" class="st3 st4 st5">60</tspan><tspan x="11.79" y="240" class="st3 st4 st5">40</tspan><tspan x="11.79" y="320" class="st3 st4 st5">20</tspan><tspan x="23.58" y="400" class="st3 st4 st5">0</tspan></text>
 </g>
 <g id="y_axis_label">
-	<text transform="matrix(1 0 0 1 7.6155 127.3781)" class="st0 st1 st2">Vaccinated</text>
+	<text transform="matrix(1 0 0 1 13.9924 129.3781)" class="st0 st1 st2">Vaccinated %</text>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Dec_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__11_">
-		<text transform="matrix(1 0 0 1 1625.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 1648.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_13_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -1015,16 +1015,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1593 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1613 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="1630" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="1650" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1630" y="162" width="56" height="400" id="liquid_12_">
+	<mask maskUnits="userSpaceOnUse" x="1650" y="162" width="56" height="400" id="liquid_12_">
 		<g class="st6">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__11_" x="1625" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__11_" x="1645" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_11_" class="st8">
@@ -1316,18 +1316,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1630 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1650 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="1630" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="1650" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1630" y="161" width="57" height="414" id="plunger_12_">
+	<mask maskUnits="userSpaceOnUse" x="1650" y="161" width="57" height="414" id="plunger_12_">
 		<g class="st9">
-			<rect x="1626" y="146" class="st7" width="64" height="430"/>
+			<rect x="1646" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_11_" class="st10">
@@ -1584,7 +1584,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1630 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1650 161)">
 			</image>
 		</g>
 	</g>
@@ -1624,13 +1624,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1627 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1647 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Nov_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__10_">
-		<text transform="matrix(1 0 0 1 1495.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 1518.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_12_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -2571,16 +2571,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1463 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1483 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="1500" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="1520" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1500" y="162" width="56" height="400" id="liquid_13_">
+	<mask maskUnits="userSpaceOnUse" x="1520" y="162" width="56" height="400" id="liquid_13_">
 		<g class="st12">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__10_" x="1495" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__10_" x="1515" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_10_" class="st13">
@@ -2872,18 +2872,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1500 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1520 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_3_" filterUnits="userSpaceOnUse" x="1500" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_3_" filterUnits="userSpaceOnUse" x="1520" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1500" y="161" width="57" height="414" id="plunger_13_">
+	<mask maskUnits="userSpaceOnUse" x="1520" y="161" width="57" height="414" id="plunger_13_">
 		<g class="st14">
-			<rect x="1496" y="146" class="st7" width="64" height="430"/>
+			<rect x="1516" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_10_" class="st15">
@@ -3140,7 +3140,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1500 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1520 161)">
 			</image>
 		</g>
 	</g>
@@ -3180,13 +3180,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1497 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1517 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Oct_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__9_">
-		<text transform="matrix(1 0 0 1 1365.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 1388.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_11_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -4127,16 +4127,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1333 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1353 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="1370" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="1390" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1370" y="162" width="56" height="400" id="liquid_14_">
+	<mask maskUnits="userSpaceOnUse" x="1390" y="162" width="56" height="400" id="liquid_14_">
 		<g class="st16">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__9_" x="1365" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__9_" x="1385" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_9_" class="st17">
@@ -4428,18 +4428,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1370 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1390 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_5_" filterUnits="userSpaceOnUse" x="1370" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_5_" filterUnits="userSpaceOnUse" x="1390" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1370" y="161" width="57" height="414" id="plunger_14_">
+	<mask maskUnits="userSpaceOnUse" x="1390" y="161" width="57" height="414" id="plunger_14_">
 		<g class="st18">
-			<rect x="1366" y="146" class="st7" width="64" height="430"/>
+			<rect x="1386" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_9_" class="st19">
@@ -4696,7 +4696,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1370 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1390 161)">
 			</image>
 		</g>
 	</g>
@@ -4736,13 +4736,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1367 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1387 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Sep_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__8_">
-		<text transform="matrix(1 0 0 1 1235.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 1258.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_10_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -5683,16 +5683,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1203 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1223 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_6_" filterUnits="userSpaceOnUse" x="1240" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_6_" filterUnits="userSpaceOnUse" x="1260" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1240" y="162" width="56" height="400" id="liquid_15_">
+	<mask maskUnits="userSpaceOnUse" x="1260" y="162" width="56" height="400" id="liquid_15_">
 		<g class="st20">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__8_" x="1235" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__8_" x="1255" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_8_" class="st21">
@@ -5984,18 +5984,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1240 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1260 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_7_" filterUnits="userSpaceOnUse" x="1240" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_7_" filterUnits="userSpaceOnUse" x="1260" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1240" y="161" width="57" height="414" id="plunger_15_">
+	<mask maskUnits="userSpaceOnUse" x="1260" y="161" width="57" height="414" id="plunger_15_">
 		<g class="st22">
-			<rect x="1236" y="146" class="st7" width="64" height="430"/>
+			<rect x="1256" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_8_" class="st23">
@@ -6252,7 +6252,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1240 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1260 161)">
 			</image>
 		</g>
 	</g>
@@ -6292,13 +6292,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1237 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1257 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Aug_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__7_">
-		<text transform="matrix(1 0 0 1 1105.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 1128.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_9_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -7239,16 +7239,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1073 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1093 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_8_" filterUnits="userSpaceOnUse" x="1110" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_8_" filterUnits="userSpaceOnUse" x="1130" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1110" y="162" width="56" height="400" id="liquid_16_">
+	<mask maskUnits="userSpaceOnUse" x="1130" y="162" width="56" height="400" id="liquid_16_">
 		<g class="st24">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__7_" x="1105" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__7_" x="1125" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_7_" class="st25">
@@ -7540,18 +7540,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1110 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1130 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_9_" filterUnits="userSpaceOnUse" x="1110" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_9_" filterUnits="userSpaceOnUse" x="1130" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="1110" y="161" width="57" height="414" id="plunger_16_">
+	<mask maskUnits="userSpaceOnUse" x="1130" y="161" width="57" height="414" id="plunger_16_">
 		<g class="st26">
-			<rect x="1106" y="146" class="st7" width="64" height="430"/>
+			<rect x="1126" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_7_" class="st27">
@@ -7808,7 +7808,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1110 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1130 161)">
 			</image>
 		</g>
 	</g>
@@ -7848,13 +7848,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1107 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1127 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Jul_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__6_">
-		<text transform="matrix(1 0 0 1 975.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 998.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_8_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -8795,16 +8795,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 943 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 963 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_10_" filterUnits="userSpaceOnUse" x="980" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_10_" filterUnits="userSpaceOnUse" x="1000" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="980" y="162" width="56" height="400" id="liquid_17_">
+	<mask maskUnits="userSpaceOnUse" x="1000" y="162" width="56" height="400" id="liquid_17_">
 		<g class="st28">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__6_" x="975" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__6_" x="995" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_6_" class="st29">
@@ -9096,18 +9096,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 980 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1000 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_11_" filterUnits="userSpaceOnUse" x="980" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_11_" filterUnits="userSpaceOnUse" x="1000" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="980" y="161" width="57" height="414" id="plunger_17_">
+	<mask maskUnits="userSpaceOnUse" x="1000" y="161" width="57" height="414" id="plunger_17_">
 		<g class="st30">
-			<rect x="976" y="146" class="st7" width="64" height="430"/>
+			<rect x="996" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_6_" class="st31">
@@ -9364,7 +9364,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 980 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 1000 161)">
 			</image>
 		</g>
 	</g>
@@ -9404,13 +9404,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 977 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 997 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Jun_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__5_">
-		<text transform="matrix(1 0 0 1 845.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 868.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_7_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -10351,16 +10351,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 813 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 833 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_12_" filterUnits="userSpaceOnUse" x="850" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_12_" filterUnits="userSpaceOnUse" x="870" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="850" y="162" width="56" height="400" id="liquid_18_">
+	<mask maskUnits="userSpaceOnUse" x="870" y="162" width="56" height="400" id="liquid_18_">
 		<g class="st32">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__5_" x="845" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__5_" x="865" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_5_" class="st33">
@@ -10652,18 +10652,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 850 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 870 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_13_" filterUnits="userSpaceOnUse" x="850" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_13_" filterUnits="userSpaceOnUse" x="870" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="850" y="161" width="57" height="414" id="plunger_18_">
+	<mask maskUnits="userSpaceOnUse" x="870" y="161" width="57" height="414" id="plunger_18_">
 		<g class="st34">
-			<rect x="846" y="146" class="st7" width="64" height="430"/>
+			<rect x="866" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_5_" class="st35">
@@ -10920,7 +10920,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 850 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 870 161)">
 			</image>
 		</g>
 	</g>
@@ -10960,13 +10960,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 847 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 867 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_May_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__4_">
-		<text transform="matrix(1 0 0 1 715.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 738.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_6_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -11907,16 +11907,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 683 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 703 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_14_" filterUnits="userSpaceOnUse" x="720" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_14_" filterUnits="userSpaceOnUse" x="740" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="720" y="162" width="56" height="400" id="liquid_19_">
+	<mask maskUnits="userSpaceOnUse" x="740" y="162" width="56" height="400" id="liquid_19_">
 		<g class="st36">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__4_" x="715" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__4_" x="735" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_4_" class="st37">
@@ -12208,18 +12208,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 720 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 740 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_15_" filterUnits="userSpaceOnUse" x="720" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_15_" filterUnits="userSpaceOnUse" x="740" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="720" y="161" width="57" height="414" id="plunger_19_">
+	<mask maskUnits="userSpaceOnUse" x="740" y="161" width="57" height="414" id="plunger_19_">
 		<g class="st38">
-			<rect x="716" y="146" class="st7" width="64" height="430"/>
+			<rect x="736" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_4_" class="st39">
@@ -12476,7 +12476,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 720 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 740 161)">
 			</image>
 		</g>
 	</g>
@@ -12516,13 +12516,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 717 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 737 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Apr_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__3_">
-		<text transform="matrix(1 0 0 1 585.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 608.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_5_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -13463,16 +13463,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 553 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 573 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_16_" filterUnits="userSpaceOnUse" x="590" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_16_" filterUnits="userSpaceOnUse" x="610" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="590" y="162" width="56" height="400" id="liquid_20_">
+	<mask maskUnits="userSpaceOnUse" x="610" y="162" width="56" height="400" id="liquid_20_">
 		<g class="st40">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__3_" x="585" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__3_" x="605" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_2_" class="st41">
@@ -13764,18 +13764,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 590 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 610 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_17_" filterUnits="userSpaceOnUse" x="590" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_17_" filterUnits="userSpaceOnUse" x="610" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="590" y="161" width="57" height="414" id="plunger_20_">
+	<mask maskUnits="userSpaceOnUse" x="610" y="161" width="57" height="414" id="plunger_20_">
 		<g class="st42">
-			<rect x="586" y="146" class="st7" width="64" height="430"/>
+			<rect x="606" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_2_" class="st43">
@@ -14032,7 +14032,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 590 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 610 161)">
 			</image>
 		</g>
 	</g>
@@ -14072,13 +14072,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 587 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 607 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Mar_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__2_">
-		<text transform="matrix(1 0 0 1 455.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 478.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_4_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -15019,16 +15019,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 423 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 443 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_18_" filterUnits="userSpaceOnUse" x="460" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_18_" filterUnits="userSpaceOnUse" x="480" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="460" y="162" width="56" height="400" id="liquid_21_">
+	<mask maskUnits="userSpaceOnUse" x="480" y="162" width="56" height="400" id="liquid_21_">
 		<g class="st44">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__2_" x="455" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__2_" x="475" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_3_" class="st45">
@@ -15320,18 +15320,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 460 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 480 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_19_" filterUnits="userSpaceOnUse" x="460" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_19_" filterUnits="userSpaceOnUse" x="480" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="460" y="161" width="57" height="414" id="plunger_21_">
+	<mask maskUnits="userSpaceOnUse" x="480" y="161" width="57" height="414" id="plunger_21_">
 		<g class="st46">
-			<rect x="456" y="146" class="st7" width="64" height="430"/>
+			<rect x="476" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_3_" class="st47">
@@ -15588,7 +15588,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 460 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 480 161)">
 			</image>
 		</g>
 	</g>
@@ -15628,13 +15628,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 457 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 477 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Feb_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D__1_">
-		<text transform="matrix(1 0 0 1 325.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 348.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_3_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -16575,16 +16575,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 293 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 313 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_20_" filterUnits="userSpaceOnUse" x="330" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_20_" filterUnits="userSpaceOnUse" x="350" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="330" y="162" width="56" height="400" id="liquid_22_">
+	<mask maskUnits="userSpaceOnUse" x="350" y="162" width="56" height="400" id="liquid_22_">
 		<g class="st48">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__1_" x="325" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D__1_" x="345" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid_1_" class="st49">
@@ -16876,18 +16876,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 330 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 350 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_21_" filterUnits="userSpaceOnUse" x="330" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_21_" filterUnits="userSpaceOnUse" x="350" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="330" y="161" width="57" height="414" id="plunger_22_">
+	<mask maskUnits="userSpaceOnUse" x="350" y="161" width="57" height="414" id="plunger_22_">
 		<g class="st50">
-			<rect x="326" y="146" class="st7" width="64" height="430"/>
+			<rect x="346" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger_1_" class="st51">
@@ -17144,7 +17144,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 330 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 350 161)">
 			</image>
 		</g>
 	</g>
@@ -17184,13 +17184,13 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 327 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 347 145)">
 		</image>
 	</g>
 </g>
 <g id="_x7B__x7B_filter:_x40_0_x3D_Jan_x7D__x7D_">
 	<g id="_x7B__x7B_ta:middle_x7D__x7D_">
-		<text transform="matrix(1 0 0 1 195.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
+		<text transform="matrix(1 0 0 1 218.3569 720.3085)" class="st3 st4 st5">{{@0}}</text>
 	</g>
 	
 		<image style="overflow:visible;" width="130" height="684" id="syringe_background_image_2_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAKsCAYAAAAgOmWSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
@@ -18131,16 +18131,16 @@ zXNnj6WJ/jX0FFvZ3/svPwSfOH1q+DfvuCv7DyffuI4SLFb6A7VjjTKHJbOs92I0NnzzjfQHHns0
 FE0H85594+vpigDU5zeH/91ff1v8C7/0K+Y91P3v0fUkgvb33Ntb+PVP67QzZz/LeLZt3dEbIA/u
 TmDtugHUosWncKKxv656QiX973ycimow/9kX9OCNtwt1xxndMg20s/gWXRTyNhzdtwOiq+fSoxg7
 ywsyJU8wTfs37CET6PUe2DmjTS9RVjyLPHm1BZgAhL5JYOgnt8nI2+T2Fdz+PwEGANeJkpu5ORpz
-AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 163 12)">
+AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 183 12)">
 	</image>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_22_" filterUnits="userSpaceOnUse" x="200" y="162" width="56" height="400">
+		<filter id="Adobe_OpacityMaskFilter_22_" filterUnits="userSpaceOnUse" x="220" y="162" width="56" height="400">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="200" y="162" width="56" height="400" id="liquid_23_">
+	<mask maskUnits="userSpaceOnUse" x="220" y="162" width="56" height="400" id="liquid_23_">
 		<g class="st52">
-			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D_" x="195" y="162" class="st7" width="64" height="400"/>
+			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1.0_x7D__x7D_" x="215" y="162" class="st7" width="64" height="400"/>
 		</g>
 	</mask>
 	<g id="liquid" class="st53">
@@ -18432,18 +18432,18 @@ AdjONOWWywki17SQXbiHE339a4/Ml5e6bQVvrZlctkJEt3u73Ro+51YtMoT5tuf3z5vnGsyp4sXj
 b771tOjPExVZNRpTERH2SBE6JFfIfojIR+C9bOZHQ26QyTJzuN9uPZNeXyoL9Xtg7383ibUn8Nqt
 X6Ye/ngrn+aKb2Giy4LGkPpgizxYbMIFzc0jEXnUbx1AUKFrzYc7Ec5ZZmYTrlXvdz6eL6937tuX
 7zGh79b1+HmIU48PYGgNcbwjwEdtzfh4ZQHSovJ0MF7dIyODaYzcKm/TGz+e9wQ+9vyDTF0xy9PU
-v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 200 162)">
+v5noehj/cbv9f+uBtmUcCOfMAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 220 162)">
 			</image>
 		</g>
 	</g>
 	<defs>
-		<filter id="Adobe_OpacityMaskFilter_23_" filterUnits="userSpaceOnUse" x="200" y="161" width="57" height="414">
+		<filter id="Adobe_OpacityMaskFilter_23_" filterUnits="userSpaceOnUse" x="220" y="161" width="57" height="414">
 			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 		</filter>
 	</defs>
-	<mask maskUnits="userSpaceOnUse" x="200" y="161" width="57" height="414" id="plunger_23_">
+	<mask maskUnits="userSpaceOnUse" x="220" y="161" width="57" height="414" id="plunger_23_">
 		<g class="st54">
-			<rect x="196" y="146" class="st7" width="64" height="430"/>
+			<rect x="216" y="146" class="st7" width="64" height="430"/>
 		</g>
 	</mask>
 	<g id="plunger" class="st55">
@@ -18700,7 +18700,7 @@ DNjI9+jSPOjzCFynNPgl+71x1/WeuHsHT09A/d0kv/wB+OOU5v/Q+eCtFGrJRlZXZ5mNxS+DdngL
 lCPw11B+u16k7+GletLv81n/0e/QbPjuzzn99q/1TYdvBt/3f0bOf4TzpNORMPSkhweQy1lxtIP7
 3wF/uxzi0AP/+MEt9k82yMW6u3dMT58AC93dL1zs/6JMp3tyu5/qeHFZ+S06e9clGn9Pu7YZ59VW
 5gl2e4VCahlN6H8ttaR4/+6+WuNIEyAH4P+G8v+dD89foinSGzfbP+/fEb/5k/Vx+PAfdPS/+I/B
-/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 200 161)">
+/al66v989v8D2/9OTwel/64AAAAASUVORK5CYII=" transform="matrix(1 0 0 1 220 161)">
 			</image>
 		</g>
 	</g>
@@ -18740,32 +18740,32 @@ hCbbhyAF3KA9YtmmIbmHhTnUmaDyRbO3I04vquMsEYHsKs5ophfdog8k6AFRGwsPsY5jWGXJ7J8o
 49RFz3pP8LnMMuhnSWiDO6+wsHaCyj/eZ6S9UeBkNwDJCOQLFNTmP4Eu4ZSNpVc4HOTN/g+1+SPW
 cwxr97KtjdMDtptbvIJIu7HJIes0Z4A01S5h9RkLFSqJtBt5CtrGch72/LuMW6hTqaG70n0OXkXW
 vjY/v2UqPwr8SXLYw3V/z9umOiLHmo/z58qxTPXEGtu2dvUp21RXzHLQ8VtVRly3sxfa4KqNuOGI
-Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 197 145)">
+Pl2NxDUGfwkwAAUMSRiM7Qe5AAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 217 145)">
 		</image>
 	</g>
 </g>
 <g id="plungerPath">
-	<line id="_x7B__x7B_plungerPath_x7D__x7D__1_" class="st56" x1="26" y1="562" x2="26" y2="162"/>
+	<line id="_x7B__x7B_plungerPath_x7D__x7D__1_" class="st56" x1="46" y1="562" x2="46" y2="162"/>
 </g>
 <g id="y_axis_lines">
 	<g class="st57">
 		<g>
-			<line class="st58" x1="148" y1="562.5" x2="1748" y2="562.5"/>
+			<line class="st58" x1="168" y1="562.5" x2="1768" y2="562.5"/>
 		</g>
 		<g>
-			<line class="st58" x1="148" y1="482.5" x2="1748" y2="482.5"/>
+			<line class="st58" x1="168" y1="482.5" x2="1768" y2="482.5"/>
 		</g>
 		<g>
-			<line class="st58" x1="148" y1="402.5" x2="1748" y2="402.5"/>
+			<line class="st58" x1="168" y1="402.5" x2="1768" y2="402.5"/>
 		</g>
 		<g>
-			<line class="st58" x1="148" y1="322.5" x2="1748" y2="322.5"/>
+			<line class="st58" x1="168" y1="322.5" x2="1768" y2="322.5"/>
 		</g>
 		<g>
-			<line class="st58" x1="148" y1="242.5" x2="1748" y2="242.5"/>
+			<line class="st58" x1="168" y1="242.5" x2="1768" y2="242.5"/>
 		</g>
 		<g>
-			<line class="st58" x1="148" y1="162.5" x2="1748" y2="162.5"/>
+			<line class="st58" x1="168" y1="162.5" x2="1768" y2="162.5"/>
 		</g>
 	</g>
 </g>
