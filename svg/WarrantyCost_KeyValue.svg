@@ -3,7 +3,7 @@
 <svg version="1.1" id="WarrantyCost_x5F_KeyValue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 320 500" style="enable-background:new 0 0 320 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#colored_background_00000147179055343182970030000001195558687900648105_);}
+	.st0{fill:url(#colored_background_00000080170523771191397670000014778922542383032709_);}
 	.st1{fill:#FFFFFF;}
 	.st2{fill:#A0A0A0;}
 	.st3{fill:#01929F;}
@@ -11,7 +11,7 @@
 	.st5{font-size:50px;}
 	.st6{font-family:'Roboto-Medium';}
 	.st7{font-size:20px;}
-	.st8{fill:url(#shine_00000116955291208019280010000012213626670706658236_);}
+	.st8{fill:url(#shine_00000134247471322529740430000007831224694175344299_);}
 </style>
 <font horiz-adv-x="2048">
 <!-- Roboto is a trademark of Google. -->
@@ -235,11 +235,11 @@
 <glyph unicode="&#xAD;" horiz-adv-x="794" d="M673,507l-563,0l0,233l563,0z"/>
 </font>
 
-	<linearGradient id="colored_background_00000054244226133190284710000009005437577586402198_" gradientUnits="userSpaceOnUse" x1="145" y1="463" x2="145" y2="151">
+	<linearGradient id="colored_background_00000181049008442064076930000011148769525935231929_" gradientUnits="userSpaceOnUse" x1="145" y1="463" x2="145" y2="151">
 	<stop  offset="1.574796e-03" style="stop-color:#0293A0"/>
 	<stop  offset="1" style="stop-color:#01929F"/>
 </linearGradient>
-<path id="colored_background" style="fill:url(#colored_background_00000054244226133190284710000009005437577586402198_);" d="
+<path id="colored_background" style="fill:url(#colored_background_00000181049008442064076930000011148769525935231929_);" d="
 	M220.03,151h-51.54c-4.3,8.03-12.77,13.5-22.49,13.5s-18.19-5.47-22.49-13.5H69.97L47,173.97V463h196V173.97L220.03,151z"/>
 <rect id="value_string_background" x="52" y="358" class="st1" width="186" height="100"/>
 <g id="icon_00000100345571110466601030000013581446502185907377_">
@@ -302,18 +302,18 @@
 	<path class="st2" d="M216.5,22C173.77,22,139,56.77,139,99.5v10c0,1.66,1.34,3,3,3s3-1.34,3-3v-10c0-39.43,32.07-71.5,71.5-71.5
 		S288,60.07,288,99.5V258c0,1.66,1.34,3,3,3s3-1.34,3-3V99.5C294,56.77,259.23,22,216.5,22z"/>
 </g>
-<g id="_x7B__x7B_a:middle_x7D__x7D__00000110441556292994038670000015990502043548865159_">
+<g id="_x7B__x7B_ta:middle_x7D__x7D__00000003080065224974911030000009224034769790341250_">
 	<g id="_x7B__x7B__x23_0_x7D__x7D_">
 		<text transform="matrix(1 0 0 1 62 425.5219)" class="st3 st4 st5">{{#0|c}}</text>
 	</g>
 </g>
-<g id="_x7B__x7B_a:middle_x7D__x7D_">
+<g id="_x7B__x7B_ta:middle_x7D__x7D_">
 	<text transform="matrix(1 0 0 1 94.001 345.3447)" class="st1 st6 st7">{{#0|name}}</text>
 </g>
-<linearGradient id="shine_00000176760521028522784290000011659920644175667887_" gradientUnits="userSpaceOnUse" x1="46.0757" y1="184.2475" x2="151.2797" y2="289.2271">
+<linearGradient id="shine_00000047023604060994002440000006985045502942805678_" gradientUnits="userSpaceOnUse" x1="46.0757" y1="184.2475" x2="151.2797" y2="289.2271">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<path id="shine_00000049192913335818573880000002099318800031931063_" style="fill:url(#shine_00000176760521028522784290000011659920644175667887_);" d="
+<path id="shine_00000049192913335818573880000002099318800031931063_" style="fill:url(#shine_00000047023604060994002440000006985045502942805678_);" d="
 	M220.03,151h-51.54c-4.3,8.03-12.77,13.5-22.49,13.5s-18.19-5.47-22.49-13.5H70l-23,22.97V392l196-199v-19.03L220.03,151z"/>
 </svg>
