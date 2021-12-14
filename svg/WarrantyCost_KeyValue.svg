@@ -37,11 +37,11 @@
       </g>
       <g id="_ta:middle_" data-name="{{ta:middle}}">
         <g id="_0_" data-name="{{#0}}">
-          <text transform="translate(50.33984 428.52185)" font-size="58" fill="#01929f" font-family="Roboto-Bold, Roboto" font-weight="700">{{#0|c}}</text>
+          <text transform="translate(57 427.52185)" font-size="54" fill="#01929f" font-family="Roboto-Bold, Roboto" font-weight="700">{{#0|c}}</text>
         </g>
       </g>
       <g id="_ta:middle_2" data-name="{{ta:middle}}">
-        <text transform="translate(115.9541 345.34473)" font-size="20" fill="#fff" font-family="Roboto-Medium, Roboto" font-weight="500">{{@0}}</text>
+        <text transform="translate(94.00098 345.34473)" font-size="20" fill="#fff" font-family="Roboto-Medium, Roboto" font-weight="500">{{#0|name}}</text>
       </g>
       <path id="shine" d="M220.0293,151H168.492a25.48667,25.48667,0,0,1-44.984,0H70L47,173.9707V392L243,193V173.9707Z" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light"/>
     </g>
