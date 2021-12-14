@@ -35,12 +35,12 @@
         <path d="M216.5,30A69.57892,69.57892,0,0,0,147,99.5v10a3,3,0,0,0,6,0v-10a63.5,63.5,0,0,1,127,0V245a3,3,0,0,0,6,0V99.5A69.57892,69.57892,0,0,0,216.5,30Z" fill="#a0a0a0"/>
         <path d="M216.5,22A77.58746,77.58746,0,0,0,139,99.5v10a3,3,0,0,0,6,0v-10a71.5,71.5,0,0,1,143,0V258a3,3,0,0,0,6,0V99.5A77.58746,77.58746,0,0,0,216.5,22Z" fill="#a0a0a0"/>
       </g>
-      <g id="_align:middle_" data-name="{{align:middle}}">
+      <g id="_a:middle_" data-name="{{a:middle}}">
         <g id="_0_" data-name="{{#0}}">
           <text transform="translate(62 425.52185)" font-size="50" fill="#01929f" font-family="Roboto-Bold, Roboto" font-weight="700">{{#0|c}}</text>
         </g>
       </g>
-      <g id="_align:middle_2" data-name="{{align:middle}}">
+      <g id="_a:middle_2" data-name="{{a:middle}}">
         <text transform="translate(94.00098 345.34473)" font-size="20" fill="#fff" font-family="Roboto-Medium, Roboto" font-weight="500">{{#0|name}}</text>
       </g>
       <path id="shine" d="M220.0293,151H168.492a25.48667,25.48667,0,0,1-44.984,0H70L47,173.9707V392L243,193V173.9707Z" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light"/>
