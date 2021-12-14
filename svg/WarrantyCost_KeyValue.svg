@@ -2,11 +2,11 @@
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="WarrantyCost_x5F_KeyValue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 320 500" enable-background="new 0 0 320 500" xml:space="preserve">
-<linearGradient id="colored_background_00000023252771909357844370000012002987747964813237_" gradientUnits="userSpaceOnUse" x1="145" y1="463" x2="145" y2="151">
+<linearGradient id="colored_background_00000155117034186064982450000001744933585998181504_" gradientUnits="userSpaceOnUse" x1="145" y1="463" x2="145" y2="151">
 	<stop  offset="1.574796e-03" style="stop-color:#0293A0"/>
 	<stop  offset="1" style="stop-color:#01929F"/>
 </linearGradient>
-<path id="colored_background" fill="url(#colored_background_00000023252771909357844370000012002987747964813237_)" d="M220.03,151
+<path id="colored_background" fill="url(#colored_background_00000155117034186064982450000001744933585998181504_)" d="M220.03,151
 	h-51.54c-4.3,8.03-12.77,13.5-22.49,13.5s-18.19-5.47-22.49-13.5H69.97L47,173.97V463h196V173.97L220.03,151z"/>
 <rect id="value_string_background" x="52" y="358" fill="#FFFFFF" width="186" height="100"/>
 <g id="icon_00000100345571110466601030000013581446502185907377_">
@@ -74,11 +74,11 @@
 		<text transform="matrix(1 0 0 1 62 425.5219)" fill="#01929F" font-family="'Roboto-Bold'" font-size="50px">{{#0|c}}</text>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 55.8555 345.3447)" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">Total Warranty Cost</text>
-<linearGradient id="shine_00000170249718551106877380000014579817142078119857_" gradientUnits="userSpaceOnUse" x1="46.0757" y1="184.2475" x2="151.2797" y2="289.2271">
+<text transform="matrix(1 0 0 1 57.1787 345.3447)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px" letter-spacing="-2">T</tspan><tspan x="10.11" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">otal </tspan><tspan x="49.05" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">W</tspan><tspan x="66.33" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">ar</tspan><tspan x="84.18" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">r</tspan><tspan x="90.92" y="0" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="20px">anty Cost</tspan></text>
+<linearGradient id="shine_00000121976496227980389690000011301640142838566533_" gradientUnits="userSpaceOnUse" x1="46.0757" y1="184.2475" x2="151.2797" y2="289.2271">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<path id="shine_00000049192913335818573880000002099318800031931063_" opacity="0.3" fill="url(#shine_00000170249718551106877380000014579817142078119857_)" d="
+<path id="shine_00000049192913335818573880000002099318800031931063_" opacity="0.3" fill="url(#shine_00000121976496227980389690000011301640142838566533_)" d="
 	M220.03,151h-51.54c-4.3,8.03-12.77,13.5-22.49,13.5s-18.19-5.47-22.49-13.5H70l-23,22.97V392l196-199v-19.03L220.03,151z"/>
 </svg>
