@@ -10,12 +10,12 @@
 	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st4{filter:url(#Adobe_OpacityMaskFilter);}
 	.st5{fill:#FFFFFF;}
-	.st6{mask:url(#bar_00000075141889458059937380000018326531864150022791_);}
+	.st6{mask:url(#bar_00000126302850554553764560000001609062169887946635_);}
 	.st7{fill:#1D1D1D;}
 	.st8{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st9{font-family:'Roboto-Bold';}
 	.st10{font-size:20px;}
-	.st11{opacity:0.3;fill:url(#shine_00000174571162396551908260000004985414416370831253_);}
+	.st11{opacity:0.3;fill:url(#shine_00000118373696166331824740000006302462532231192199_);}
 	.st12{fill:#696969;}
 	.st13{font-family:'Roboto-Regular';}
 	.st14{font-size:24px;}
@@ -76,12 +76,12 @@
 		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="206" y="154" width="40" height="182" id="bar_00000085249372202675594200000017689293966006016935_">
+<mask maskUnits="userSpaceOnUse" x="206" y="154" width="40" height="182" id="bar_00000152239584437166620620000013799489473646050193_">
 	<g id="mask" class="st4">
 		<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1_x7D__x7D_" x="206" y="154" class="st5" width="40" height="182"/>
 	</g>
 </mask>
-<g id="bar_00000075854356459916241020000016491690230725533119_" style="mask:url(#bar_00000085249372202675594200000017689293966006016935_);">
+<g id="bar_00000075854356459916241020000016491690230725533119_" style="mask:url(#bar_00000152239584437166620620000013799489473646050193_);">
 	<rect id="bar" x="206" y="154" class="st7" width="40" height="182"/>
 	<g id="grid_lines_00000135650177593299540770000011175515799606790289_" class="st2">
 		<g>
@@ -154,13 +154,13 @@
 		</g>
 	</g>
 </g>
-<linearGradient id="shine_00000160172012798061446340000000506603440406717849_" gradientUnits="userSpaceOnUse" x1="153.4001" y1="218.6193" x2="234.8404" y2="291.2784">
+<linearGradient id="shine_00000004525417737483736960000002413277497279921589_" gradientUnits="userSpaceOnUse" x1="153.4001" y1="218.6193" x2="234.8404" y2="291.2784">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<path id="shine" style="opacity:0.3;fill:url(#shine_00000160172012798061446340000000506603440406717849_);" d="M299,136h-55.79
+<path id="shine" style="opacity:0.3;fill:url(#shine_00000004525417737483736960000002413277497279921589_);" d="M299,136h-55.79
 	c-3.8,5.43-10.09,9-17.21,9s-13.41-3.57-17.21-9H153l-17,17v262.62L316,192v-39L299,136z"/>
-<text transform="matrix(1 0 0 1 46.0469 163.5313)"><tspan x="0" y="0" class="st12 st13 st14">$20M</tspan><tspan x="0" y="45" class="st12 st13 st14">$15M</tspan><tspan x="0" y="90" class="st12 st13 st14">$10M</tspan><tspan x="13.48" y="135" class="st12 st13 st14">$5M</tspan><tspan x="13.48" y="180" class="st12 st13 st14">$0M</tspan></text>
+<text transform="matrix(1 0 0 1 46.0469 163.5313)"><tspan x="0" y="0" class="st12 st13 st14">$40M</tspan><tspan x="0" y="45" class="st12 st13 st14">$30M</tspan><tspan x="0" y="90" class="st12 st13 st14">$20M</tspan><tspan x="0" y="135" class="st12 st13 st14">$10M</tspan><tspan x="13.48" y="180" class="st12 st13 st14">$0M</tspan></text>
 <g>
 	<text transform="matrix(1 0 0 1 110.8314 496.9539)"><tspan x="0" y="0" class="st7 st15 st16 st17">T</tspan><tspan x="13.14" y="0" class="st7 st15 st16">otal </tspan><tspan x="63.77" y="0" class="st7 st15 st16">W</tspan><tspan x="86.23" y="0" class="st7 st15 st16">ar</tspan><tspan x="109.43" y="0" class="st7 st15 st16">r</tspan><tspan x="118.19" y="0" class="st7 st15 st16">anty Cost</tspan></text>
 </g>
