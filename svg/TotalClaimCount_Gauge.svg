@@ -12,9 +12,9 @@
 	.st6{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st7{filter:url(#Adobe_OpacityMaskFilter);}
 	.st8{fill:#FFFFFF;}
-	.st9{mask:url(#bar_00000140706003908582111470000014547038229381707170_);fill:#0293A0;}
+	.st9{mask:url(#bar_00000094599172895869364420000004768075027532282252_);fill:#0293A0;}
 	.st10{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
-	.st11{opacity:0.3;fill:url(#shine_00000010288074536750049480000008663661975305190052_);}
+	.st11{opacity:0.3;fill:url(#shine_00000090271214655219804510000002067967973857013407_);}
 	.st12{fill:#696969;}
 	.st13{font-family:'Roboto-Regular';}
 	.st14{font-size:24px;}
@@ -62,16 +62,13 @@
 		<line class="st6" x1="191" y1="335" x2="122" y2="335"/>
 	</g>
 	<g>
-		<line class="st6" x1="191" y1="287" x2="122" y2="287"/>
+		<line class="st6" x1="191" y1="275" x2="122" y2="275"/>
 	</g>
 	<g>
-		<line class="st6" x1="191" y1="239" x2="122" y2="239"/>
+		<line class="st6" x1="191" y1="215" x2="122" y2="215"/>
 	</g>
 	<g>
-		<line class="st6" x1="191" y1="191" x2="122" y2="191"/>
-	</g>
-	<g>
-		<line class="st6" x1="191" y1="143" x2="122" y2="143"/>
+		<line class="st6" x1="191" y1="155" x2="122" y2="155"/>
 	</g>
 	<g>
 		<line class="st6" x1="191" y1="95" x2="122" y2="95"/>
@@ -84,28 +81,27 @@
 		</filter>
 	</defs>
 	
-		<mask maskUnits="userSpaceOnUse" x="168" y="94" width="19" height="242" id="bar_00000085934642928245251850000017145348319588639133_">
+		<mask maskUnits="userSpaceOnUse" x="168" y="94" width="19" height="242" id="bar_00000026135139308782565780000013931088127107630756_">
 		<g id="mask" class="st7">
 			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1_x7D__x7D_" x="168" y="94" class="st8" width="19" height="242"/>
 		</g>
 	</mask>
 	
-		<rect id="bar_00000159438346624292936920000007586214576285236120_" x="168" y="94" style="mask:url(#bar_00000085934642928245251850000017145348319588639133_);fill:#0293A0;" width="19" height="242"/>
+		<rect id="bar_00000159438346624292936920000007586214576285236120_" x="168" y="94" style="mask:url(#bar_00000026135139308782565780000013931088127107630756_);fill:#0293A0;" width="19" height="242"/>
 	<g id="bar_grid_lines" class="st5">
 		<line class="st10" x1="187" y1="335" x2="168" y2="335"/>
-		<line class="st10" x1="187" y1="287" x2="168" y2="287"/>
-		<line class="st10" x1="187" y1="239" x2="168" y2="239"/>
-		<line class="st10" x1="187" y1="191" x2="168" y2="191"/>
-		<line class="st10" x1="187" y1="143" x2="168" y2="143"/>
+		<line class="st10" x1="187" y1="275" x2="168" y2="275"/>
+		<line class="st10" x1="187" y1="215" x2="168" y2="215"/>
+		<line class="st10" x1="187" y1="155" x2="168" y2="155"/>
 		<line class="st10" x1="187" y1="95" x2="168" y2="95"/>
 	</g>
 </g>
-<linearGradient id="shine_00000100349846767436755710000016195437934165599120_" gradientUnits="userSpaceOnUse" x1="168" y1="215" x2="177" y2="215">
+<linearGradient id="shine_00000072960439900660248380000005056343045239632268_" gradientUnits="userSpaceOnUse" x1="168" y1="215" x2="177" y2="215">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<rect id="shine_00000091008309965269043600000012869153302409665163_" x="168" y="94" style="opacity:0.3;fill:url(#shine_00000100349846767436755710000016195437934165599120_);" width="9" height="242"/>
-<text transform="matrix(1 0 0 1 73.4297 102.5313)"><tspan x="0" y="0" class="st12 st13 st14">50K</tspan><tspan x="0" y="48" class="st12 st13 st14">40K</tspan><tspan x="0" y="96" class="st12 st13 st14">30K</tspan><tspan x="0" y="144" class="st12 st13 st14">20K</tspan><tspan x="0" y="192" class="st12 st13 st14">10K</tspan><tspan x="13.48" y="240" class="st12 st13 st14">0K</tspan></text>
+<rect id="shine_00000091008309965269043600000012869153302409665163_" x="168" y="94" style="opacity:0.3;fill:url(#shine_00000072960439900660248380000005056343045239632268_);" width="9" height="242"/>
+<text transform="matrix(1 0 0 1 73.4297 102.5313)"><tspan x="0" y="0" class="st12 st13 st14">80K</tspan><tspan x="0" y="60" class="st12 st13 st14">60K</tspan><tspan x="0" y="120" class="st12 st13 st14">40K</tspan><tspan x="0" y="180" class="st12 st13 st14">20K</tspan><tspan x="13.48" y="240" class="st12 st13 st14">0K</tspan></text>
 <g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_">
 	<rect id="spacer" x="191.54" y="308.28" class="st15" width="190" height="54"/>
 	<g>
