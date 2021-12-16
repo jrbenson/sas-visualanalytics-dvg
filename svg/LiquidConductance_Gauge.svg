@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="ElectricalCircuit_x5F_Gauge"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-	 style="enable-background:new 0 0 500 500;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 470 500"
+	 style="enable-background:new 0 0 470 500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#1D1D1D;}
 	.st1{font-family:'Roboto-Medium';}
 	.st2{font-size:26px;}
 	.st3{filter:url(#Adobe_OpacityMaskFilter);}
-	.st4{mask:url(#Beaker_lines_00000007402538051103739430000002373866310904642962_);}
+	.st4{mask:url(#Beaker_lines_00000027571040797386449770000008077723037338129066_);}
 	.st5{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
 	.st6{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-miterlimit:10;}
-	.st7{filter:url(#Adobe_OpacityMaskFilter_00000127046429762101798710000008898674007643572118_);}
+	.st7{filter:url(#Adobe_OpacityMaskFilter_00000064342465330254015360000003175810985177151418_);}
 	.st8{fill:#FFFFFF;}
-	.st9{mask:url(#bar_00000156572070185434176160000005363982391548407937_);}
+	.st9{mask:url(#bar_00000132078600374463554400000013826777161438945724_);}
 	.st10{fill:#2F90EC;}
 	.st11{opacity:0.4;}
 	.st12{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st13{opacity:0.3;fill:url(#shine_00000170982553506482577170000007669010045547465872_);}
+	.st13{opacity:0.3;fill:url(#shine_00000096753558736687638760000008304998907562298047_);}
 	.st14{opacity:0.35;}
 	.st15{fill:none;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st16{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
@@ -36,157 +36,157 @@
 	.st29{font-size:60px;}
 </style>
 <g>
-	<text transform="matrix(1 0 0 1 89.3564 476.9539)" class="st0 st1 st2">Specific Conductance 6ft</text>
+	<text transform="matrix(1 0 0 1 109.3564 476.9539)" class="st0 st1 st2">Specific Conductance 6ft</text>
 </g>
 <defs>
-	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="97" y="116" width="235" height="315">
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="117" y="116" width="235" height="315">
 		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
 		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="97" y="116" width="235" height="315" id="Beaker_lines_00000083806142052946825620000008095976701389353617_">
+<mask maskUnits="userSpaceOnUse" x="117" y="116" width="235" height="315" id="Beaker_lines_00000030445934284171162730000003730986909176220303_">
 	<g id="mask_00000172424561823853336710000009917235241729234086_" class="st3">
-		<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_" class="st0" points="336.59,410.85 322.59,418.32 
-			317.29,421.15 322.73,423.69 336.73,430.22 341,432.21 341,408.5 		"/>
+		<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_" class="st0" points="356.59,410.85 342.59,418.32 
+			337.29,421.15 342.73,423.69 356.73,430.22 361,432.21 361,408.5 		"/>
 	</g>
 </mask>
-<g id="Beaker_lines_00000045609903689058157370000018012760092452978592_" style="mask:url(#Beaker_lines_00000083806142052946825620000008095976701389353617_);">
-	<path id="beaker_outline_00000181058543177515124160000006768978752801846402_" class="st5" d="M325,118H104c-2.76,0-5,2.24-5,5
-		s2.24,5,5,5v293c0,4.42,3.58,8,8,8h205c4.42,0,8-3.58,8-8V128c2.76,0,5-2.24,5-5S327.76,118,325,118z"/>
-	<line class="st6" x1="104" y1="127" x2="325" y2="127"/>
+<g id="Beaker_lines_00000045609903689058157370000018012760092452978592_" style="mask:url(#Beaker_lines_00000030445934284171162730000003730986909176220303_);">
+	<path id="beaker_outline_00000181058543177515124160000006768978752801846402_" class="st5" d="M345,118H124c-2.76,0-5,2.24-5,5
+		s2.24,5,5,5v293c0,4.42,3.58,8,8,8h205c4.42,0,8-3.58,8-8V128c2.76,0,5-2.24,5-5S347.76,118,345,118z"/>
+	<line class="st6" x1="124" y1="127" x2="345" y2="127"/>
 </g>
 <defs>
 	
-		<filter id="Adobe_OpacityMaskFilter_00000012441888273188516570000014830128391013593992_" filterUnits="userSpaceOnUse" x="112" y="149" width="205" height="272">
+		<filter id="Adobe_OpacityMaskFilter_00000127031222808414743450000001984306684528192190_" filterUnits="userSpaceOnUse" x="132" y="149" width="205" height="272">
 		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="112" y="149" width="205" height="272" id="bar_00000164483320284968120620000005155455299462683820_">
+<mask maskUnits="userSpaceOnUse" x="132" y="149" width="205" height="272" id="bar_00000113330415461736033260000011516785784603006613_">
 	
-		<g id="mask_00000183209239670803494530000006164580517792188053_" style="filter:url(#Adobe_OpacityMaskFilter_00000012441888273188516570000014830128391013593992_);">
+		<g id="mask_00000062171840543102452610000015948528647842002586_" style="filter:url(#Adobe_OpacityMaskFilter_00000127031222808414743450000001984306684528192190_);">
 		
-			<path id="_x7B__x7B_py:_x23_0_x2C_g:maskPath_x2C_o:0_x3B_0_x7D__x7D__00000003086710302553528020000006690298650896653743_" class="st8" d="
-			M306.7,425c-3.93,0-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4
+			<path id="_x7B__x7B_py:_x23_0_x2C_g:maskPath_x2C_o:0_x3B_0_x7D__x7D__00000081645078646379663660000011015020434129769889_" class="st8" d="
+			M326.7,425c-3.93,0-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4
 			s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4
 			h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16
 			c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16
-			c-2.67,2.47-6.24,4-10.17,4c-3.93,0-7.5-1.52-10.17-4H112v272h205V421h-0.13C314.19,423.47,310.63,425,306.7,425z"/>
+			c-2.67,2.47-6.24,4-10.17,4c-3.93,0-7.5-1.52-10.17-4H132v272h205V421h-0.13C334.19,423.47,330.63,425,326.7,425z"/>
 	</g>
 </mask>
-<g id="bar_00000109027726845690125280000003795945497054315159_" style="mask:url(#bar_00000164483320284968120620000005155455299462683820_);">
-	<path id="bar_00000023983219974960502260000000473114394696509336_" class="st10" d="M317,149H112v270c0,1.1,0.9,2,2,2h201
+<g id="bar_00000109027726845690125280000003795945497054315159_" style="mask:url(#bar_00000113330415461736033260000011516785784603006613_);">
+	<path id="bar_00000064325109722078445880000012595083126308017806_" class="st10" d="M337,149H132v270c0,1.1,0.9,2,2,2h201
 		c1.1,0,2-0.9,2-2V149z"/>
 	<g id="bubbles_00000033347007837499092250000005880465362328449936_" class="st11">
-		<circle class="st8" cx="125.04" cy="407.8" r="4"/>
-		<circle class="st8" cx="206" cy="271.4" r="4"/>
-		<circle class="st12" cx="166.19" cy="344.8" r="5.5"/>
-		<circle class="st12" cx="299.04" cy="232.7" r="5.5"/>
-		<circle class="st12" cx="137.54" cy="174.84" r="5.5"/>
-		<circle class="st12" cx="135.04" cy="326.8" r="8"/>
-		<circle class="st12" cx="258" cy="395.8" r="8"/>
-		<circle class="st8" cx="298.04" cy="304.8" r="4"/>
-		<circle class="st8" cx="132.04" cy="245.3" r="4"/>
-		<circle class="st8" cx="246.36" cy="237" r="4"/>
-		<circle class="st12" cx="260.36" cy="323.8" r="5.5"/>
-		<circle class="st12" cx="275.67" cy="189.95" r="5.5"/>
-		<circle class="st12" cx="217.86" cy="255.3" r="5.5"/>
-		<circle class="st12" cx="157.04" cy="281.4" r="8"/>
-		<circle class="st8" cx="229" cy="383.8" r="4"/>
-		<circle class="st8" cx="188" cy="186.4" r="4"/>
-		<circle class="st8" cx="304" cy="397.8" r="4"/>
-		<circle class="st12" cx="278" cy="346" r="10"/>
-		<circle class="st12" cx="185" cy="401" r="10"/>
-		<circle class="st12" cx="210.96" cy="314.6" r="10"/>
-		<circle class="st12" cx="173" cy="220" r="10"/>
-		<circle class="st12" cx="273" cy="259" r="10"/>
-		<circle class="st12" cx="241.4" cy="172.05" r="10"/>
+		<circle class="st8" cx="145.04" cy="407.8" r="4"/>
+		<circle class="st8" cx="226" cy="271.4" r="4"/>
+		<circle class="st12" cx="186.19" cy="344.8" r="5.5"/>
+		<circle class="st12" cx="319.04" cy="232.7" r="5.5"/>
+		<circle class="st12" cx="157.54" cy="174.84" r="5.5"/>
+		<circle class="st12" cx="155.04" cy="326.8" r="8"/>
+		<circle class="st12" cx="278" cy="395.8" r="8"/>
+		<circle class="st8" cx="318.04" cy="304.8" r="4"/>
+		<circle class="st8" cx="152.04" cy="245.3" r="4"/>
+		<circle class="st8" cx="266.36" cy="237" r="4"/>
+		<circle class="st12" cx="280.36" cy="323.8" r="5.5"/>
+		<circle class="st12" cx="295.67" cy="189.95" r="5.5"/>
+		<circle class="st12" cx="237.86" cy="255.3" r="5.5"/>
+		<circle class="st12" cx="177.04" cy="281.4" r="8"/>
+		<circle class="st8" cx="249" cy="383.8" r="4"/>
+		<circle class="st8" cx="208" cy="186.4" r="4"/>
+		<circle class="st8" cx="324" cy="397.8" r="4"/>
+		<circle class="st12" cx="298" cy="346" r="10"/>
+		<circle class="st12" cx="205" cy="401" r="10"/>
+		<circle class="st12" cx="230.96" cy="314.6" r="10"/>
+		<circle class="st12" cx="193" cy="220" r="10"/>
+		<circle class="st12" cx="293" cy="259" r="10"/>
+		<circle class="st12" cx="261.4" cy="172.05" r="10"/>
 	</g>
 	
-		<linearGradient id="shine_00000092423383488646598530000006654539145811833512_" gradientUnits="userSpaceOnUse" x1="112" y1="285" x2="214" y2="285">
+		<linearGradient id="shine_00000072959131381304015270000007175235719498069389_" gradientUnits="userSpaceOnUse" x1="132" y1="285" x2="234" y2="285">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 	</linearGradient>
 	
-		<path id="shine_00000052825428444929375900000014617976946757475471_" style="opacity:0.3;fill:url(#shine_00000092423383488646598530000006654539145811833512_);" d="
-		M214,149H112v270c0,1.1,0.9,2,2,2h100V149z"/>
+		<path id="shine_00000093157653572481274550000002492461593862437525_" style="opacity:0.3;fill:url(#shine_00000072959131381304015270000007175235719498069389_);" d="
+		M234,149H132v270c0,1.1,0.9,2,2,2h100V149z"/>
 </g>
 <g id="circuit_00000072993443246530344100000006456134217333615006_">
 	<g id="wire_in_liquid_00000067233210359350415060000018322240810504790702_" class="st14">
-		<line class="st15" x1="140" y1="329" x2="140" y2="149"/>
-		<path class="st16" d="M135,329v28c0,1.1,0.9,2,2,2l0,0v33.83c0,1.62,1.22,3.08,2.84,3.17c1.73,0.09,3.16-1.29,3.16-3v-34l0,0
-			c1.1,0,2-0.9,2-2v-28H135z"/>
-		<line class="st17" x1="137" y1="358" x2="143" y2="358"/>
+		<line class="st15" x1="160" y1="329" x2="160" y2="149"/>
+		<path class="st16" d="M155,329v28c0,1.1,0.9,2,2,2l0,0v33.83c0,1.62,1.22,3.08,2.84,3.17c1.73,0.09,3.16-1.29,3.16-3v-34l0,0
+			c1.1,0,2-0.9,2-2v-28H155z"/>
+		<line class="st17" x1="157" y1="358" x2="163" y2="358"/>
 	</g>
-	<polyline id="wire_outside_liquid_00000043447955024503308520000012267558255624265345_" class="st18" points="140,149 140,22 
-		188,22 188,36.93 	"/>
+	<polyline id="wire_outside_liquid_00000043447955024503308520000012267558255624265345_" class="st18" points="160,149 160,22 
+		208,22 208,36.93 	"/>
 	<g id="wire_in_liquid" class="st14">
-		<path class="st16" d="M294,329v28c0,1.1-0.9,2-2,2l0,0v33.83c0,1.62-1.22,3.08-2.84,3.17c-1.73,0.09-3.16-1.29-3.16-3v-34l0,0
-			c-1.1,0-2-0.9-2-2v-28H294z"/>
-		<line class="st17" x1="292" y1="358" x2="286" y2="358"/>
-		<line class="st15" x1="289" y1="329" x2="289" y2="149"/>
+		<path class="st16" d="M314,329v28c0,1.1-0.9,2-2,2l0,0v33.83c0,1.62-1.22,3.08-2.84,3.17c-1.73,0.09-3.16-1.29-3.16-3v-34l0,0
+			c-1.1,0-2-0.9-2-2v-28H314z"/>
+		<line class="st17" x1="312" y1="358" x2="306" y2="358"/>
+		<line class="st15" x1="309" y1="329" x2="309" y2="149"/>
 	</g>
-	<polyline id="wire_outside_liquid" class="st18" points="289,149 289,22 241,22 241,36.93 	"/>
+	<polyline id="wire_outside_liquid" class="st18" points="309,149 309,22 261,22 261,36.93 	"/>
 	<g id="battery_00000049216085032968132270000002637694925384127123_">
-		<path class="st19" d="M265,50v-6c0-1.1-0.9-2-2-2h-97c-1.1,0-2,0.9-2,2v6h5v44h-3c-1.1,0-2,0.9-2,2v6h101v-6c0-1.1-0.9-2-2-2h-3
-			V50H265z"/>
-		<line id="_x2D__00000014611407687302752430000014824383567833281449_" class="st20" x1="183" y1="63" x2="193" y2="63"/>
-		<path class="st21" d="M191,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C193,34.9,192.1,34,191,34z"/>
+		<path class="st19" d="M285,50v-6c0-1.1-0.9-2-2-2h-97c-1.1,0-2,0.9-2,2v6h5v44h-3c-1.1,0-2,0.9-2,2v6h101v-6c0-1.1-0.9-2-2-2h-3
+			V50H285z"/>
+		<line id="_x2D__00000014611407687302752430000014824383567833281449_" class="st20" x1="203" y1="63" x2="213" y2="63"/>
+		<path class="st21" d="M211,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C213,34.9,212.1,34,211,34z"/>
 		<g id="_x2B__00000165952784229464530370000001247099299315957173_">
-			<line class="st20" x1="236" y1="63" x2="246" y2="63"/>
-			<line class="st20" x1="241" y1="68" x2="241" y2="58"/>
+			<line class="st20" x1="256" y1="63" x2="266" y2="63"/>
+			<line class="st20" x1="261" y1="68" x2="261" y2="58"/>
 		</g>
-		<path class="st21" d="M244,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C246,34.9,245.1,34,244,34z"/>
-		<line class="st20" x1="169" y1="95" x2="260" y2="95"/>
-		<line class="st20" x1="169" y1="49" x2="260" y2="49"/>
+		<path class="st21" d="M264,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C266,34.9,265.1,34,264,34z"/>
+		<line class="st20" x1="189" y1="95" x2="280" y2="95"/>
+		<line class="st20" x1="189" y1="49" x2="280" y2="49"/>
 	</g>
 </g>
 <g id="grid_lines" class="st22">
-	<line class="st23" x1="324" y1="420" x2="101" y2="420"/>
-	<line class="st23" x1="324" y1="366" x2="101" y2="366"/>
-	<line class="st23" x1="324" y1="312" x2="101" y2="312"/>
-	<line class="st23" x1="324" y1="258" x2="101" y2="258"/>
-	<line class="st23" x1="324" y1="204" x2="101" y2="204"/>
-	<line class="st23" x1="324" y1="150" x2="101" y2="150"/>
+	<line class="st23" x1="344" y1="420" x2="121" y2="420"/>
+	<line class="st23" x1="344" y1="366" x2="121" y2="366"/>
+	<line class="st23" x1="344" y1="312" x2="121" y2="312"/>
+	<line class="st23" x1="344" y1="258" x2="121" y2="258"/>
+	<line class="st23" x1="344" y1="204" x2="121" y2="204"/>
+	<line class="st23" x1="344" y1="150" x2="121" y2="150"/>
 </g>
 <g id="tick_lines">
-	<line class="st20" x1="104" y1="420" x2="92" y2="420"/>
-	<line class="st20" x1="104" y1="366" x2="92" y2="366"/>
-	<line class="st20" x1="104" y1="312" x2="92" y2="312"/>
-	<line class="st20" x1="104" y1="258" x2="92" y2="258"/>
-	<line class="st20" x1="104" y1="204" x2="92" y2="204"/>
-	<line class="st20" x1="104" y1="150" x2="92" y2="150"/>
+	<line class="st20" x1="124" y1="420" x2="112" y2="420"/>
+	<line class="st20" x1="124" y1="366" x2="112" y2="366"/>
+	<line class="st20" x1="124" y1="312" x2="112" y2="312"/>
+	<line class="st20" x1="124" y1="258" x2="112" y2="258"/>
+	<line class="st20" x1="124" y1="204" x2="112" y2="204"/>
+	<line class="st20" x1="124" y1="150" x2="112" y2="150"/>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D__00000183962274609462693090000009469698766163323561_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0_x7D__x7D__00000093880938055548618370000006978718386372527523_" transform="matrix(1 0 0 1 -25.6723 427.9227)" class="st24 st25 st26">{{#0|c,r:0}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0_x7D__x7D__00000093880938055548618370000006978718386372527523_" transform="matrix(1 0 0 1 -5.6723 427.9227)" class="st24 st25 st26">{{#0|c,r:0}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D__00000026120951369927482680000007322764546468101288_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.2_x7D__x7D__00000008125141380074841140000016911612592904076989_" transform="matrix(1 0 0 1 -45.6723 373.9227)" class="st24 st25 st26">{{#0|c,r:0.2}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.2_x7D__x7D__00000028308794513405990400000000370181536250497704_" transform="matrix(1 0 0 1 -25.6723 373.9227)" class="st24 st25 st26">{{#0|c,r:0.2}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D__00000019653917905410595120000010853602402998120352_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.4_x7D__x7D__00000172440190656614802580000006286297124590646433_" transform="matrix(1 0 0 1 -45.6723 319.9227)" class="st24 st25 st26">{{#0|c,r:0.4}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.4_x7D__x7D__00000172440190656614802580000006286297124590646433_" transform="matrix(1 0 0 1 -25.6723 319.9227)" class="st24 st25 st26">{{#0|c,r:0.4}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D__00000099650364963467965080000011308901768986062724_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.6_x7D__x7D__00000102534016950951746230000000009553170548491960_" transform="matrix(1 0 0 1 -44.6723 265.9227)" class="st24 st25 st26">{{#0|c,r:0.6}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.6_x7D__x7D__00000181781251134687520500000004601800973374480818_" transform="matrix(1 0 0 1 -24.6723 265.9227)" class="st24 st25 st26">{{#0|c,r:0.6}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D__00000176007822419317546090000006033430549646521478_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.8_x7D__x7D__00000081613676847552329990000013385566333945940115_" transform="matrix(1 0 0 1 -45.6723 211.9227)" class="st24 st25 st26">{{#0|c,r:0.8}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.8_x7D__x7D__00000081613676847552329990000013385566333945940115_" transform="matrix(1 0 0 1 -25.6723 211.9227)" class="st24 st25 st26">{{#0|c,r:0.8}}</text>
 </g>
 <g id="_x7B__x7B_ta:end_x7D__x7D_">
 	
-		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:1_x7D__x7D__00000004543438723947816730000010196467873655304602_" transform="matrix(1 0 0 1 -25.6723 157.9227)" class="st24 st25 st26">{{#0|c,r:1}}</text>
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:1_x7D__x7D__00000020384140579024491700000007417294354510823836_" transform="matrix(1 0 0 1 -5.6723 157.9227)" class="st24 st25 st26">{{#0|c,r:1}}</text>
 </g>
 <g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000042731879714800980860000017057326349804204950_">
-	<rect id="spacer_00000173850182145212793830000004320044980353660548_" x="319" y="386" class="st27" width="240" height="70"/>
+	<rect id="spacer_00000173850182145212793830000004320044980353660548_" x="339" y="386" class="st27" width="240" height="70"/>
 	<g id="pointer_00000116944330880479670380000017903067828577285806_">
-		<polygon class="st0" points="338,427.5 324,420.97 338,413.5 		"/>
+		<polygon class="st0" points="358,427.5 344,420.97 358,413.5 		"/>
 	</g>
-	<text transform="matrix(1 0 0 1 345.6395 439.7401)" class="st10 st28 st29">{{#0|c}}</text>
+	<text transform="matrix(1 0 0 1 365.6395 439.7401)" class="st10 st28 st29">{{#0|c}}</text>
 </g>
-<line id="_x7B__x7B_valuePath_x7D__x7D_" class="st27" x1="316" y1="421" x2="316" y2="149"/>
-<line id="_x7B__x7B_maskPath_x7D__x7D__00000017510385228697826150000011795687767351290034_" class="st27" x1="111" y1="421" x2="111" y2="149"/>
+<line id="_x7B__x7B_valuePath_x7D__x7D_" class="st27" x1="336" y1="421" x2="336" y2="149"/>
+<line id="_x7B__x7B_maskPath_x7D__x7D__00000017510385228697826150000011795687767351290034_" class="st27" x1="131" y1="421" x2="131" y2="149"/>
 </svg>
