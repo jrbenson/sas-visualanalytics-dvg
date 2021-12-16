@@ -4,16 +4,16 @@
 	 y="0px" viewBox="0 0 470 500" style="enable-background:new 0 0 470 500;" xml:space="preserve">
 <style type="text/css">
 	.st0{filter:url(#Adobe_OpacityMaskFilter);}
-	.st1{mask:url(#outline_00000039104958563240298570000003498836249593405338_);}
+	.st1{mask:url(#outline_00000096037917370031675600000006183630445184840382_);}
 	.st2{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-miterlimit:10;}
-	.st4{filter:url(#Adobe_OpacityMaskFilter_00000068653316572410115670000018320071546904787635_);}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_00000155831079529197303720000000822976635216490125_);}
 	.st5{fill:#FFFFFF;}
-	.st6{mask:url(#bar_00000017508496398964901090000016726106894244095375_);}
+	.st6{mask:url(#bar_00000139281895678827191400000010419071815997964437_);}
 	.st7{fill:#2F90EC;}
 	.st8{opacity:0.4;}
 	.st9{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st10{opacity:0.3;fill:url(#shine_00000181086447053147553380000005940615102835057293_);}
+	.st10{opacity:0.3;fill:url(#shine_00000065781901936105757480000009507161249106938525_);}
 	.st11{opacity:0.2;}
 	.st12{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st13{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
@@ -33,33 +33,33 @@
 		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="154" y="23" width="94" height="417" id="outline_00000106108828433208634480000012507047000679946675_">
+<mask maskUnits="userSpaceOnUse" x="154" y="23" width="94" height="417" id="outline_00000043450296529048594730000017555817764239299741_">
 	<g id="mask_00000096780520702433827880000016899603873256511380_" class="st0">
 		
 			<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000106119423029672606610000009681112592962208408_" points="
 			228.29,386.15 252,397.21 252,373.5 		"/>
 	</g>
 </mask>
-<g id="outline_00000074425486611219774930000014101129436499686058_" style="mask:url(#outline_00000106108828433208634480000012507047000679946675_);">
+<g id="outline_00000074425486611219774930000014101129436499686058_" style="mask:url(#outline_00000043450296529048594730000017555817764239299741_);">
 	<path class="st2" d="M238,25h-74c-4.42,0-8,3.58-8,8s3.58,8,8,8h2v362c0,19.33,15.67,35,35,35h0c19.33,0,35-15.67,35-35V41h2
 		c4.42,0,8-3.58,8-8S242.42,25,238,25z"/>
 	<line class="st3" x1="166" y1="40" x2="236" y2="40"/>
 </g>
 <defs>
 	
-		<filter id="Adobe_OpacityMaskFilter_00000083063889882700149260000015718117630484971192_" filterUnits="userSpaceOnUse" x="174" y="84" width="54" height="346">
+		<filter id="Adobe_OpacityMaskFilter_00000036952247116338400860000007793694358636916108_" filterUnits="userSpaceOnUse" x="174" y="84" width="54" height="346">
 		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="174" y="84" width="54" height="346" id="bar_00000147916741434594118070000016414986000746898347_">
+<mask maskUnits="userSpaceOnUse" x="174" y="84" width="54" height="346" id="bar_00000148639515772466983090000012869312129349157024_">
 	
-		<g id="mask_00000076584819780666707200000013719077497669876399_" style="filter:url(#Adobe_OpacityMaskFilter_00000083063889882700149260000015718117630484971192_);">
+		<g id="mask_00000076584819780666707200000013719077497669876399_" style="filter:url(#Adobe_OpacityMaskFilter_00000036952247116338400860000007793694358636916108_);">
 		<path id="_x7B__x7B_py:_x23_0_x2C_g:maskPath_x2C_o:0_x3B_0_x7D__x7D_" class="st5" d="M219,87.63c-3.5,0-6.66-1.39-9-3.63
 			c-2.34,2.25-5.5,3.63-9,3.63s-6.66-1.39-9-3.63c-2.34,2.25-5.5,3.63-9,3.63s-6.66-1.39-9-3.63v346h54V84
 			C225.66,86.25,222.5,87.63,219,87.63z"/>
 	</g>
 </mask>
-<g id="bar_00000142860505531629634860000015642696636043749305_" style="mask:url(#bar_00000147916741434594118070000016414986000746898347_);">
+<g id="bar_00000142860505531629634860000015642696636043749305_" style="mask:url(#bar_00000148639515772466983090000012869312129349157024_);">
 	<path id="liquid" class="st7" d="M174,84v319c0,14.91,12.09,27,27,27s27-12.09,27-27V84H174z"/>
 	<g id="bubbles" class="st8">
 		<circle class="st5" cx="190.04" cy="405.8" r="4"/>
@@ -78,11 +78,11 @@
 		<circle class="st9" cx="207" cy="103" r="10"/>
 	</g>
 	
-		<linearGradient id="shine_00000154425833663508695150000007563303875421301393_" gradientUnits="userSpaceOnUse" x1="174" y1="257" x2="201" y2="257">
+		<linearGradient id="shine_00000031898649764107009220000012463414256774425985_" gradientUnits="userSpaceOnUse" x1="174" y1="257" x2="201" y2="257">
 		<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 	</linearGradient>
-	<path id="shine" style="opacity:0.3;fill:url(#shine_00000154425833663508695150000007563303875421301393_);" d="M174,84v319
+	<path id="shine" style="opacity:0.3;fill:url(#shine_00000031898649764107009220000012463414256774425985_);" d="M174,84v319
 		c0,14.91,12.09,27,27,27V84H174z"/>
 </g>
 <g id="grid_lines_00000140011060346513122770000016312980234552478640_" class="st11">
@@ -135,5 +135,5 @@
 	<text transform="matrix(1 0 0 1 74.0182 476.954)"><tspan x="0" y="0" class="st18 st21 st22">Dissol</tspan><tspan x="71.91" y="0" class="st18 st21 st22">v</tspan><tspan x="84.6" y="0" class="st18 st21 st22">ed Ox</tspan><tspan x="150.73" y="0" class="st18 st21 st22">y</tspan><tspan x="163.22" y="0" class="st18 st21 st22">gen 6 ft</tspan></text>
 </g>
 <line id="_x7B__x7B_maskPath_x7D__x7D_" class="st17" x1="174" y1="84" x2="174" y2="386"/>
-<line id="_x7B__x7B_valuePath_x7D__x7D__00000041267460439888146650000013578552268960070572_" class="st17" x1="228" y1="386" x2="228" y2="84"/>
+<line id="_x7B__x7B_valuePath_x7D__x7D__00000041267460439888146650000013578552268960070572_" class="st17" x1="228" y1="84" x2="228" y2="386"/>
 </svg>
