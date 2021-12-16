@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ElectricalCircuit_x5F_Gauge"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 620 500"
+	 style="enable-background:new 0 0 620 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D1D1D;}
+	.st1{font-family:'Roboto-Medium';}
+	.st2{font-size:26px;}
+	.st3{filter:url(#Adobe_OpacityMaskFilter);}
+	.st4{mask:url(#Beaker_lines_00000122696684727167397520000000627175350527051430_);}
+	.st5{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-miterlimit:10;}
+	.st7{filter:url(#Adobe_OpacityMaskFilter_00000014624290430116540440000018374609299048100998_);}
+	.st8{fill:#FFFFFF;}
+	.st9{mask:url(#bar_00000168795345564457578480000007045400421018496389_);}
+	.st10{fill:#2F90EC;}
+	.st11{opacity:0.4;}
+	.st12{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st13{opacity:0.3;fill:url(#shine_00000077304227996438586240000000392712975037419428_);}
+	.st14{opacity:0.35;}
+	.st15{fill:none;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st19{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st20{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st21{fill:#A0A0A0;}
+	.st22{opacity:0.2;}
+	.st23{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
+	.st24{fill:#696969;}
+	.st25{font-family:'Roboto-Regular';}
+	.st26{font-size:24px;}
+	.st27{fill:none;}
+	.st28{font-family:'Roboto-Bold';}
+	.st29{font-size:60px;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 149.3564 476.9539)" class="st0 st1 st2">Specific Conductance 6ft</text>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="157" y="116" width="235" height="315">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="157" y="116" width="235" height="315" id="Beaker_lines_00000017493542618016266840000008773103484645740198_">
+	<g id="mask_00000172424561823853336710000009917235241729234086_" class="st3">
+		<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_" class="st0" points="396.59,410.85 382.59,418.32 
+			377.29,421.15 382.73,423.69 396.73,430.22 401,432.21 401,408.5 		"/>
+	</g>
+</mask>
+<g id="Beaker_lines_00000045609903689058157370000018012760092452978592_" style="mask:url(#Beaker_lines_00000017493542618016266840000008773103484645740198_);">
+	<path id="beaker_outline_00000181058543177515124160000006768978752801846402_" class="st5" d="M385,118H164c-2.76,0-5,2.24-5,5
+		s2.24,5,5,5v293c0,4.42,3.58,8,8,8h205c4.42,0,8-3.58,8-8V128c2.76,0,5-2.24,5-5S387.76,118,385,118z"/>
+	<line class="st6" x1="164" y1="127" x2="385" y2="127"/>
+</g>
+<defs>
+	
+		<filter id="Adobe_OpacityMaskFilter_00000152984839866835830930000010413633725759997621_" filterUnits="userSpaceOnUse" x="172" y="149" width="205" height="272">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="172" y="149" width="205" height="272" id="bar_00000101067040249937441140000014415113900789116304_">
+	
+		<g id="mask_00000183209239670803494530000006164580517792188053_" style="filter:url(#Adobe_OpacityMaskFilter_00000152984839866835830930000010413633725759997621_);">
+		
+			<path id="_x7B__x7B_py:_x23_0_x2C_g:maskPath_x2C_o:0_x3B_0_x7D__x7D__00000003086710302553528020000006690298650896653743_" class="st8" d="
+			M366.7,425c-3.93,0-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4
+			s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4
+			h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16
+			c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16c-2.67,2.47-6.24,4-10.17,4s-7.49-1.53-10.17-4h-0.16
+			c-2.67,2.47-6.24,4-10.17,4c-3.93,0-7.5-1.52-10.17-4H172v272h205V421h-0.13C374.19,423.47,370.63,425,366.7,425z"/>
+	</g>
+</mask>
+<g id="bar_00000109027726845690125280000003795945497054315159_" style="mask:url(#bar_00000101067040249937441140000014415113900789116304_);">
+	<path id="bar_00000023983219974960502260000000473114394696509336_" class="st10" d="M377,149H172v270c0,1.1,0.9,2,2,2h201
+		c1.1,0,2-0.9,2-2V149z"/>
+	<g id="bubbles_00000033347007837499092250000005880465362328449936_" class="st11">
+		<circle class="st8" cx="185.04" cy="407.8" r="4"/>
+		<circle class="st8" cx="266" cy="271.4" r="4"/>
+		<circle class="st12" cx="226.19" cy="344.8" r="5.5"/>
+		<circle class="st12" cx="359.04" cy="232.7" r="5.5"/>
+		<circle class="st12" cx="197.54" cy="174.84" r="5.5"/>
+		<circle class="st12" cx="195.04" cy="326.8" r="8"/>
+		<circle class="st12" cx="318" cy="395.8" r="8"/>
+		<circle class="st8" cx="358.04" cy="304.8" r="4"/>
+		<circle class="st8" cx="192.04" cy="245.3" r="4"/>
+		<circle class="st8" cx="306.36" cy="237" r="4"/>
+		<circle class="st12" cx="320.36" cy="323.8" r="5.5"/>
+		<circle class="st12" cx="335.67" cy="189.95" r="5.5"/>
+		<circle class="st12" cx="277.86" cy="255.3" r="5.5"/>
+		<circle class="st12" cx="217.04" cy="281.4" r="8"/>
+		<circle class="st8" cx="289" cy="383.8" r="4"/>
+		<circle class="st8" cx="248" cy="186.4" r="4"/>
+		<circle class="st8" cx="364" cy="397.8" r="4"/>
+		<circle class="st12" cx="338" cy="346" r="10"/>
+		<circle class="st12" cx="245" cy="401" r="10"/>
+		<circle class="st12" cx="270.96" cy="314.6" r="10"/>
+		<circle class="st12" cx="233" cy="220" r="10"/>
+		<circle class="st12" cx="333" cy="259" r="10"/>
+		<circle class="st12" cx="301.4" cy="172.05" r="10"/>
+	</g>
+	
+		<linearGradient id="shine_00000085232010603095305560000012884371206446925203_" gradientUnits="userSpaceOnUse" x1="172" y1="285" x2="274" y2="285">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	
+		<path id="shine_00000052825428444929375900000014617976946757475471_" style="opacity:0.3;fill:url(#shine_00000085232010603095305560000012884371206446925203_);" d="
+		M274,149H172v270c0,1.1,0.9,2,2,2h100V149z"/>
+</g>
+<g id="circuit_00000072993443246530344100000006456134217333615006_">
+	<g id="wire_in_liquid_00000067233210359350415060000018322240810504790702_" class="st14">
+		<line class="st15" x1="200" y1="329" x2="200" y2="149"/>
+		<path class="st16" d="M195,329v28c0,1.1,0.9,2,2,2l0,0v33.83c0,1.62,1.22,3.08,2.84,3.17c1.73,0.09,3.16-1.29,3.16-3v-34l0,0
+			c1.1,0,2-0.9,2-2v-28H195z"/>
+		<line class="st17" x1="197" y1="358" x2="203" y2="358"/>
+	</g>
+	<polyline id="wire_outside_liquid_00000043447955024503308520000012267558255624265345_" class="st18" points="200,149 200,22 
+		248,22 248,36.93 	"/>
+	<g id="wire_in_liquid" class="st14">
+		<path class="st16" d="M354,329v28c0,1.1-0.9,2-2,2l0,0v33.83c0,1.62-1.22,3.08-2.84,3.17c-1.73,0.09-3.16-1.29-3.16-3v-34l0,0
+			c-1.1,0-2-0.9-2-2v-28H354z"/>
+		<line class="st17" x1="352" y1="358" x2="346" y2="358"/>
+		<line class="st15" x1="349" y1="329" x2="349" y2="149"/>
+	</g>
+	<polyline id="wire_outside_liquid" class="st18" points="349,149 349,22 301,22 301,36.93 	"/>
+	<g id="battery_00000049216085032968132270000002637694925384127123_">
+		<path class="st19" d="M325,50v-6c0-1.1-0.9-2-2-2h-97c-1.1,0-2,0.9-2,2v6h5v44h-3c-1.1,0-2,0.9-2,2v6h101v-6c0-1.1-0.9-2-2-2h-3
+			V50H325z"/>
+		<line id="_x2D__00000014611407687302752430000014824383567833281449_" class="st20" x1="243" y1="63" x2="253" y2="63"/>
+		<path class="st21" d="M251,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C253,34.9,252.1,34,251,34z"/>
+		<g id="_x2B__00000165952784229464530370000001247099299315957173_">
+			<line class="st20" x1="296" y1="63" x2="306" y2="63"/>
+			<line class="st20" x1="301" y1="68" x2="301" y2="58"/>
+		</g>
+		<path class="st21" d="M304,34h-6c-1.1,0-2,0.9-2,2v6h10v-6C306,34.9,305.1,34,304,34z"/>
+		<line class="st20" x1="229" y1="95" x2="320" y2="95"/>
+		<line class="st20" x1="229" y1="49" x2="320" y2="49"/>
+	</g>
+</g>
+<g id="grid_lines" class="st22">
+	<line class="st23" x1="384" y1="420" x2="161" y2="420"/>
+	<line class="st23" x1="384" y1="366" x2="161" y2="366"/>
+	<line class="st23" x1="384" y1="312" x2="161" y2="312"/>
+	<line class="st23" x1="384" y1="258" x2="161" y2="258"/>
+	<line class="st23" x1="384" y1="204" x2="161" y2="204"/>
+	<line class="st23" x1="384" y1="150" x2="161" y2="150"/>
+</g>
+<g id="tick_lines">
+	<line class="st20" x1="164" y1="420" x2="152" y2="420"/>
+	<line class="st20" x1="164" y1="366" x2="152" y2="366"/>
+	<line class="st20" x1="164" y1="312" x2="152" y2="312"/>
+	<line class="st20" x1="164" y1="258" x2="152" y2="258"/>
+	<line class="st20" x1="164" y1="204" x2="152" y2="204"/>
+	<line class="st20" x1="164" y1="150" x2="152" y2="150"/>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000183962274609462693090000009469698766163323561_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0_x7D__x7D__00000093880938055548618370000006978718386372527523_" transform="matrix(1 0 0 1 34.3277 427.9227)" class="st24 st25 st26">{{#0|c,r:0}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000026120951369927482680000007322764546468101288_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.2_x7D__x7D__00000008125141380074841140000016911612592904076989_" transform="matrix(1 0 0 1 14.3277 373.9227)" class="st24 st25 st26">{{#0|c,r:0.2}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000019653917905410595120000010853602402998120352_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.4_x7D__x7D__00000172440190656614802580000006286297124590646433_" transform="matrix(1 0 0 1 14.3277 319.9227)" class="st24 st25 st26">{{#0|c,r:0.4}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000099650364963467965080000011308901768986062724_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.6_x7D__x7D__00000102534016950951746230000000009553170548491960_" transform="matrix(1 0 0 1 15.3277 265.9227)" class="st24 st25 st26">{{#0|c,r:0.6}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000176007822419317546090000006033430549646521478_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.8_x7D__x7D__00000081613676847552329990000013385566333945940115_" transform="matrix(1 0 0 1 14.3277 211.9227)" class="st24 st25 st26">{{#0|c,r:0.8}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:1_x7D__x7D__00000004543438723947816730000010196467873655304602_" transform="matrix(1 0 0 1 34.3277 157.9227)" class="st24 st25 st26">{{#0|c,r:1}}</text>
+</g>
+<g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000042731879714800980860000017057326349804204950_">
+	<rect id="spacer_00000173850182145212793830000004320044980353660548_" x="379" y="386" class="st27" width="240" height="70"/>
+	<g id="pointer_00000116944330880479670380000017903067828577285806_">
+		<polygon class="st0" points="398,427.5 384,420.97 398,413.5 		"/>
+	</g>
+	<text transform="matrix(1 0 0 1 405.6395 439.7401)" class="st10 st28 st29">{{#0|c}}</text>
+</g>
+<line id="_x7B__x7B_valuePath_x7D__x7D_" class="st27" x1="376" y1="421" x2="376" y2="149"/>
+<line id="_x7B__x7B_maskPath_x7D__x7D__00000017510385228697826150000011795687767351290034_" class="st27" x1="171" y1="421" x2="171" y2="149"/>
+</svg>
