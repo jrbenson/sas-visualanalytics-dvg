@@ -5,13 +5,13 @@
 <style type="text/css">
 	.st0{filter:url(#Adobe_OpacityMaskFilter);}
 	
-		.st1{mask:url(#outline_00000103261790751641924330000014481625373239927231_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
+		.st1{mask:url(#outline_00000182495543636748931890000009374309995140616081_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
 	.st2{fill:#2F90EC;}
-	.st3{opacity:0.3;fill:url(#mercuryShine_00000166644087843902032810000006965195561329291398_);}
-	.st4{filter:url(#Adobe_OpacityMaskFilter_00000142860335032870571530000009929282156177134006_);}
+	.st3{opacity:0.3;fill:url(#mercuryShine_00000168830761676061538510000000265129353074203784_);}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_00000122720985373416594980000004230442204874044565_);}
 	.st5{fill:#FFFFFF;}
-	.st6{mask:url(#bar_00000102511851999806416330000007169220495779868569_);}
-	.st7{opacity:0.3;fill:url(#barShine_00000115472314391626397270000011023980966744592287_);}
+	.st6{mask:url(#bar_00000139985680345978311490000013946872275010537405_);}
+	.st7{opacity:0.3;fill:url(#barShine_00000151503868683790784940000004632602456210539931_);}
 	.st8{opacity:0.2;}
 	.st9{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st10{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
@@ -32,43 +32,43 @@
 		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="185" y="23" width="74" height="416" id="outline_00000128448360966128499240000014514585696838129586_">
+<mask maskUnits="userSpaceOnUse" x="185" y="23" width="74" height="416" id="outline_00000002351926482259441910000002606536143033520037_">
 	<g id="mask_00000102544744580016951010000004309601805183441540_" class="st0">
 		<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_" points="234.53,358.09 255,367.64 255,347.17 		"/>
 	</g>
 </mask>
-<path id="outline" style="mask:url(#outline_00000128448360966128499240000014514585696838129586_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;" d="
+<path id="outline" style="mask:url(#outline_00000002351926482259441910000002606536143033520037_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;" d="
 	M242,373.28V45c0-5.52-2.24-10.52-5.86-14.14S227.52,25,222,25c-11.05,0-20,8.95-20,20v328.28c-9.07,6.32-15,16.83-15,28.72
 	c0,19.33,15.67,35,35,35s35-15.67,35-35C257,390.11,251.07,379.6,242,373.28z"/>
 <path id="mercuryBottom" class="st2" d="M234,377.81V356h-24v21.81c-8.89,4.42-15,13.59-15,24.19c0,14.91,12.09,27,27,27
 	s27-12.09,27-27C249,391.4,242.89,382.23,234,377.81z"/>
-<linearGradient id="mercuryShine_00000076574960447373890560000002586381024082519692_" gradientUnits="userSpaceOnUse" x1="195" y1="393.5" x2="222" y2="393.5">
+<linearGradient id="mercuryShine_00000168834852165680249480000001050063218773101447_" gradientUnits="userSpaceOnUse" x1="195" y1="393.5" x2="222" y2="393.5">
 	<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<path id="mercuryShine" style="opacity:0.3;fill:url(#mercuryShine_00000076574960447373890560000002586381024082519692_);" d="
+<path id="mercuryShine" style="opacity:0.3;fill:url(#mercuryShine_00000168834852165680249480000001050063218773101447_);" d="
 	M210,358v19.81c-8.89,4.42-15,13.59-15,24.19c0,14.91,12.09,27,27,27v-71H210z"/>
 <defs>
 	
-		<filter id="Adobe_OpacityMaskFilter_00000098215717777790046920000005531091807128811166_" filterUnits="userSpaceOnUse" x="210" y="56" width="24" height="302">
+		<filter id="Adobe_OpacityMaskFilter_00000175318630218660477960000017101587808938502036_" filterUnits="userSpaceOnUse" x="210" y="56" width="24" height="302">
 		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 	</filter>
 </defs>
-<mask maskUnits="userSpaceOnUse" x="210" y="56" width="24" height="302" id="bar_00000160178259138155810780000016566700020209831100_">
+<mask maskUnits="userSpaceOnUse" x="210" y="56" width="24" height="302" id="bar_00000173142696375871371700000017947599575019397307_">
 	
-		<g id="mask_00000109725597550023429200000002814302164633269379_" style="filter:url(#Adobe_OpacityMaskFilter_00000098215717777790046920000005531091807128811166_);">
+		<g id="mask_00000109725597550023429200000002814302164633269379_" style="filter:url(#Adobe_OpacityMaskFilter_00000175318630218660477960000017101587808938502036_);">
 		<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1_x7D__x7D_" x="210" y="56" class="st5" width="24" height="302"/>
 	</g>
 </mask>
-<g id="bar_00000014598666071666223690000007374098923566915995_" style="mask:url(#bar_00000160178259138155810780000016566700020209831100_);">
+<g id="bar_00000014598666071666223690000007374098923566915995_" style="mask:url(#bar_00000173142696375871371700000017947599575019397307_);">
 	<rect id="bar" x="210" y="56" class="st2" width="24" height="302"/>
 	
-		<linearGradient id="barShine_00000145020921988541477890000006428330837577433263_" gradientUnits="userSpaceOnUse" x1="210" y1="207" x2="222" y2="207">
+		<linearGradient id="barShine_00000058578656779713452960000004324042806116845960_" gradientUnits="userSpaceOnUse" x1="210" y1="207" x2="222" y2="207">
 		<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 	</linearGradient>
 	
-		<rect id="barShine" x="210" y="56" style="opacity:0.3;fill:url(#barShine_00000145020921988541477890000006428330837577433263_);" width="12" height="302"/>
+		<rect id="barShine" x="210" y="56" style="opacity:0.3;fill:url(#barShine_00000058578656779713452960000004324042806116845960_);" width="12" height="302"/>
 </g>
 <g id="gridLines" class="st8">
 	<line class="st9" x1="242" y1="357" x2="202" y2="357"/>
