@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Thermometer_x5F_Gauge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	
+		.st1{mask:url(#outline_00000103261790751641924330000014481625373239927231_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#2F90EC;}
+	.st3{opacity:0.3;fill:url(#mercuryShine_00000166644087843902032810000006965195561329291398_);}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_00000142860335032870571530000009929282156177134006_);}
+	.st5{fill:#FFFFFF;}
+	.st6{mask:url(#bar_00000102511851999806416330000007169220495779868569_);}
+	.st7{opacity:0.3;fill:url(#barShine_00000115472314391626397270000011023980966744592287_);}
+	.st8{opacity:0.2;}
+	.st9{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
+	.st10{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st11{fill:#696969;}
+	.st12{font-family:'Roboto-Regular';}
+	.st13{font-size:24px;}
+	.st14{fill:#1D1D1D;}
+	.st15{font-family:'Roboto-Medium';}
+	.st16{font-size:26px;}
+	.st17{letter-spacing:-1;}
+	.st18{fill:none;}
+	.st19{font-family:'Roboto-Bold';}
+	.st20{font-size:60px;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="185" y="23" width="74" height="416">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="185" y="23" width="74" height="416" id="outline_00000128448360966128499240000014514585696838129586_">
+	<g id="mask_00000102544744580016951010000004309601805183441540_" class="st0">
+		<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_" points="234.53,358.09 255,367.64 255,347.17 		"/>
+	</g>
+</mask>
+<path id="outline" style="mask:url(#outline_00000128448360966128499240000014514585696838129586_);fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;" d="
+	M242,373.28V45c0-5.52-2.24-10.52-5.86-14.14S227.52,25,222,25c-11.05,0-20,8.95-20,20v328.28c-9.07,6.32-15,16.83-15,28.72
+	c0,19.33,15.67,35,35,35s35-15.67,35-35C257,390.11,251.07,379.6,242,373.28z"/>
+<path id="mercuryBottom" class="st2" d="M234,377.81V356h-24v21.81c-8.89,4.42-15,13.59-15,24.19c0,14.91,12.09,27,27,27
+	s27-12.09,27-27C249,391.4,242.89,382.23,234,377.81z"/>
+<linearGradient id="mercuryShine_00000076574960447373890560000002586381024082519692_" gradientUnits="userSpaceOnUse" x1="195" y1="393.5" x2="222" y2="393.5">
+	<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+</linearGradient>
+<path id="mercuryShine" style="opacity:0.3;fill:url(#mercuryShine_00000076574960447373890560000002586381024082519692_);" d="
+	M210,358v19.81c-8.89,4.42-15,13.59-15,24.19c0,14.91,12.09,27,27,27v-71H210z"/>
+<defs>
+	
+		<filter id="Adobe_OpacityMaskFilter_00000098215717777790046920000005531091807128811166_" filterUnits="userSpaceOnUse" x="210" y="56" width="24" height="302">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="210" y="56" width="24" height="302" id="bar_00000160178259138155810780000016566700020209831100_">
+	
+		<g id="mask_00000109725597550023429200000002814302164633269379_" style="filter:url(#Adobe_OpacityMaskFilter_00000098215717777790046920000005531091807128811166_);">
+		<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1_x7D__x7D_" x="210" y="56" class="st5" width="24" height="302"/>
+	</g>
+</mask>
+<g id="bar_00000014598666071666223690000007374098923566915995_" style="mask:url(#bar_00000160178259138155810780000016566700020209831100_);">
+	<rect id="bar" x="210" y="56" class="st2" width="24" height="302"/>
+	
+		<linearGradient id="barShine_00000145020921988541477890000006428330837577433263_" gradientUnits="userSpaceOnUse" x1="210" y1="207" x2="222" y2="207">
+		<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	
+		<rect id="barShine" x="210" y="56" style="opacity:0.3;fill:url(#barShine_00000145020921988541477890000006428330837577433263_);" width="12" height="302"/>
+</g>
+<g id="gridLines" class="st8">
+	<line class="st9" x1="242" y1="357" x2="202" y2="357"/>
+	<line class="st9" x1="242" y1="282" x2="202" y2="282"/>
+	<line class="st9" x1="242" y1="207" x2="202" y2="207"/>
+	<line class="st9" x1="242" y1="132" x2="202" y2="132"/>
+	<line class="st9" x1="242" y1="57" x2="202" y2="57"/>
+</g>
+<g id="tickLines">
+	<line class="st10" x1="200" y1="357" x2="188" y2="357"/>
+	<line class="st10" x1="200" y1="282" x2="188" y2="282"/>
+	<line class="st10" x1="200" y1="207" x2="188" y2="207"/>
+	<line class="st10" x1="200" y1="132" x2="188" y2="132"/>
+	<line class="st10" x1="200" y1="57" x2="188" y2="57"/>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000183962274609462693090000009469698766163323561_">
+	<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0_x7D__x7D_" transform="matrix(1 0 0 1 69.3277 364.9227)" class="st11 st12 st13">{{#0|c,r:0}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000019653917905410595120000010853602402998120352_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.25_x7D__x7D__00000105417002910352867200000002051448279613116591_" transform="matrix(1 0 0 1 36.3277 289.9227)" class="st11 st12 st13">{{#0|c,r:0.25}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000099650364963467965080000011308901768986062724_">
+	<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.5_x7D__x7D_" transform="matrix(1 0 0 1 50.3277 214.9227)" class="st11 st12 st13">{{#0|c,r:0.5}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000176007822419317546090000006033430549646521478_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.75_x7D__x7D__00000071546096274290160660000006445929769651708840_" transform="matrix(1 0 0 1 36.3277 139.9227)" class="st11 st12 st13">{{#0|c,r:0.75}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:1_x7D__x7D__00000155837594258409204200000016951266049211963793_" transform="matrix(1 0 0 1 70.3277 64.9227)" class="st11 st12 st13">{{#0|c,r:1}}</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 128.1497 476.9546)"><tspan x="0" y="0" class="st14 st15 st16 st17">T</tspan><tspan x="14.65" y="0" class="st14 st15 st16">empe</tspan><tspan x="79.82" y="0" class="st14 st15 st16">r</tspan><tspan x="88.58" y="0" class="st14 st15 st16">atu</tspan><tspan x="125.73" y="0" class="st14 st15 st16">r</tspan><tspan x="134.63" y="0" class="st14 st15 st16">e 6ft</tspan></text>
+</g>
+<g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000139268383050630648580000002484237591822170278_">
+	<rect id="spacer_00000009583443066101272770000003606393616852562064_" x="234" y="323" class="st18" width="240" height="70"/>
+	<g id="pointer_00000029766287966952496440000005579253905957036432_">
+		<polygon class="st14" points="236.76,358.03 254,348.83 254,366.07 		"/>
+		<path class="st5" d="M253,350.5v14l-14-6.53L253,350.5 M255,347.17l-2.94,1.57l-14,7.47l-3.53,1.88l3.63,1.69l14,6.53l2.85,1.33
+			v-3.14v-14V347.17L255,347.17z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 260.6395 376.7401)" class="st2 st19 st20">{{#0|c}}</text>
+</g>
+<line id="_x7B__x7B_valuePath_x7D__x7D_" class="st18" x1="234" y1="56" x2="234" y2="358"/>
+</svg>
