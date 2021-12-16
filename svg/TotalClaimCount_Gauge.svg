@@ -12,9 +12,9 @@
 	.st6{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
 	.st7{filter:url(#Adobe_OpacityMaskFilter);}
 	.st8{fill:#FFFFFF;}
-	.st9{mask:url(#bar_00000040560363217910107600000003278119749038055099_);fill:#0293A0;}
+	.st9{mask:url(#bar_00000149372059707090871230000013426935470169939336_);fill:#0293A0;}
 	.st10{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
-	.st11{opacity:0.3;fill:url(#shine_00000082328216222177383720000013700644617851028918_);}
+	.st11{opacity:0.3;fill:url(#shine_00000052101472375516625760000007121490218177636779_);}
 	.st12{fill:#696969;}
 	.st13{font-family:'Roboto-Regular';}
 	.st14{font-size:24px;}
@@ -81,13 +81,13 @@
 		</filter>
 	</defs>
 	
-		<mask maskUnits="userSpaceOnUse" x="213" y="94" width="19" height="242" id="bar_00000013881569442926684480000014686731906108027273_">
+		<mask maskUnits="userSpaceOnUse" x="213" y="94" width="19" height="242" id="bar_00000108285719107607580150000018204587461148663467_">
 		<g id="mask" class="st7">
 			<rect id="_x7B__x7B_sy:_x23_0_x2C_o:0.5_x3B_1_x7D__x7D_" x="213" y="94" class="st8" width="19" height="242"/>
 		</g>
 	</mask>
 	
-		<rect id="bar_00000159438346624292936920000007586214576285236120_" x="213" y="94" style="mask:url(#bar_00000013881569442926684480000014686731906108027273_);fill:#0293A0;" width="19" height="242"/>
+		<rect id="bar_00000159438346624292936920000007586214576285236120_" x="213" y="94" style="mask:url(#bar_00000108285719107607580150000018204587461148663467_);fill:#0293A0;" width="19" height="242"/>
 	<g id="bar_grid_lines" class="st5">
 		<line class="st10" x1="232" y1="335" x2="213" y2="335"/>
 		<line class="st10" x1="232" y1="275" x2="213" y2="275"/>
@@ -96,24 +96,24 @@
 		<line class="st10" x1="232" y1="95" x2="213" y2="95"/>
 	</g>
 </g>
-<linearGradient id="shine_00000135655714124052474010000011084492668624650377_" gradientUnits="userSpaceOnUse" x1="213" y1="215" x2="222" y2="215">
+<linearGradient id="shine_00000169531602567037894430000004989704910832144300_" gradientUnits="userSpaceOnUse" x1="213" y1="215" x2="222" y2="215">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
 </linearGradient>
-<rect id="shine_00000091008309965269043600000012869153302409665163_" x="213" y="94" style="opacity:0.3;fill:url(#shine_00000135655714124052474010000011084492668624650377_);" width="9" height="242"/>
-<g id="_x7B__x7B_ta:right_x7D__x7D__00000113344909002482184270000016656346354731004856_">
+<rect id="shine_00000091008309965269043600000012869153302409665163_" x="213" y="94" style="opacity:0.3;fill:url(#shine_00000169531602567037894430000004989704910832144300_);" width="9" height="242"/>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000026150382613295286290000013338375509109719188_">
 	<text transform="matrix(1 0 0 1 46.4297 342.5313)" class="st12 st13 st14">{{#0|c,r:0}}</text>
 </g>
-<g id="_x7B__x7B_ta:right_x7D__x7D__00000178906302358415421310000009057712063982966198_">
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000161619925334424253320000011442313559868003968_">
 	<text transform="matrix(1 0 0 1 13.4297 282.5313)" class="st12 st13 st14">{{#0|c,r:0.25}}</text>
 </g>
-<g id="_x7B__x7B_ta:right_x7D__x7D_">
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000073706882505467088600000002046329755614173611_">
 	<text transform="matrix(1 0 0 1 13.4297 222.5313)" class="st12 st13 st14">{{#0|c,r:0.50}}</text>
 </g>
-<g id="_x7B__x7B_ta:right_x7D__x7D__00000066490898054093472340000007251889125538510738_">
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000047055393571923356660000015324077857147782017_">
 	<text transform="matrix(1 0 0 1 13.4297 162.5313)" class="st12 st13 st14">{{#0|c,r:0.75}}</text>
 </g>
-<g id="_x7B__x7B_ta:right_x7D__x7D__00000125599944747590540470000017641653487504880823_">
+<g id="_x7B__x7B_ta:end_x7D__x7D_">
 	<text transform="matrix(1 0 0 1 46.4297 102.5313)" class="st12 st13 st14">{{#0|c,r:1}}</text>
 </g>
 <g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D_">
