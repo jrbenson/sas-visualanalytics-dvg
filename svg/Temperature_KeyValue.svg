@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Thermometer_x5F_KeyValue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 320 540" style="enable-background:new 0 0 320 540;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2F90EC;}
+	.st1{fill:#D8D8D8;}
+	.st2{opacity:0.75;fill:url(#SVGID_1_);}
+	.st3{fill:#A0A0A0;}
+	.st4{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
+	.st6{fill:#1D1D1D;}
+	.st7{font-family:'Roboto-Medium';}
+	.st8{font-size:20px;}
+	.st9{font-family:'Roboto-Bold';}
+	.st10{font-size:70px;}
+	.st11{opacity:0.3;fill:url(#shine_00000150073466034985301670000006225304804273786299_);}
+	.st12{fill:none;stroke:#2F90EC;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.78,182.01c0-27.12,10.99-51.68,28.77-69.45S132.88,83.79,160,83.79s51.68,10.99,69.45,28.77
+	s28.77,42.33,28.77,69.45s-10.99,51.68-28.77,69.45s-42.33,28.77-69.45,28.77s-51.68-10.99-69.45-28.77S61.78,209.13,61.78,182.01z"
+	/>
+<g id="outlines">
+	<path class="st1" d="M175.02,439.72v40.98c0,8.54-7.12,15.41-15.75,15.01c-8.08-0.38-14.3-7.34-14.3-15.43l0-40.55h0H175.02z"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="144.9778" y1="467.7136" x2="160" y2="467.7136">
+		<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	<path class="st2" d="M160,439.72v55.98c-8.08-0.38-15.02-7.34-15.02-15.43l0-40.55h0H160z"/>
+	<g>
+		<g>
+			<path class="st3" d="M160,71.34c29.56,0,57.35,11.51,78.25,32.41c20.9,20.9,32.41,48.69,32.41,78.25
+				c0,29.56-11.51,57.35-32.41,78.25c-20.9,20.9-48.69,32.41-78.25,32.41c-29.56,0-57.35-11.51-78.25-32.41
+				s-32.41-48.69-32.41-78.25c0-29.56,11.51-57.35,32.41-78.25C102.65,82.86,130.44,71.34,160,71.34 M160,69.34
+				c-31.11,0-59.28,12.61-79.67,33c-20.39,20.39-33,48.56-33,79.67s12.61,59.28,33,79.67c20.39,20.39,48.56,33,79.67,33
+				s59.28-12.61,79.67-33c20.39-20.39,33-48.56,33-79.67s-12.61-59.28-33-79.67C219.28,81.96,191.11,69.34,160,69.34L160,69.34z"/>
+		</g>
+	</g>
+	<line class="st4" x1="144.98" y1="439.72" x2="175.02" y2="439.72"/>
+	<path class="st4" d="M130.17,56.6c9.58-2.25,19.56-3.44,29.83-3.44c11.08,0,21.84,1.39,32.1,3.99"/>
+	<path class="st5" d="M251.92,90.09c-18.46-18.46-42.44-31.38-69.25-36.1l0.28-1.57c0.57-3.23-1.65-6.31-4.9-6.74
+		c-5.98-0.79-12.01-1.19-18.05-1.19s-12.07,0.4-18.05,1.19c-3.25,0.43-5.47,3.51-4.9,6.74l0.28,1.57
+		c-26.81,4.72-50.79,17.65-69.25,36.1C44.55,113.61,30,146.11,30,182.01c0,35.9,14.55,68.4,38.08,91.92
+		c24.36,28.52,76.9,42.7,76.9,147.22l0,59.12c0,8.09,6.22,15.05,14.3,15.43c8.63,0.41,15.75-6.47,15.75-15v-59.54
+		c0-104.52,52.54-118.7,76.9-147.22c23.53-23.53,38.08-56.03,38.08-91.92C290,146.11,275.45,113.61,251.92,90.09z"/>
+</g>
+<g id="speaker">
+	<circle class="st3" cx="164.22" cy="333.97" r="2.89"/>
+	<circle class="st3" cx="154.22" cy="333.97" r="2.89"/>
+	<circle class="st3" cx="168.44" cy="324.72" r="2.89"/>
+	<circle class="st3" cx="158.44" cy="324.72" r="2.89"/>
+	<circle class="st3" cx="148.44" cy="324.72" r="2.89"/>
+	<circle class="st3" cx="172.67" cy="315.48" r="2.89"/>
+	<circle class="st3" cx="162.67" cy="315.48" r="2.89"/>
+	<circle class="st3" cx="152.67" cy="315.48" r="2.89"/>
+	<circle class="st3" cx="142.67" cy="315.48" r="2.89"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 102.8525 218.3447)"><tspan x="0" y="0" class="st6 st7 st8">T</tspan><tspan x="11.27" y="0" class="st6 st7 st8">empe</tspan><tspan x="61.4" y="0" class="st6 st7 st8">r</tspan><tspan x="68.13" y="0" class="st6 st7 st8">atu</tspan><tspan x="96.72" y="0" class="st6 st7 st8">r</tspan><tspan x="103.56" y="0" class="st6 st7 st8">e</tspan><tspan x="44.59" y="24" class="st6 st7 st8">6ft</tspan></text>
+</g>
+<text transform="matrix(1 0 0 1 46.8105 192.3017)" class="st6 st9 st10">{{#0|c}}</text>
+<linearGradient id="shine_00000016036061643559653860000012536873053979082883_" gradientUnits="userSpaceOnUse" x1="90.5463" y1="112.5575" x2="159.9999" y2="182.0111">
+	<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+</linearGradient>
+<path id="shine_00000124846478359266200340000016408070363888959362_" style="opacity:0.3;fill:url(#shine_00000016036061643559653860000012536873053979082883_);" d="
+	M90.55,112.56c19.18-19.18,44.32-28.77,69.45-28.77s50.27,9.59,69.45,28.77L90.55,251.46c-19.18-19.18-28.77-44.32-28.77-69.45
+	S71.37,131.74,90.55,112.56z"/>
+<path class="st12" d="M62,182c0-27.06,10.97-51.56,28.7-69.3S132.94,84,160,84s51.56,10.97,69.3,28.7S258,154.94,258,182
+	s-10.97,51.56-28.7,69.3S187.06,280,160,280s-51.56-10.97-69.3-28.7S62,209.06,62,182z"/>
+</svg>
