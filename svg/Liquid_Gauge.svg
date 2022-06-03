@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Liquid_x5F_Gauge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 470 500" style="enable-background:new 0 0 470 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#outline_00000100363911084256863020000006121098372448547477_);}
+	.st2{fill:none;stroke:#A0A0A0;stroke-width:4;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-miterlimit:10;}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_00000155112638429330217080000004677472557828312723_);}
+	.st5{fill:#FFFFFF;}
+	.st6{mask:url(#bar_00000163784835922296571560000012717405182065843897_);}
+	.st7{fill:#2F90EC;}
+	.st8{opacity:0.4;}
+	.st9{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st10{opacity:0.3;fill:url(#shine_00000064319076154568294480000007508359323877566134_);}
+	.st11{opacity:0.2;}
+	.st12{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3,2;}
+	.st13{fill:none;stroke:#A0A0A0;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:#696969;}
+	.st15{font-family:'Roboto-Regular';}
+	.st16{font-size:24px;}
+	.st17{fill:none;}
+	.st18{fill:#1D1D1D;}
+	.st19{font-family:'Roboto-Bold';}
+	.st20{font-size:60px;}
+	.st21{font-family:'Roboto-Medium';}
+	.st22{font-size:26px;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="154" y="23" width="94" height="417">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="154" y="23" width="94" height="417" id="outline_00000061430434470464742270000014242002698533172375_">
+	<g id="mask_00000096780520702433827880000016899603873256511380_" class="st0">
+		
+			<polygon id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000106119423029672606610000009681112592962208408_" points="
+			228.29,386.15 252,397.21 252,373.5 		"/>
+	</g>
+</mask>
+<g id="outline_00000074425486611219774930000014101129436499686058_" style="mask:url(#outline_00000061430434470464742270000014242002698533172375_);">
+	<path class="st2" d="M238,25h-74c-4.42,0-8,3.58-8,8s3.58,8,8,8h2v362c0,19.33,15.67,35,35,35h0c19.33,0,35-15.67,35-35V41h2
+		c4.42,0,8-3.58,8-8S242.42,25,238,25z"/>
+	<line class="st3" x1="166" y1="40" x2="236" y2="40"/>
+</g>
+<defs>
+	
+		<filter id="Adobe_OpacityMaskFilter_00000044882001526821136420000009192634450356129164_" filterUnits="userSpaceOnUse" x="174" y="84" width="54" height="346">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="174" y="84" width="54" height="346" id="bar_00000117668117999918739070000005036020631093744518_">
+	
+		<g id="mask_00000076584819780666707200000013719077497669876399_" style="filter:url(#Adobe_OpacityMaskFilter_00000044882001526821136420000009192634450356129164_);">
+		<path id="_x7B__x7B_py:_x23_0_x2C_g:maskPath_x2C_o:0_x3B_0_x7D__x7D_" class="st5" d="M219,389.63c-3.5,0-6.66-1.39-9-3.63
+			c-2.34,2.25-5.5,3.63-9,3.63s-6.66-1.39-9-3.63c-2.34,2.25-5.5,3.63-9,3.63s-6.66-1.39-9-3.63v346h54V386
+			C225.66,388.25,222.5,389.63,219,389.63z"/>
+	</g>
+</mask>
+<g id="bar_00000142860505531629634860000015642696636043749305_" style="mask:url(#bar_00000117668117999918739070000005036020631093744518_);">
+	<path id="liquid" class="st7" d="M174,84v319c0,14.91,12.09,27,27,27s27-12.09,27-27V84H174z"/>
+	<g id="bubbles" class="st8">
+		<circle class="st5" cx="190.04" cy="405.8" r="4"/>
+		<circle class="st9" cx="196.04" cy="350.8" r="5.5"/>
+		<circle class="st5" cx="215.04" cy="297.8" r="4"/>
+		<circle class="st9" cx="186.04" cy="247.8" r="5.5"/>
+		<circle class="st9" cx="212.04" cy="223.8" r="8"/>
+		<circle class="st5" cx="206.04" cy="172.8" r="4"/>
+		<circle class="st9" cx="213.04" cy="156.8" r="5.5"/>
+		<circle class="st9" cx="189.04" cy="134.8" r="5.5"/>
+		<circle class="st5" cx="208.04" cy="122.8" r="4"/>
+		<circle class="st9" cx="211" cy="384" r="10"/>
+		<circle class="st9" cx="190" cy="320" r="10"/>
+		<circle class="st9" cx="201" cy="272" r="10"/>
+		<circle class="st9" cx="192" cy="189" r="10"/>
+		<circle class="st9" cx="207" cy="103" r="10"/>
+	</g>
+	
+		<linearGradient id="shine_00000124139892489524566390000016641304560910978741_" gradientUnits="userSpaceOnUse" x1="174" y1="257" x2="201" y2="257">
+		<stop  offset="4.910593e-04" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	<path id="shine" style="opacity:0.3;fill:url(#shine_00000124139892489524566390000016641304560910978741_);" d="M174,84v319
+		c0,14.91,12.09,27,27,27V84H174z"/>
+</g>
+<g id="grid_lines_00000140011060346513122770000016312980234552478640_" class="st11">
+	<line class="st12" x1="236" y1="385" x2="166" y2="385"/>
+	<line class="st12" x1="236" y1="325" x2="166" y2="325"/>
+	<line class="st12" x1="236" y1="265" x2="166" y2="265"/>
+	<line class="st12" x1="236" y1="205" x2="166" y2="205"/>
+	<line class="st12" x1="236" y1="145" x2="166" y2="145"/>
+	<line class="st12" x1="236" y1="85" x2="166" y2="85"/>
+</g>
+<g id="tick_lines_00000101799244612189761520000004006443284757723835_">
+	<line class="st13" x1="166" y1="385" x2="154" y2="385"/>
+	<line class="st13" x1="166" y1="325" x2="154" y2="325"/>
+	<line class="st13" x1="166" y1="265" x2="154" y2="265"/>
+	<line class="st13" x1="166" y1="205" x2="154" y2="205"/>
+	<line class="st13" x1="166" y1="145" x2="154" y2="145"/>
+	<line class="st13" x1="166" y1="85" x2="154" y2="85"/>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000183962274609462693090000009469698766163323561_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0_x7D__x7D__00000093880938055548618370000006978718386372527523_" transform="matrix(1 0 0 1 35.3277 392.9227)" class="st14 st15 st16">{{#0|c,r:0}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000026120951369927482680000007322764546468101288_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.2_x7D__x7D__00000100367570100822097510000001796225158354769338_" transform="matrix(1 0 0 1 15.3277 332.9227)" class="st14 st15 st16">{{#0|c,r:0.2}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000019653917905410595120000010853602402998120352_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.4_x7D__x7D__00000172440190656614802580000006286297124590646433_" transform="matrix(1 0 0 1 15.3277 272.9227)" class="st14 st15 st16">{{#0|c,r:0.4}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000099650364963467965080000011308901768986062724_">
+	<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.6_x7D__x7D_" transform="matrix(1 0 0 1 16.3277 212.9227)" class="st14 st15 st16">{{#0|c,r:0.6}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D__00000176007822419317546090000006033430549646521478_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:0.8_x7D__x7D__00000081613676847552329990000013385566333945940115_" transform="matrix(1 0 0 1 15.3277 152.9227)" class="st14 st15 st16">{{#0|c,r:0.8}}</text>
+</g>
+<g id="_x7B__x7B_ta:end_x7D__x7D_">
+	
+		<text id="_x7B__x7B__x23_0_x7C_c_x2C_r:1_x7D__x7D__00000151535930789133843620000012274442375359541692_" transform="matrix(1 0 0 1 35.3277 92.9227)" class="st14 st15 st16">{{#0|c,r:1}}</text>
+</g>
+<g id="_x7B__x7B_py:_x23_0_x2C_g:valuePath_x2C_o:0_x3B_0.5_x7D__x7D__00000137841505438395109580000001335684597375828159_">
+	<rect id="spacer_00000102510905967075341440000005575938811815327635_" x="230" y="351" class="st17" width="240" height="70"/>
+	<g id="pointer_00000095332410092349931920000013027635376409838981_">
+		<polygon class="st18" points="249,392.5 235,385.97 249,378.5 		"/>
+	</g>
+	<text transform="matrix(1 0 0 1 256.6395 404.7401)" class="st7 st19 st20">{{#0|c}}</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 74.0182 476.954)"><tspan x="0" y="0" class="st18 st21 st22">Dissol</tspan><tspan x="71.91" y="0" class="st18 st21 st22">v</tspan><tspan x="84.6" y="0" class="st18 st21 st22">ed Ox</tspan><tspan x="150.73" y="0" class="st18 st21 st22">y</tspan><tspan x="163.22" y="0" class="st18 st21 st22">gen 6 ft</tspan></text>
+</g>
+<line id="_x7B__x7B_maskPath_x7D__x7D_" class="st17" x1="174" y1="386" x2="174" y2="84"/>
+<line id="_x7B__x7B_valuePath_x7D__x7D__00000041267460439888146650000013578552268960070572_" class="st17" x1="228" y1="386" x2="228" y2="84"/>
+</svg>
