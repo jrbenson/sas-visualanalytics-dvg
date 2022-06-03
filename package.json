@@ -1,0 +1,35 @@
+{
+  "name": "sas-visualanalytics-dvg",
+  "version": "1.0.0",
+  "description": "SAS Visual Analytics data-driven content object wrapper for the Dynamic Vector Graphics project.",
+  "browser": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "keywords": [
+    "sas",
+    "visual",
+    "analytics",
+    "dvg",
+    "dynamic",
+    "vector",
+    "graphics",
+    "svg",
+    "visualization",
+    "infographics",
+    "data"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrbenson/sas-visualanalytics-dvg.git"
+  },
+  "author": "Riley.Benson@sas.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrbenson/sas-visualanalytics-dvg/issues"
+  },
+  "homepage": "https://github.com/jrbenson/sas-visualanalytics-dvg#readme"
+}
