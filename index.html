@@ -28,7 +28,7 @@ limitations under the License.
     </style>
     <script src="https://sassoftware.github.io/sas-visualanalytics-thirdpartyvisualizations/util/contentUtil.js"></script>
     <script src="https://sassoftware.github.io/sas-visualanalytics-thirdpartyvisualizations/util/messagingUtil.js"></script>
-    <script src="https://jrbenson.github.io/dynamic-vector-graphics/dist/dvg.min.js"></script>
+    <script src="https://unpkg.com/dynamic-vector-graphics/dist/dvg.min.js"></script>
   </head>
 
   <body>
@@ -49,7 +49,7 @@ limitations under the License.
               }
             }),
           })
-        } 
+        }
 
         va.messagingUtil.setOnDataReceivedCallback(dataRecievedCallback)
         va.contentUtil.setupResizeListener(ddcDVG.draw.bind(ddcDVG))
