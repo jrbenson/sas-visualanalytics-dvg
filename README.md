@@ -9,12 +9,22 @@ To use this system in a Visual Analytics report you must use a Data-driven conte
 <sub><sup>**Adding a Data-driven Content Object**</sup></sub><br/>
 ![](doc/va-ddc-add.gif)
 
-Then you must provide a URL to the VA Data-driven Content object's "URL" option. This URL is to the HTML page that runs the dynamic SVG and takes an "svg" parameter which is a URL to the desired SVG file. This sample URL uses a test SVG to demonstrate:
+Then you must provide a URL to the VA Data-driven Content object's "URL" option. This URL should point to a copy of the `index.html` file in this project. This `index.html` page uses URL parameter syntax for an `svg` parameter which in turn provides a URL to the desired SVG file. This sample URL uses a test SVG to demonstrate:
 
-`https://jrbenson.github.io/sas-visualanalytics-dvg/?svg=https://jrbenson.github.io/dvg-gallery/svg/test/airplane-top.svg`
+```
+https://jrbenson.github.io/sas-visualanalytics-dvg/?svg=https://jrbenson.github.io/dvg-gallery/svg/test/airplane-top.svg
+```
 
 If you host a copy of the library alongside your SVGs then the path can be relative:
-`https://my.host.com/dvg/dvg.html?svg=graphic.svg`
+
+```
+https://my.host.com/dvg/dvg.html?svg=graphic.svg
+```
+
+If you cannot host your own copy of the page then either unpkg or GitHub pages host the `index.html` page as well:
+
+- `https://unpkg.com/sas-visualanalytics-dvg/index.html`
+- `https://jrbenson.github.io/sas-visualanalytics-dvg/`
 
 <sub><sup>**Setting URL of VA Data-driven Content**</sup></sub><br/>
 ![](doc/va-ddc-url.gif)
