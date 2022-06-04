@@ -6,7 +6,7 @@ This project provides a SAS Visual Analytics (VA) data-driven content object tha
 
 To use this system in a Visual Analytics report you must use a Data-driven content object.
 
-<sub><sup>**Adding a Data-driven Content Object**</sup></sub><br/>
+**_Adding a Data-driven Content Object_**
 ![](doc/va-ddc-add.gif)
 
 Then you must provide a URL to the VA Data-driven Content object's "URL" option. This URL should point to a copy of the `index.html` file in this project. This `index.html` page uses URL parameter syntax for an `svg` parameter which in turn provides a URL to the desired SVG file. This sample URL uses a test SVG to demonstrate:
@@ -27,16 +27,19 @@ If you cannot host your own copy of the page then either unpkg or GitHub pages h
 - `https://jrbenson.github.io/sas-visualanalytics-dvg/`
 
 <sub><sup>**Setting URL of VA Data-driven Content**</sup></sub><br/>
+
 ![](doc/va-ddc-url.gif)
 
 Any measures in the data that will be used to dynamically alter the SVG need to be annotated with their minimum to maximum data range.
 
 <sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
+
 ![](doc/va-data-range.gif)
 
 And finally the data must be assigned to the "Variables" role of the Data-driven content object.
 
 <sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
+
 ![](doc/va-ddc-roles.gif)
 
 ## Annotating an SVG File
