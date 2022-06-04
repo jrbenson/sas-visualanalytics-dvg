@@ -15,31 +15,29 @@ Then you must provide a URL to the VA Data-driven Content object's "URL" option.
 https://jrbenson.github.io/sas-visualanalytics-dvg/?svg=https://jrbenson.github.io/dvg-gallery/svg/test/airplane-top.svg
 ```
 
-If you host a copy of the library alongside your SVGs then the path can be relative:
+**_Setting URL of VA Data-driven Content_**
+![](doc/va-ddc-url.gif)
 
-```
-https://my.host.com/dvg/dvg.html?svg=graphic.svg
-```
+If you host a copy of the library alongside your SVGs then the path can be relative, such as `https://my.host.com/dvg/dvg.html?svg=graphic.svg`
 
 If you cannot host your own copy of the page then either unpkg or GitHub pages host the `index.html` page as well:
 
-- `https://unpkg.com/sas-visualanalytics-dvg/index.html`
-- `https://jrbenson.github.io/sas-visualanalytics-dvg/`
+```
+https://unpkg.com/sas-visualanalytics-dvg/index.html
+```
 
-<sub><sup>**Setting URL of VA Data-driven Content**</sup></sub><br/>
+```
+https://jrbenson.github.io/sas-visualanalytics-dvg/
+```
 
-![](doc/va-ddc-url.gif)
+Any measures in the data that will be used to dynamically alter the SVG need to be annotated with their minimum to maximum data range using the syntax `{{MIN..MAX}}`.
 
-Any measures in the data that will be used to dynamically alter the SVG need to be annotated with their minimum to maximum data range.
-
-<sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
-
+**_Adding Range Annotation to Data_**
 ![](doc/va-data-range.gif)
 
 And finally the data must be assigned to the "Variables" role of the Data-driven content object.
 
-<sub><sup>**Adding Range Annotation to Data**</sup></sub><br/>
-
+**_Adding Range Annotation to Data_**
 ![](doc/va-ddc-roles.gif)
 
 ## Annotating an SVG File
