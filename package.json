@@ -1,6 +1,6 @@
 {
   "name": "sas-visualanalytics-dvg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SAS Visual Analytics data-driven content object wrapper for the Dynamic Vector Graphics project.",
   "browser": "index.html",
   "directories": {
