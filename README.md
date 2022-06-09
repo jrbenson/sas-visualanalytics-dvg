@@ -1,5 +1,3 @@
-# SAS Visual Analytics Data-Driven Content Dynamic SVG
-
 This project provides a SAS Visual Analytics (VA) data-driven content object that uses annotations on provided data and SVG file to create a dynamic illustration that responds to data updates. It is a wrapper around the [Dyanmic Vector Graphics](https://github.com/jrbenson/dynamic-vector-graphics#readme) project.
 
 ## Quick Start Guide
